@@ -7,5 +7,10 @@ body {
 .navbar {
     padding: 10px;
     margin: 10px;
-    background-color: rgb(216, 162, 91);
+    border-radius: 15px;
+    background-color: rgb(248, 247, 247);
+}
+footer {
+    padding-top: 50px;
+    margin: 10px;
 }
