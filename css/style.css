@@ -36,6 +36,14 @@ h1 {
   /* Styles for the main heading */
   text-align: center;
 }
+ .advertise {
+  background-color: #595959;
+  border-radius: 20px;
+  padding:30px;
+  text-align: center;
+  margin:10px;
+}
+  
 
 .categories {
   /* Styles for the categories section */
@@ -44,9 +52,18 @@ h1 {
   background-color: #343840;
   border-radius: 20px;
 }
+ a {
+  text-decoration: none;
+  color: white;
+  }
 
 footer {
   /* Styles for the footer */
+  padding: 15px;
   text-align: left;
   margin-top: 20px;
+  text-decoration: none;
+  background-color: #212427;
+  min-height: 20vh;
+  flex: 1;
 }
