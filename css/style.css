@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(216, 162, 91);
+}
