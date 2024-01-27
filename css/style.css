@@ -15,6 +15,27 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.search-bar {
+  flex-grow: 1;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
 .logo {
   /* Styles for the logo */
@@ -37,21 +58,23 @@ h1 {
   text-align: center;
 }
  .advertise {
+  color: white;
   background-color: #595959;
   border-radius: 20px;
-  padding:30px;
+  padding:35px;
   text-align: center;
-  margin:10px;
+  margin:20px;
 }
-  
 
 .categories {
   /* Styles for the categories section */
   padding-top: 35px;
+  padding:50px;
   color: white;
   background-color: #343840;
   border-radius: 20px;
 }
+
  a {
   text-decoration: none;
   color: white;
@@ -60,6 +83,7 @@ h1 {
 footer {
   /* Styles for the footer */
   padding: 15px;
+  color: white;
   text-align: left;
   margin-top: 20px;
   text-decoration: none;
