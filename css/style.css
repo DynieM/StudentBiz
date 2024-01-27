@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  padding-bottom:25px;
+  padding-bottom: 25px;
 }
 
 header {
@@ -18,7 +18,8 @@ header {
 .search-bar {
   flex-grow: 1;
   border-radius: 20px;
-  margin: 0 10px;
+  margin:  40px;
+
 }
 
 input[type="text"] {
@@ -29,7 +30,7 @@ input[type="text"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -46,7 +47,7 @@ button {
 
 .rightnav {
   /* Styles for the right navigation links */
-  font-size:20px;
+  font-size: 20px;
   padding-bottom: 10px;
   color: #fff;
   text-decoration: none;
@@ -57,35 +58,48 @@ h1 {
   /* Styles for the main heading */
   text-align: center;
 }
- .advertise {
+h2 {
+  font-size: 30px;
+}
+/* Adevertisement on the Home page*/
+.advertise {
   color: white;
   background-color: #595959;
   border-radius: 20px;
-  padding:35px;
+  padding: 40px;
   text-align: center;
-  margin:20px;
+  margin: 40px;
 }
 
-.categories {
   /* Styles for the categories section */
-  padding-top: 35px;
-  padding:50px;
+.categories {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding: 40px;
   color: white;
   background-color: #343840;
   border-radius: 20px;
+  text-align:left;
 }
 
- a {
+/* Link styles*/
+a {
   text-decoration: none;
   color: white;
-  }
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+}
 
 footer {
   /* Styles for the footer */
+  position:sticky;
   padding: 15px;
   color: white;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 100px;
   text-decoration: none;
   background-color: #212427;
   min-height: 20vh;
