@@ -6,14 +6,13 @@ body {
 
 header {
   color: #000000;
-  color: #000000;
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 
 .navbar {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
