@@ -237,21 +237,12 @@ footer {
 /* Individual Search Results */
 .searches {
   background-color:black;
-  padding:20px;
+  padding:30px;
   border-radius: 20px;
   margin-top: 30px;
   min-height: 900px;
 }
-.search1 {
-  background-color:white;
-  padding:30px;
-  border-radius: 20px;
-  margin-top: 30px;
-  display: flex;
-}
-/*.s1rating {
- 
-}*/
+
 .small-tag {
   font-size: 14px;
   border: 1px solid transparent;
@@ -269,3 +260,85 @@ footer {
 .rating img{
   size: 10px 10px;
 }
+/* TESTING CSS*/
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-areas: 
+    "logo name rating"
+    "tags tags tags"
+    "about about about";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.logo img {
+  width: 70px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  grid-area: name;
+  display: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.rating {
+  grid-area: rating;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.tags {
+  grid-area: tags;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.tags span {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.about {
+  grid-area: about;
+  padding: 10px 0;
+}
+
+/* Responsive adjustments can be made here */
+@media (max-width: 768px) {
+  .card {
+    grid-template-areas:
+      "logo name"
+      "logo rating"
+      "tags tags"
+      "about about";
+    grid-template-columns: 100px 1fr;
+  }
+
+  .logo img {
+    width: 50px; /* Larger size for smaller screens */
+  }
+
+  .name, .rating {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+/**/
