@@ -299,6 +299,7 @@ footer {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  font-size: 0.8em;
 }
 
 .tags {
@@ -314,15 +315,21 @@ footer {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.8em;
+  border:1px solid transparent;
+  border-color:black;
 }
 
 .about {
   grid-area: about;
-  padding: 10px 0;
+  padding: 10px 5px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  border-color:black;
+
 }
 
 /* Responsive adjustments can be made here */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .card {
     grid-template-areas:
       "logo name"
