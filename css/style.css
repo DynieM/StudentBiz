@@ -5,9 +5,9 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  color: #000000;
   padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -15,42 +15,49 @@ header {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-}
-/* Styling for Links in the Nav Bar */
- .navbar a {
-    float: left;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-    
-   
- }
- .navbar .icon  {
-   font-family: sans-serif;
-            margin-right: 5px;
-            margin-bottom: 5px; /* Adjust spacing between icon and text */
-            font-size: 24px; 
-            display: block;
-        }
-          .navbar img {
-            display: block; /* Make the image a block element */
-            margin: 0 auto 5px; /* Center the image and adjust spacing */
-            width: 24px; /* Set the width of the images */
-            height: auto; /* Maintain aspect ratio */
-        }
+  background-color: transparent;
+  /* Remove the background color */
 
- .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-            border-radius:20px;
-            
-        }
+}
+
+/* Styling for Links in the Nav Bar */
+.navbar a {
+  float: left;
+  color: rgb(21, 20, 20);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar .icon {
+  font-family: sans-serif;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  /* Adjust spacing between icon and text */
+  font-size: 24px;
+
+}
+
+.navbar img {
+  display: block;
+  /* Make the image a block element */
+  margin: 0 auto 5px;
+  /* Center the image and adjust spacing */
+  width: 24px;
+  /* Set the width of the images */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.navbar a:hover {
+  background-color: #d2d0d0;
+  color: black;
+  border-radius: 20px;
+}
 
 .search-bar {
   flex-grow: 1;
   border-radius: 20px;
   margin: 10px;
-
 }
 
 input[type="text"] {
@@ -85,14 +92,15 @@ button {
   text-decoration: none;
   margin-left: 5px; /* Adjust the margin as needed */
 }
-
+/* Styles for the main heading */
 h1 {
-  /* Styles for the main heading */
   text-align: center;
 }
+
 h2 {
   font-size: 30px;
 }
+
 /* Adevertisement on the Home page*/
 .advertise {
   color: white;
@@ -103,7 +111,7 @@ h2 {
   margin: 40px;
 }
 
-  /* Styles for the categories section */
+/* Styles for the categories section */
 .categories {
   margin-top: 50px;
   padding-top: 10px;
@@ -111,7 +119,7 @@ h2 {
   color: white;
   background-color: #343840;
   border-radius: 20px;
-  text-align:left;
+  text-align: left;
 }
 
 /* Link styles*/
@@ -127,7 +135,7 @@ ul {
 
 footer {
   /* Styles for the footer */
-  position:sticky;
+  position: sticky;
   padding: 15px;
   color: white;
   text-align: left;
@@ -136,4 +144,68 @@ footer {
   background-color: #212427;
   min-height: 20vh;
   flex: 1;
+}
+
+/* Adevertisement on the Home page*/
+.adcontainer {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px; /* ADJUST WIDth*/
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+/* Arrow icons next to Ad on homepage*/
+.left-arrow {
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
+}
+
+/* Styles for the categories section */
+.categories {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding: 30px;
+  color: white;
+  background-color: #343840;
+  border-top-left-radius: 0px;
+  /* Straight top-left corner */
+  border-bottom-left-radius: 0px;
+  /* Straight bottom-left corner */
+  border-bottom-right-radius: 0px;
+  /* Straight bottom-right corner */
+  text-align: left;
+}
+
+/* Grid styles */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+/* Styles for each category item */
+.category-item {
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.category-item:hover {
+  text-align: center;
+  border-color: #555; /* Add your desired color for hover effect */
+}
+
+.category-item img {
+  width: 50px; /* Set the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Adjust spacing between icon and text */
 }
