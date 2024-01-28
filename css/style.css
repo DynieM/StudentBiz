@@ -249,11 +249,9 @@ footer {
   margin-top: 30px;
   display: flex;
 }
-.s1rating {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+/*.s1rating {
+ 
+}*/
 .small-tag {
   font-size: 14px;
   border: 1px solid transparent;
@@ -267,4 +265,7 @@ footer {
   height:20px;
   height: auto; /* Maintain aspect ratio */
   margin-right: 15px; /* Adjust spacing between logo and text */
+}
+.rating img{
+  size: 10px 10px;
 }
