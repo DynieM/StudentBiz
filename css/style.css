@@ -175,12 +175,9 @@ footer {
   padding: 30px;
   color: white;
   background-color: #343840;
-  border-top-left-radius: 0px;
-  /* Straight top-left corner */
-  border-bottom-left-radius: 0px;
-  /* Straight bottom-left corner */
-  border-bottom-right-radius: 0px;
-  /* Straight bottom-right corner */
+  border-top-left-radius: 0px;/* Straight top-left corner */
+  border-bottom-left-radius: 0px;/* Straight bottom-left corner */
+  border-bottom-right-radius: 0px;/* Straight bottom-right corner */
   text-align: left;
 }
 
@@ -224,7 +221,6 @@ footer {
   background-color: white;
   color: black;
   text-decoration: none;
-
   border: 2px solid transparent;
   border-color: black;
   border-radius: 20px;
@@ -260,9 +256,7 @@ footer {
 .rating img{
   size: 10px 10px;
 }
-/* TESTING CSS*/
-
-
+/* Styling for Business Card - Submitted Search Page*/
 .card {
   background-color: white;
   padding: 20px;
@@ -348,4 +342,3 @@ footer {
     text-align: left;
   }
 }
-/**/
