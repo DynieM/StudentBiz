@@ -6,18 +6,17 @@ body {
 
 header {
   color: #000000;
+  color: #000000;
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 
 .navbar {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: transparent;
-  /* Remove the background color */
-
 }
 
 /* Styling for Links in the Nav Bar */
@@ -48,11 +47,12 @@ header {
   /* Maintain aspect ratio */
 }
 
-.navbar a:hover {
-  background-color: #d2d0d0;
-  color: black;
-  border-radius: 20px;
-}
+ .navbar a:hover {
+            background-color: #d2d0d0;
+            color: black;
+            border-radius:20px;
+            
+        }
 
 .search-bar {
   flex-grow: 1;
