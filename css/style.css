@@ -16,6 +16,36 @@ header {
   align-items: center;
   overflow: hidden;
 }
+/* Styling for Links in the Nav Bar */
+ .navbar a {
+    float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+    
+   
+ }
+ .navbar .icon  {
+   font-family: sans-serif;
+            margin-right: 5px;
+            margin-bottom: 5px; /* Adjust spacing between icon and text */
+            font-size: 24px; 
+            display: block;
+        }
+          .navbar img {
+            display: block; /* Make the image a block element */
+            margin: 0 auto 5px; /* Center the image and adjust spacing */
+            width: 24px; /* Set the width of the images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+ .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            border-radius:20px;
+            
+        }
+
 .search-bar {
   flex-grow: 1;
   border-radius: 20px;
@@ -48,7 +78,8 @@ button {
 
 .rightnav {
   /* Styles for the right navigation links */
-  font-size: 20px;
+  float: right;
+  font-size: 24px;
   padding-bottom: 10px;
   color: #fff;
   text-decoration: none;
