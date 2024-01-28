@@ -233,3 +233,38 @@ footer {
 .tag:hover {
   background-color: #777;
 }
+
+/* Individual Search Results */
+.searches {
+  background-color:black;
+  padding:20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  min-height: 900px;
+}
+.search1 {
+  background-color:white;
+  padding:30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+}
+.s1rating {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.small-tag {
+  font-size: 14px;
+  border: 1px solid transparent;
+  padding: 8px;
+  border-radius: 18px;
+  border-color: black;
+}
+/* Business Logo */
+.business-logo {
+  width: 100px; /* Set the width of the logo */
+  height:20px;
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Adjust spacing between logo and text */
+}
