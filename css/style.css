@@ -11,6 +11,14 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 
+.button {
+
+  color: white;
+  background-color: #000000;
+  padding: 10px 130px;
+
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -410,3 +418,105 @@ h2 {
   margin-top: 5px;
   color: #555;
 }
+
+/* Business Profile Styles - Joao */
+
+.bProfileImg {
+  margin-top: 20px;
+  border-radius: 200px;
+  width: 250px;
+  height: 250px;
+}
+
+.bProfile {
+margin: 50px 250px;
+
+}
+
+.bLogo {
+  text-align: center;
+  border: 5px solid;
+  margin-right: 630px;
+  padding: 10px;
+
+}
+
+.bPictures {
+  text-align: center;
+  border: 5px solid;
+  padding: 10px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+   padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.specialLink {
+  color: #0b0ed6;
+  text-decoration: underline;
+
+}
+
+.businessPic {
+
+  border-radius: 20px;
+  width: 500px;
+  padding: 20px;
+
+}
+
+.smallIcon {
+  width: 40px;
+  margin-bottom: 170px;
+  
+}
+
+#bDescription {
+padding: 0px 300px;
+
+}
+
+input {
+  background-color: #dddddd;
+  height: 100px;
+  text-align: center;
+
+}
+
+.inline-container img,
+.inline-container p {
+  display: inline-block; /* or use "inline" depending on your specific requirements */
+  vertical-align: middle; /* to align them vertically in the middle */
+  margin: 0; /* to remove default margin */
+}
+
+.spacer {
+  margin-left: 145px;
+}
+
+#bForm {
+
+  margin: 70px 200px;
+  text-align: center;
+
+}
+
+
+.textDescription {
+  text-align: justify;
+  text-indent: 120px;
+
+}
+
+/* Business Profile Styles - End - Joao */
+
