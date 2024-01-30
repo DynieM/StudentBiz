@@ -111,7 +111,6 @@ h1 {
   color: #ffffff;
   font-size: 60px;
   font-family: "Oswald-SemiBold", Helvetica;
-
 }
 
 .firstcontainer,
@@ -164,6 +163,13 @@ h2 {
   font-size: 30px;
   color: #ffffff;
   font-family: "Oswald-SemiBold", Helvetica;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Oswald-SemiBold", Helvetica;
+  font-size: 30px;
+  color: black;
   text-align: center;
 }
 
@@ -482,7 +488,8 @@ footer {
   height: 100%;
   background: url('background-image.jpg') center/cover fixed no-repeat;
   /* Set your blurred background image */
-  filter: blur(10px); /* Adjust the blur effect */
+  filter: blur(10px);
+  /* Adjust the blur effect */
 }
 
 .popup-box {
@@ -557,8 +564,10 @@ h2 {
 }
 
 .profile-picture {
-  width: 100%; /* Make the profile picture span the width */
-  max-width: 200px; /* Limit the maximum width */
+  width: 100%;
+  /* Make the profile picture span the width */
+  max-width: 200px;
+  /* Limit the maximum width */
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -568,8 +577,9 @@ h2 {
   align-items: center;
 }
 
-.user-name, .user-email,
-.user-phone  {
+.user-name,
+.user-email,
+.user-phone {
   margin: 0;
 }
 
@@ -581,7 +591,8 @@ h2 {
 
 .contact-info {
   display: flex;
-  flex-direction: column; /* Display contact info in a column */
+  flex-direction: column;
+  /* Display contact info in a column */
 }
 
 .contact-item {
