@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  color: #000000;
+  color: white;
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  background-color: white;
 }
 
 /* Styling for Links in the Nav Bar */
@@ -147,13 +148,11 @@ p {
   text-align: left;
 }
 
-/* Advertisement on the Home page*/
+/* Styling Advertisement on the Home page*/
 .advertise {
   color: white;
-  background-color: #595959;
   border-radius: 20px;
-  padding: 40px;
-  text-align: center;
+  padding: 30px;
   margin: 40px;
 }
 
@@ -178,12 +177,9 @@ a {
 ul {
   list-style-type: none;
 }
- 
+/* Styles for the footer */
 footer {
-  /* Styles for the footer */
-
   position: sticky;
-
   padding: 15px;
   color: white;
   text-align: left;
@@ -191,10 +187,8 @@ footer {
   text-decoration: none;
   background-color: #212427;
   min-height: 20vh;
-  flex: 1; */
+  flex: 1; 
 }
-
-
 
 /* Advertisement on the Home page*/
 .adcontainer {
@@ -206,8 +200,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   width: 30px; /* ADJUST WIDth*/
-  height: auto;
-  /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
   cursor: pointer;
 }
 
@@ -433,7 +426,6 @@ footer {
 img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
 .business-info {
@@ -444,12 +436,10 @@ img {
 h2 {
   font-size: 24px;
   margin: 0;
+  font-family: "Oswald-SemiBold", Helvetica;
   color: black;
 }
-h2 {
-  font-size: 30px;
-  font-family: "Oswald-SemiBold", Helvetica;
-}
+
 
 .category {
   color: #888;
@@ -479,7 +469,6 @@ h2 {
 .profile-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .profile-picture {
@@ -497,13 +486,12 @@ h2 {
 }
 
 .user-name {
-  margin: 0;
+  font-size: larger;
 }
 
 .verification-badge {
   width: 20px;
   height: 20px;
-  margin-left: 5px;
 }
 
 .contact-info {
@@ -517,27 +505,28 @@ h2 {
   margin-right: 5px;
 }
 
-.user-email,
+/*.user-email,
 .user-phone {
-  margin: 0;
-}
+}*/
 
 .profile-buttons {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items:right;
 }
 
 .edit-link {
   margin-bottom: 10px;
-  color: blue;
+  color:white;
   text-decoration: underline;
 }
 
 .create-section {
   display: flex;
+  font-size: 20px;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
+  padding: 15px;
 }
 
 .plus-sign {
