@@ -549,7 +549,7 @@ h2 {
 
 .userprofile_container {
   background-color: lightgrey;
-  padding: 20px;
+  padding: 30px;
 }
 
 .userprofile_box {
@@ -564,10 +564,8 @@ h2 {
 }
 
 .profile-picture {
-  width: 100%;
-  /* Make the profile picture span the width */
-  max-width: 200px;
-  /* Limit the maximum width */
+  width: 100%; /* Make the profile picture span the width */
+  max-width: 200px; /* Limit the maximum width */
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -577,7 +575,8 @@ h2 {
   align-items: center;
 }
 
-.user-name {
+.user-name, .user-email,
+.user-phone  {
   margin: 0;
 }
 
@@ -589,8 +588,7 @@ h2 {
 
 .contact-info {
   display: flex;
-  flex-direction: column;
-  /* Display contact info in a column */
+  flex-direction: column; /* Display contact info in a column */
 }
 
 .contact-item {
@@ -604,10 +602,6 @@ h2 {
   margin-right: 5px;
 }
 
-.user-email,
-.user-phone {
-  margin: 0;
-}
 
 .profile-buttons {
   display: flex;
