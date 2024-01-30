@@ -1,0 +1,81 @@
+body::before {
+  content: "";
+  display:flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 1160px;
+  background-color: #000000b8;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.signup_container
+{
+  position: relative;
+  width: 800px;
+  height: 1180px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff; /* Add this line */
+  filter: none;
+  z-index: 100;
+  border-radius: 45px;
+  flex-direction: column;
+}
+
+.signup{
+font-family: 'Montserrat-Regular', Helvetica;
+color:#000000;
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+.markStudent {
+font-family: 'Montserrat-Light', Helvetica;
+color:#000000;
+font-size: 16px;  
+font-weight: 100;
+}
+
+p {
+    font-family: 'Montserrat-Light', Helvetica;
+    font-size: 12px;
+}
+.user input, .student input{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: #ddd6d6;
+  display: block;
+  margin: 20px;
+  width: 290px;
+  height: 50px;
+  padding-left:18px;
+}
+.user input::placeholder, .student input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  color: #c9c5c5;
+}
+
+#SignUpButton
+{
+    width: 150px;
+    height: 40px;
+    color:#ffffff;
+    background-color: #212427;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10.25px;
+    text-align: center;
+    outline: none;
+    border: none;
+}

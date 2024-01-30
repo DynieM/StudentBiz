@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   padding-bottom: 25px;
+  background-color: #212427;
 }
 
 header {
@@ -77,31 +78,81 @@ button {
 
 .logo {
   /* Styles for the logo */
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 24px;
 }
 
 .rightnav {
   /* Styles for the right navigation links */
-  float: right;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 10px;
-  color: #fff;
+  right: 25px;
+  position: relative;
+  color: #000000;
   text-decoration: none;
   margin-left: 5px; /* Adjust the margin as needed */
 }
 /* Styles for the main heading */
 h1 {
   text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+   font-family: "Oswald-SemiBold", Helvetica;
+ 
 }
+
+.firstcontainer, .secondcontainer, .thirdcontainer {
+  /* Styles for the blue section containers */
+   width: 800px; 
+  min-height: 304px;
+  background-color: #0066ff;
+  position: relative;
+  border-radius: 80px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  justify-content: center;
+  display: flex;
+  top: 150px;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+.secondcontainer
+{
+  /* Styles for the second container */
+  top: 230px;
+}
+
+
+/* Styles for the third container */
+.thirdcontainer
+{
+  top: 315px;
+}
+
+/* Styles for the subheaders */
+
 
 h2 {
   font-size: 30px;
+  color: #ffffff;
+  font-family: "Oswald-SemiBold", Helvetica;
+ text-align: center;
 }
 
+/* Styles for the paragraphs */
+p {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+  color:#ffffff;
+  font-size: 20px;;
+ display: block;
+  text-align: left;
+}
 
-/* Adevertisement on the Home page*/
+/* Advertisement on the Home page*/
 .advertise {
   color: white;
   background-color: #595959;
@@ -132,10 +183,12 @@ a {
 ul {
   list-style-type: none;
 }
-
+ 
 footer {
   /* Styles for the footer */
+
   position: sticky;
+
   padding: 15px;
   color: white;
   text-align: left;
@@ -143,10 +196,12 @@ footer {
   text-decoration: none;
   background-color: #212427;
   min-height: 20vh;
-  flex: 1;
+  flex: 1; */
 }
 
-/* Adevertisement on the Home page*/
+
+
+/* Advertisement on the Home page*/
 .adcontainer {
   position: relative;
 }
@@ -410,3 +465,4 @@ h2 {
   margin-top: 5px;
   color: #555;
 }
+
