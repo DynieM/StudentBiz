@@ -97,8 +97,8 @@ h1 {
 }
 
 .firstcontainer, .secondcontainer, .thirdcontainer {
-  /* Styles for the first container */
-   width: 800px; /* Change this line */
+  /* Styles for the blue section containers */
+   width: 800px; 
   min-height: 304px;
   background-color: #0066ff;
   position: relative;
@@ -106,21 +106,24 @@ h1 {
   box-shadow: inset 0px 4px 4px #00000040;
   justify-content: center;
   display: flex;
-   /* Add this line */
   top: 150px;
-  left: 50%; /* Add this line */
+  left: 50%; 
   transform: translate(-50%, -50%);
   flex-direction: column;
 }
 .secondcontainer
 {
+  /* Styles for the second container */
   top: 230px;
 }
+
+/* Styles for the third container */
 .thirdcontainer
 {
   top: 315px;
 }
 
+/* Styles for the subheaders */
 h2 {
   font-size: 30px;
   color: #ffffff;
@@ -128,6 +131,7 @@ h2 {
  text-align: center;
 }
 
+/* Styles for the paragraphs */
 p {
   font-family: 'Montserrat', sans-serif;
   position: relative;
@@ -169,7 +173,7 @@ a {
 ul {
   list-style-type: none;
 }
-
+ 
 footer {
   /* Styles for the footer */
   /* position:sticky;
@@ -182,3 +186,4 @@ footer {
   min-height: 20vh;
   flex: 1; */
 }
+
