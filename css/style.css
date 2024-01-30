@@ -546,3 +546,88 @@ h2 {
   margin-top: 5px;
   color: #555;
 }
+
+.userprofile_container {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.userprofile_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-picture {
+  width: 100%;
+  /* Make the profile picture span the width */
+  max-width: 200px;
+  /* Limit the maximum width */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name-verification {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin: 0;
+}
+
+.verification-badge {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  /* Display contact info in a column */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.user-email,
+.user-phone {
+  margin: 0;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.edit-link {
+  margin-bottom: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.create-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plus-sign {
+  width: 20px;
+  height: 20px;
+}
