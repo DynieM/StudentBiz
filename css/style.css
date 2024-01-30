@@ -133,12 +133,7 @@ h1 {
 /* Styles for the subheaders */
 
 
-h2 {
-  font-size: 30px;
-  color: #ffffff;
-  font-family: "Oswald-SemiBold", Helvetica;
- text-align: center;
-}
+
 
 /* Styles for the paragraphs */
 p {
@@ -449,6 +444,11 @@ img {
 h2 {
   font-size: 24px;
   margin: 0;
+  color: black;
+}
+h2 {
+  font-size: 30px;
+  font-family: "Oswald-SemiBold", Helvetica;
 }
 
 .category {
@@ -465,4 +465,3 @@ h2 {
   margin-top: 5px;
   color: #555;
 }
-
