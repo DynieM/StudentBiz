@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 25px;
   background-color: #212427;
 }
@@ -543,70 +543,20 @@ h2 {
 }
 
 .userprofile_container {
-  background-color: #f2f2f2;
+  background-color: #403e3e;
   padding: 20px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 20px;
 }
-
-.profile-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.user-info-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .profile-picture {
-  width: 100px;
-  height: 100px;
+  width:200px;
+  height:auto;
   border-radius: 50%;
-  object-fit: cover;
+  margin-right: 5px;
 }
-
-.verification-badge {
-  width: 20px;
+.username {
+  width:20px;
   height: 20px;
-  object-fit: cover;
-  margin-top: 5px;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.contact-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  margin-bottom: 5px;
-}
-
-.edit-profile,
-.create-post {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  margin-top: auto;
-}
-
-.plus-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
-  margin-top: 5px;
-}
