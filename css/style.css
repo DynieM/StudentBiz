@@ -6,8 +6,9 @@ body {
 }
 
 header {
-  color: #000000;
-  padding: 5px;
+  color: #ffffff;
+  background-color: white;
+  padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,7 +19,6 @@ header {
   margin: 0;
   box-sizing: border-box;
   color: #000000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -182,10 +182,8 @@ p {
 /* Advertisement on the Home page*/
 .advertise {
   color: white;
-  background-color: #595959;
   border-radius: 20px;
-  padding: 40px;
-  text-align: center;
+  padding: 10px;
   margin: 40px;
 }
 
@@ -213,9 +211,7 @@ ul {
 
 footer {
   /* Styles for the footer */
-
   position: sticky;
-
   padding: 15px;
   color: white;
   text-align: left;
@@ -224,7 +220,6 @@ footer {
   background-color: #212427;
   min-height: 20vh;
   flex: 1;
-  */
 }
 
 
