@@ -517,46 +517,4 @@ img {
 }
 
 /* Business Information Div */
-.business-info {
-  flex: 1;
-  padding-left: 20px;
-}
-
-h2 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.category {
-  color: #888;
-  margin-top: 5px;
-}
-
-.caption {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.description {
-  margin-top: 5px;
-  color: #555;
-}
-
-.userprofile_container {
-  background-color: #403e3e;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 20px;
-}
-.profile-picture {
-  width:200px;
-  height:auto;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-.username {
-  width:20px;
-  height: 20px;
-}
 
