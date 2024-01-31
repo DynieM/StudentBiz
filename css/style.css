@@ -54,6 +54,13 @@ header {
 
 }
 
+/* Styling for Main Logo */
+#mainLogo {
+  width: 100px;
+  transition: width 1s ease, height 1s ease;
+  /* Add a transition for width and height */
+}
+
 .navbar img {
   display: block;
   /* Make the image a block element */
@@ -466,11 +473,18 @@ footer {
     grid-template-columns: 100px 1fr;
   }
 
-  .name,
-  .rating {
-    margin-left: 0;
-    text-align: left;
+  #mainLogo {
+    width: 40px;
+    transition: width 1s ease, height 1s ease;
+    /* Add a transition for width and height */
   }
+}
+
+.name,
+.rating {
+  margin-left: 0;
+  text-align: left;
+}
 }
 
 /* Styling for pop up page */
