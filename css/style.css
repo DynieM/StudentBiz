@@ -79,6 +79,13 @@ header {
 
 }
 
+.centered {
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+
+}
+
 .search-bar {
   flex-grow: 1;
   border-radius: 20px;
@@ -293,14 +300,16 @@ footer {
 /* Styles for each category item */
 .category-item {
   text-align: center;
-  border-radius: 20px;
-  border: 2px solid transparent;
+  transform: scale(1);
 }
 
 .category-item:hover {
   text-align: center;
   border-color: #01FFFF;
-  /* Add your desired color for hover effect */
+  transform: scale(1.2);
+  /* Set the initial scale */
+  transition: transform 0.3s ease;
+  /* Add a transition for the transform property */
 }
 
 .category-item img {
