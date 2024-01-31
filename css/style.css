@@ -1,14 +1,25 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 25px;
+  background-color: #212427;
 }
 
 header {
-  color: #000000;
-  padding: 5px;
+  color: #ffffff;
+  background-color: white;
+  padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+}
+
+/* Business Info */
+.business-info {
+  width: 220%;
+  height: 110%;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -54,12 +65,12 @@ header {
   /* Maintain aspect ratio */
 }
 
- .navbar a:hover {
-            background-color: #d2d0d0;
-            color: black;
-            border-radius:20px;
-            
-        }
+.navbar a:hover {
+  background-color: #d2d0d0;
+  color: black;
+  border-radius: 20px;
+
+}
 
 .search-bar {
   flex-grow: 1;
@@ -85,37 +96,103 @@ button {
 
 .logo {
   /* Styles for the logo */
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   font-size: 24px;
 }
 
 .rightnav {
   /* Styles for the right navigation links */
-  float: right;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 10px;
-  color: #fff;
+  right: 25px;
+  position: relative;
+  color: #000000;
   text-decoration: none;
-  margin-left: 5px; /* Adjust the margin as needed */
+  margin-left: 5px;
+  /* Adjust the margin as needed */
 }
+
 /* Styles for the main heading */
 h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+  font-family: "Oswald-SemiBold", Helvetica;
+}
+
+.firstcontainer,
+.secondcontainer,
+.thirdcontainer {
+  /* Styles for the blue section containers */
+  width: 800px;
+  min-height: 304px;
+  background-color: #0066ff;
+  position: relative;
+  border-radius: 80px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  justify-content: center;
+  display: flex;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+
+.secondcontainer {
+  /* Styles for the second container */
+  top: 230px;
+}
+
+
+/* Styles for the third container */
+.thirdcontainer {
+  top: 315px;
+}
+
+/* Styles for the subheaders */
+
+.submitted-search-container {
+  display: flex;
+  align-items: center;
+}
+
+.submitted-search-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
+  padding: 0px 0px 10px;
   text-align: center;
 }
 
 h2 {
   font-size: 30px;
+  color: #ffffff;
+  font-family: "Oswald-SemiBold", Helvetica;
+  text-align: center;
 }
 
 
-/* Adevertisement on the Home page*/
+
+/* Styles for the paragraphs */
+p {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+}
+
+/* Advertisement on the Home page*/
 .advertise {
   color: white;
-  background-color: #595959;
   border-radius: 20px;
-  padding: 40px;
-  text-align: center;
+  padding: 10px;
   margin: 40px;
 }
 
@@ -154,7 +231,9 @@ footer {
   flex: 1;
 }
 
-/* Adevertisement on the Home page*/
+
+
+/* Advertisement on the Home page*/
 .adcontainer {
   position: relative;
 }
@@ -163,7 +242,8 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px; /* ADJUST WIDth*/
+  width: 30px;
+  /* ADJUST WIDth*/
   height: auto;
   /* Maintain aspect ratio */
   cursor: pointer;
@@ -173,6 +253,7 @@ footer {
 .left-arrow {
   left: 10px;
 }
+
 .right-arrow {
   right: 10px;
 }
@@ -184,17 +265,22 @@ footer {
   padding: 30px;
   color: white;
   background-color: #343840;
-  border-top-left-radius: 0px;/* Straight top-left corner */
-  border-bottom-left-radius: 0px;/* Straight bottom-left corner */
-  border-bottom-right-radius: 0px;/* Straight bottom-right corner */
+  border-top-left-radius: 0px;
+  /* Straight top-left corner */
+  border-bottom-left-radius: 0px;
+  /* Straight bottom-left corner */
+  border-bottom-right-radius: 0px;
+  /* Straight bottom-right corner */
   text-align: left;
 }
 
 /* Grid styles */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-  gap: 20px; /* Adjust the gap between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns with equal width */
+  gap: 20px;
+  /* Adjust the gap between grid items */
 }
 
 /* Styles for each category item */
@@ -206,14 +292,23 @@ footer {
 
 .category-item:hover {
   text-align: center;
-  border-color: #01FFFF; /* Add your desired color for hover effect */
+  border-color: #01FFFF;
+  /* Add your desired color for hover effect */
 }
 
 .category-item img {
-  width: 50px; /* Set the width of the icons */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Adjust spacing between icon and text */
-} 
+  width: 50px;
+  /* Set the width of the icons */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-bottom: 10px;
+  /* Adjust spacing between icon and text */
+}
+
+.search-rating-star {
+  width: 25px;
+  height: 25px;
+}
 
 /* Tag Styling for Submitted Search Page*/
 .tag-container {
@@ -221,7 +316,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
-  
+
 }
 
 .tag {
@@ -241,8 +336,12 @@ footer {
 
 /* Individual Search Results */
 .searches {
-  background-color:black;
-  padding:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 30px;
   border-radius: 20px;
   margin-top: 30px;
   min-height: 900px;
@@ -255,16 +354,22 @@ footer {
   border-radius: 18px;
   border-color: black;
 }
+
 /* Business Logo */
 .business-logo {
-  width: 100px; /* Set the width of the logo */
-  height:20px;
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 15px; /* Adjust spacing between logo and text */
+  width: 100px;
+  /* Set the width of the logo */
+  height: 20px;
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 15px;
+  /* Adjust spacing between logo and text */
 }
-.rating img{
+
+.rating img {
   size: 10px 10px;
 }
+
 /* Styling for Business Card - Submitted Search Page*/
 .card {
   background-color: white;
@@ -272,7 +377,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "logo name rating"
     "tags tags tags"
     "about about about";
@@ -280,11 +385,12 @@ footer {
   grid-template-rows: auto auto 1fr;
   gap: 15px;
   max-width: 600px;
-  margin: auto;
+  margin: 20px;
 }
 
 .logo img {
-  width: 70px; /* Adjust as necessary */
+  width: 100px;
+  /* Adjust as necessary */
   height: auto;
   border-radius: 50%;
 }
@@ -303,14 +409,16 @@ footer {
   align-items: flex-end;
   justify-content: center;
   font-size: 0.8em;
+  gap: 10px;
 }
 
 .tags {
-  grid-area: tags;
+  flex-direction: row;
   display: flex;
   justify-content: start;
-  gap: 5px;
-  padding: 10px 0;
+  gap: 15px;
+  padding: 10px 0px 0px;
+  border-radius: 30px;
 }
 
 .tags span {
@@ -318,17 +426,34 @@ footer {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.8em;
-  border:1px solid transparent;
-  border-color:black;
+  border: 1px solid transparent;
+  border-color: black;
 }
 
+/* Main About Div */
 .about {
+  padding: 0px 20px 0px;
   grid-area: about;
-  padding: 10px 5px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 1px solid transparent;
-  border-color:black;
+  border-color: black;
+}
 
+/* About Header Title */
+.about-header {
+  padding: 10px 0px 0px;
+  font-size: 25px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
+  text-align: left;
+}
+
+/* About Description Text */
+.about-text {
+  padding: 0px 70px 0px;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
 }
 
 /* Responsive adjustments can be made here */
@@ -342,11 +467,8 @@ footer {
     grid-template-columns: 100px 1fr;
   }
 
-  .logo img {
-    width: 50px; /* Larger size for smaller screens */
-  }
-
-  .name, .rating {
+  .name,
+  .rating {
     margin-left: 0;
     text-align: left;
   }
@@ -355,19 +477,22 @@ footer {
 /* Styling for pop up page */
 .maincontainer {
   background: #000000;
-  padding:20px;
+  padding: 20px;
   width: 100%;
   height: 100vh;
 }
 
-.blur-background { /* NOT BEING USED RN */
+.blur-background {
+  /* NOT BEING USED RN */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('background-image.jpg') center/cover fixed no-repeat; /* Set your blurred background image */
-  filter: blur(5px); /* Adjust the blur effect */
+  background: url('background-image.jpg') center/cover fixed no-repeat;
+  /* Set your blurred background image */
+  filter: blur(10px);
+  /* Adjust the blur effect */
 }
 
 .popup-box {
@@ -386,6 +511,11 @@ footer {
 
 .image-section {
   flex: 1;
+}
+
+/* Blue Text for Reviews*/
+.blue-text {
+  color: blue;
 }
 
 img {
@@ -418,105 +548,3 @@ h2 {
   margin-top: 5px;
   color: #555;
 }
-
-/* Business Profile Styles - Joao */
-
-.bProfileImg {
-  margin-top: 20px;
-  border-radius: 200px;
-  width: 250px;
-  height: 250px;
-}
-
-.bProfile {
-margin: 50px 250px;
-
-}
-
-.bLogo {
-  text-align: center;
-  border: 5px solid;
-  margin-right: 630px;
-  padding: 10px;
-
-}
-
-.bPictures {
-  text-align: center;
-  border: 5px solid;
-  padding: 10px;
-
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-   padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.specialLink {
-  color: #0b0ed6;
-  text-decoration: underline;
-
-}
-
-.businessPic {
-
-  border-radius: 20px;
-  width: 500px;
-  padding: 20px;
-
-}
-
-.smallIcon {
-  width: 40px;
-  margin-bottom: 170px;
-  
-}
-
-#bDescription {
-padding: 0px 300px;
-
-}
-
-input {
-  background-color: #dddddd;
-  height: 100px;
-  text-align: center;
-
-}
-
-.inline-container img,
-.inline-container p {
-  display: inline-block; /* or use "inline" depending on your specific requirements */
-  vertical-align: middle; /* to align them vertically in the middle */
-  margin: 0; /* to remove default margin */
-}
-
-.spacer {
-  margin-left: 145px;
-}
-
-#bForm {
-
-  margin: 70px 200px;
-  text-align: center;
-
-}
-
-
-.textDescription {
-  text-align: justify;
-  text-indent: 120px;
-
-}
-
-/* Business Profile Styles - End - Joao */
-
