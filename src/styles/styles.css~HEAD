@@ -1,0 +1,584 @@
+.this
+{
+  color:#0066ff;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 25px;
+  background-color: #212427;
+}
+
+header {
+  color: #ffffff;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Business Info */
+.business-info {
+  width: 220%;
+  height: 110%;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+
+  color: white;
+  background-color: #000000;
+  padding: 10px 130px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  color:#0066ff;
+}
+
+/* Styling for Links in the Nav Bar */
+.navbar a {
+  float: left;
+  color: rgb(21, 20, 20);
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbar .icon {
+  font-family: sans-serif;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  /* Adjust spacing between icon and text */
+  font-size: 24px;
+
+}
+
+/* Styling for Main Logo */
+#mainLogo {
+  width: 100px;
+  transition: width 1s ease, height 1s ease;
+  /* Add a transition for width and height */
+}
+
+.navbar img {
+  display: block;
+  /* Make the image a block element */
+  margin: 0 auto 5px;
+  /* Center the image and adjust spacing */
+  width: 24px;
+  /* Set the width of the images */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.navbar a:hover {
+  background-color: #d2d0d0;
+  color: black;
+  border-radius: 20px;
+
+}
+
+.centered {
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+
+}
+
+.search-bar {
+  flex-grow: 1;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  /* Styles for the logo */
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.rightnav {
+  /* Styles for the right navigation links */
+  font-size: 20px;
+  padding-bottom: 10px;
+  right: 25px;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 5px;
+  /* Adjust the margin as needed */
+}
+
+/* Styles for the main heading */
+h1 {
+  text-align: center;
+  color: #ffffff;
+<<<<<<< HEAD:src/styles/styles.css
+  font-size: 1000px;
+   font-family: "Oswald-SemiBold", Helvetica;
+ 
+=======
+  font-size: 60px;
+  font-family: "Oswald-SemiBold", Helvetica;
+>>>>>>> b93598c59a357a4925ef827f1284743405e038aa:css/style.css
+}
+
+.firstcontainer,
+.secondcontainer,
+.thirdcontainer {
+  /* Styles for the blue section containers */
+  width: 800px;
+  min-height: 304px;
+  background-color: #0066ff;
+  position: relative;
+  border-radius: 80px;
+  box-shadow: inset 0px 4px 4px #00000040;
+  justify-content: center;
+  display: flex;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+
+.secondcontainer {
+  /* Styles for the second container */
+  top: 230px;
+}
+
+
+/* Styles for the third container */
+.thirdcontainer {
+  top: 315px;
+}
+
+/* Styles for the subheaders */
+
+.submitted-search-container {
+  display: flex;
+  align-items: center;
+}
+
+.submitted-search-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
+  padding: 0px 0px 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Oswald-SemiBold", Helvetica;
+  text-align: center;
+}
+
+
+
+/* Styles for the paragraphs */
+p {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+}
+
+/* Advertisement on the Home page*/
+.advertise {
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px;
+}
+
+/* Styles for the categories section */
+.categories {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding: 40px;
+  color: white;
+  background-color: #343840;
+  border-radius: 20px;
+  text-align: left;
+}
+
+/* Link styles*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+}
+
+footer {
+  /* Styles for the footer */
+  position: sticky;
+  padding: 15px;
+  color: white;
+  text-align: left;
+  margin-top: 100px;
+  text-decoration: none;
+  background-color: #212427;
+  min-height: 20vh;
+  flex: 1;
+}
+
+
+
+/* Advertisement on the Home page*/
+.adcontainer {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  /* ADJUST WIDth*/
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+/* Arrow icons next to Ad on homepage*/
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Styles for the categories section */
+.categories {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding: 30px;
+  color: white;
+  background-color: #343840;
+  border-top-left-radius: 0px;
+  /* Straight top-left corner */
+  border-bottom-left-radius: 0px;
+  /* Straight bottom-left corner */
+  border-bottom-right-radius: 0px;
+  /* Straight bottom-right corner */
+  text-align: left;
+}
+
+/* Grid styles */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns with equal width */
+  gap: 20px;
+  /* Adjust the gap between grid items */
+}
+
+/* Styles for each category item */
+.category-item {
+  text-align: center;
+  transform: scale(1);
+}
+
+.category-item:hover {
+  text-align: center;
+  border-color: #01FFFF;
+  transform: scale(1.2);
+  /* Set the initial scale */
+  transition: transform 0.3s ease;
+  /* Add a transition for the transform property */
+}
+
+.category-item img {
+  width: 50px;
+  /* Set the width of the icons */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-bottom: 10px;
+  /* Adjust spacing between icon and text */
+}
+
+.search-rating-star {
+  width: 25px;
+  height: 25px;
+}
+
+/* Tag Styling for Submitted Search Page*/
+.tag-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.tag {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-color: black;
+  border-radius: 20px;
+}
+
+.tag:hover {
+  background-color: #777;
+}
+
+/* Individual Search Results */
+.searches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  min-height: 900px;
+}
+
+.small-tag {
+  font-size: 14px;
+  border: 1px solid transparent;
+  padding: 8px;
+  border-radius: 18px;
+  border-color: black;
+}
+
+/* Business Logo */
+.business-logo {
+  width: 100px;
+  /* Set the width of the logo */
+  height: 20px;
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 15px;
+  /* Adjust spacing between logo and text */
+}
+
+.rating img {
+  size: 10px 10px;
+}
+
+/* Styling for Business Card - Submitted Search Page*/
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-areas:
+    "logo name rating"
+    "tags tags tags"
+    "about about about";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  gap: 15px;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.logo img {
+  width: 100px;
+  /* Adjust as necessary */
+  height: auto;
+}
+
+.name {
+  grid-area: name;
+  display: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.rating {
+  grid-area: rating;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.8em;
+  gap: 10px;
+}
+
+.tags {
+  flex-direction: row;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  padding: 10px 0px 0px;
+  border-radius: 30px;
+}
+
+.tags span {
+  background-color: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  border: 1px solid transparent;
+  border-color: black;
+}
+
+/* Main About Div */
+.about {
+  padding: 0px 20px 0px;
+  grid-area: about;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  border-color: black;
+}
+
+/* About Header Title */
+.about-header {
+  padding: 10px 0px 0px;
+  font-size: 25px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
+  text-align: left;
+}
+
+/* About Description Text */
+.about-text {
+  padding: 0px 70px 0px;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Oswald-SemiBold", Helvetica;
+}
+
+/* Responsive adjustments can be made here */
+@media (max-width: 800px) {
+  .card {
+    grid-template-areas:
+      "logo name"
+      "logo rating"
+      "tags tags"
+      "about about";
+    grid-template-columns: 100px 1fr;
+  }
+
+  #mainLogo {
+    width: 40px;
+    transition: width 1s ease, height 1s ease;
+    /* Add a transition for width and height */
+  }
+}
+
+.name,
+.rating {
+  margin-left: 0;
+  text-align: left;
+}
+
+/* Styling for pop up page */
+.maincontainer {
+  background: #000000;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.blur-background {
+  /* NOT BEING USED RN */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('background-image.jpg') center/cover fixed no-repeat;
+  /* Set your blurred background image */
+  filter: blur(10px);
+  /* Adjust the blur effect */
+}
+
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 80%;
+  display: flex;
+}
+
+.image-section {
+  flex: 1;
+}
+
+/* Blue Text for Reviews*/
+.blue-text {
+  color: blue;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.business-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.category {
+  color: #888;
+  margin-top: 5px;
+}
+
+.caption {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 5px;
+  color: #555;
+}

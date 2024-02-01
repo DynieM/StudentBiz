@@ -1,6 +1,7 @@
 .this
 {
   color:#0066ff;
+  font-size: 10px;
 }
 
 
@@ -203,7 +204,7 @@ footer {
   text-decoration: none;
   background-color: #212427;
   min-height: 20vh;
-  flex: 1; */
+  flex: 1; 
 }
 
 
@@ -414,15 +415,15 @@ footer {
   height: 100vh;
 }
 
-.blur-background { /* NOT BEING USED RN */
+/* .blur-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('background-image.jpg') center/cover fixed no-repeat; /* Set your blurred background image */
-  filter: blur(5px); /* Adjust the blur effect */
-}
+  background: url('background-image.jpg') center/cover fixed no-repeat; 
+  filter: blur(5px); Adjust the blur effect
+} */
 
 .popup-box {
   position: fixed;

@@ -1,11 +1,13 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+/** @format */
 
-  
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackLinkTypePlugin =
+	require("html-webpack-link-type-plugin").HtmlWebpackLinkTypePlugin;
 
 module.exports = {
 	mode: "production",
@@ -44,13 +46,15 @@ module.exports = {
 		extensions: [".js", ".jsx"],
 	},
 	plugins: [
+		new MiniCssExtractPlugin({
+			filename: "./style.[contenthash].css",
+		}),
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			template: "./src/index.html",
+			filename: "index.html",
 		}),
-		new MiniCssExtractPlugin({
-			filename: "[name].[contenthash].css",
-		}),
+		new HtmlWebpackLinkTypePlugin(),
 	],
 	optimization: {
 		minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],

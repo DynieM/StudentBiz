@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <style></style>
-  </head>
 
-  <body>
-    <header>
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#"><img src="../assets/Logo/studentbizlogo_medium.png" alt="Home">StudentBiz</a>
-        </div>
-        <!-- Right side of the navigation bar on the Home Page-->
-        <div class="rightnav">
-          <a href="#"><img src="../assets/Icons/profilepic.png" alt="Profile Icon">Profile</a>
-          <a href="#"><img src="../assets/Icons/inbox.png" alt="Inbox Icon"> Inbox</a>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+  <style></style>
+  <script src="../script/script.js"></script>
+</head>
 
-      <!--Advertisement Container -->
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo">StudentBiz</a>
+      </div>
+      <!-- Right side of the navigation bar on the Home Page-->
+      <div class="rightnav">
+        <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon">Profile</a>
+        <a href="../html/inbox.html"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon"> Inbox</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Advertisement Container -->
   <div class="adcontainer">
-  <!-- Left Arrow-->
-    <img src="../assets/Icons/leftslide.png" alt="Left Arrow" class="arrow left-arrow">
+    <!-- Left Arrow-->
+    <a href=""><img src="../assets/Icons/leftslide.svg" alt="Left Arrow" class="arrow left-arrow"></a>
     <div class="advertise">
-      <p>Space for AD</p>
-    </div>
-   <!-- Right Arrow-->
-    <img src="../assets/Icons/rightslide.png" alt="Right Arrow" class="arrow right-arrow">
-  </div>
-
-    <h1>What are you looking for?</h1>
-    <!--Search Bar-->
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." >
-    </div>
-
-   <!-- Categories Section -->
-<div class="categories">
-  <h2>Categories</h2>
-  <div class="category-grid">
-    <div class="category-item">
-    <!--Edit Link-->
-      <a href="../html/submittedSearch.html">
-      <img src="../assets/Icons/beauty.png" alt="Beauty Icon"><p>Beauty</p>
+      <a href="../html/popup_ad.html">
+        <img src="../assets/Icons/Ad_Homepage.png" alt="Advertisement on homepage">
       </a>
     </div>
-    <div class="category-item">
-     <!--Edit Link-->
-      <a href="category2.html">
-        <img src="../assets/Icons/food.png" alt="Food Icon"><p>Food</p>
-      </a>
-    </div>
-    <div class="category-item">
-      <img src="../assets/Icons/tutor.png" alt="Education/Tutor Icon"><p>Education/Tutor</p>
-    </div>
-    <div class="category-item">
-      <img src="../assets/Icons/shopping.png" alt="Shopping Icon"><p>Shopping</p>
-    </div>
-    <div class="category-item">
-      <img src="../assets/Icons/art.png" alt="Arts & Crafts Icon">
-      <p>Arts &amp; Crafts</p>
-    </div>
-    <div class="category-item">
-      <img src="../assets/Icons/pets.png" alt="Pets Icon">
-      <p>Pets</p>
+    <!-- Right Arrow-->
+    <a href=""><img src="../assets/Icons/rightslide.svg" alt="Right Arrow" class="arrow right-arrow"></a>
+  </div>
+
+  <h1>What are you looking for?</h1>
+  <!--Search Bar-->
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <!-- Categories Section -->
+  <div class="categories">
+    <h2>Categories</h2>
+    <div class="category-grid">
+      <div class="category-item">
+        <!--Edit Link-->
+        <a href="../html/submittedSearch.html">
+          <img src="../assets/Icons/beauty.svg" alt="Beauty Icon">
+          <p class="centered">Beauty</p>
+        </a>
+      </div>
+      <div class="category-item">
+        <!--Edit Link-->
+        <a href="category2.html">
+          <img src="../assets/Icons/food.svg" alt="Food Icon">
+          <p class="centered">Food</p>
+        </a>
+      </div>
+      <div class="category-item">
+        <img src="../assets/Icons/tutor.svg" alt="Education/Tutor Icon">
+        <p class="centered">Education/Tutor</p>
+      </div>
+      <div class="category-item">
+        <img src="../assets/Icons/shopping.svg" alt="Shopping Icon">
+        <p class="centered">Shopping</p>
+      </div>
+      <div class="category-item">
+        <img src="../assets/Icons/art.svg" alt="Arts & Crafts Icon">
+        <p class="centered">Arts &amp; Crafts</p>
+      </div>
+      <div class="category-item">
+        <img src="../assets/Icons/pets.svg" alt="Pets Icon">
+        <p class="centered">Pets</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!--Footer -->
-    <footer>
-        <h3><a href="about.html">About</a></h3>
-      <ul class="footer">
-        <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
-        <li><a href="about.html">Accessibility Statement </a></li>
-        <li><a href="about.html">Contact Us</a></li>
-      </ul>
-    </footer>
-  </body>
+  <!--Footer -->
+  <footer>
+    <h3><a href="about.html">About</a></h3>
+    <ul class="footer">
+      <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+      <li><a href="about.html">Accessibility Statement </a></li>
+      <li><a href="about.html">Contact Us</a></li>
+    </ul>
+  </footer>
+</body>
 </html>

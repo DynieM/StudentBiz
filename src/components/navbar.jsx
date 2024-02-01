@@ -1,5 +1,5 @@
 import React from 'react';
-import "./../styles/styles.css"
+import "../test.css"
 import homeIcon from "../assets/Logo/studentbizlogo_small.png";
 // import profileIcon from "../../assets/Icons/profilepic.png";
 // import InboxIcon from "../../assets/Icons/inbox.png";
