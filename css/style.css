@@ -2,32 +2,20 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 25px;
-  background-color: #212427;
+  background-color: #ffffff;
 }
 
 header {
   color: #ffffff;
   background-color: white;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Business Info */
-.business-info {
-  width: 220%;
-  height: 110%;
-  margin: 0;
-  box-sizing: border-box;
-  color: #000000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button {
-
   color: white;
   background-color: #000000;
   padding: 10px 130px;
-
 }
 
 .navbar {
@@ -48,42 +36,49 @@ header {
 .navbar .icon {
   font-family: sans-serif;
   margin-right: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   /* Adjust spacing between icon and text */
-  font-size: 24px;
-
+  font-size: 25px;
 }
 
 /* Styling for Main Logo */
 #mainLogo {
-  width: 100px;
+  width: 35px;
+  height: 35px;
+  display: block;
   transition: width 1s ease, height 1s ease;
   /* Add a transition for width and height */
 }
 
-.navbar img {
+.navbar .rightnav img {
   display: block;
   /* Make the image a block element */
   margin: 0 auto 5px;
   /* Center the image and adjust spacing */
-  width: 24px;
-  /* Set the width of the images */
-  height: auto;
-  /* Maintain aspect ratio */
+  width: 25px;
+  height: 25px;
+}
+  /* Styles for the right navigation bar links */
+.rightnav {
+  font-size: 20px;
+  right: 25px;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 5px;
+
 }
 
 .navbar a:hover {
   background-color: #d2d0d0;
   color: black;
   border-radius: 20px;
-
 }
 
 .centered {
   text-align: center;
   margin: 0;
-  padding: 40px;
-
+  padding: 25px;
 }
 
 .search-bar {
@@ -94,7 +89,7 @@ header {
 
 input[type="text"] {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
 }
@@ -113,18 +108,6 @@ button {
   color: #000000;
   text-decoration: none;
   font-size: 24px;
-}
-
-.rightnav {
-  /* Styles for the right navigation links */
-  font-size: 20px;
-  padding-bottom: 10px;
-  right: 25px;
-  position: relative;
-  color: #000000;
-  text-decoration: none;
-  margin-left: 5px;
-  /* Adjust the margin as needed */
 }
 
 /* Styles for the main heading */
@@ -213,12 +196,12 @@ p {
 /* Styles for the categories section */
 .categories {
   margin-top: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding: 40px;
   color: white;
   background-color: #343840;
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Link styles*/
@@ -306,6 +289,8 @@ footer {
 .category-item:hover {
   text-align: center;
   border-color: #01FFFF;
+  border: 2px solid transparent;
+  border-radius: 20px;
   transform: scale(1.2);
   /* Set the initial scale */
   transition: transform 0.3s ease;
@@ -332,6 +317,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
+  color:#000000;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -341,9 +328,11 @@ footer {
   background-color: white;
   color: black;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   border-color: black;
   border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .tag:hover {
@@ -498,9 +487,9 @@ footer {
 /* Styling for pop up page */
 .maincontainer {
   background: #000000;
-  padding: 20px;
+  padding: 15px;
   width: 100%;
-  height: 100vh;
+  height:220vh;
 }
 
 .blur-background {
@@ -518,18 +507,26 @@ footer {
 
 .popup-box {
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px;
+  padding: 18px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  max-width: 600px;
+  max-width: 650px;
   width: 80%;
   display: flex;
 }
-
+/* Business Info for pop up page */
+.business-info {
+  width: 220%;
+  height: 500%;
+  margin: 10;
+  padding:15px;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .image-section {
   flex: 1;
 }
@@ -563,11 +560,23 @@ h2 {
 .caption {
   font-weight: bold;
   margin-top: 10px;
+  color: black;
+  font-size: 20px;
 }
 
 .description {
   margin-top: 5px;
   color: #555;
+  font-size: 15px;
+  padding:5px;
+  padding-right: 15px;
+}
+#title_business {
+  font-weight: bold;
+  margin-top: 15px;
+  color: rgb(136, 13, 13);
+  font-size: 20px;
+  padding:10px;
 }
 /* Styles for Inbox */
 .inbox-container {
