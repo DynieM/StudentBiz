@@ -374,6 +374,14 @@ footer {
 .rating img {
   size: 10px 10px;
 }
+.bInfoAll, .bPictures img {
+  height:15px;
+  width:15px;
+  padding: 10px;
+}
+.bInfoText {
+  padding: 10px;
+}
 
 /* Styling for Business Card - Submitted Search Page*/
 .card {
