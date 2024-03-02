@@ -43,8 +43,8 @@ header {
 
 /* Styling for Main Logo */
 #mainLogo {
-  width: 35px;
-  height: 35px;
+  width: 71px;
+  height: 82px;
   display: block;
   transition: width 1s ease, height 1s ease;
   /* Add a transition for width and height */
