@@ -68,12 +68,6 @@ header {
   margin-left: 5px;
 }
 
-.navbar a:hover {
-  background-color: #d2d0d0;
-  color: black;
-  border-radius: 20px;
-}
-
 .centered {
   text-align: center;
   margin: 0;
@@ -88,6 +82,13 @@ header {
   height: 71px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+.search-bar-header {
+  width: 477px;
+  height: 53px;
 }
 
 input[type="text"] {
