@@ -805,3 +805,19 @@ h2 {
     left: 920px;
     top: 240px;
 }
+
+#emailicon {
+    position: absolute;
+    width: 48px;
+    height: 44px;
+    left: 669px;
+    top: 370px;
+}
+
+#phoneicon {
+    position: absolute;
+    width: 48px;
+    height: 47px;
+    left: 669px;
+    top: 450px;
+}
