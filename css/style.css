@@ -855,3 +855,23 @@ h2 {
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+
+#add {
+  /* + */
+  
+    position: absolute;
+    width: 58px;
+    height: 64px;
+    left: 1587px;
+    top: 666px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 32px;
+    /* or 25% */
+    letter-spacing: -0.019em;
+  
+    color: #9A9A9A;
+}
