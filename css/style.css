@@ -241,6 +241,11 @@ p {
   text-align: left;
 }
 
+#beauty {
+  width: 109px;
+  height: 167px;
+}
+
 /* Link styles*/
 a {
   text-decoration: none;
