@@ -8,8 +8,8 @@ body {
 header {
   color: #ffffff;
   background-color: white;
+  padding: 10px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-  height: 198px;
 }
 
 .button {
@@ -84,6 +84,10 @@ header {
   flex-grow: 1;
   border-radius: 20px;
   margin: 10px;
+  width: 808px;
+  height: 71px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type="text"] {
@@ -112,9 +116,9 @@ button {
 /* Styles for the main heading */
 h1 {
   text-align: center;
-  color: #b6b6b6;
+  color: #ffffff;
   font-size: 60px;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
 }
 
 .firstcontainer,
@@ -145,6 +149,12 @@ h1 {
   top: 315px;
 }
 
+.about-subheading {
+  padding: 10px;
+  font-family: "Oswald", Helvetica;
+  font-size: 35px;
+}
+
 /* Styles for the subheaders */
 
 .submitted-search-container {
@@ -157,7 +167,7 @@ h1 {
   flex-direction: column;
   font-size: 30px;
   color: #000000;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
   padding: 0px 0px 10px;
   text-align: center;
 }
@@ -165,7 +175,7 @@ h1 {
 h2 {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
   text-align: center;
 }
 
@@ -179,6 +189,12 @@ p {
   font-size: 20px;
   display: block;
   text-align: left;
+}
+
+.alt-heading {
+  color: black;
+  font-family: "Oswald", Helvetica;
+  font-size: 70px;
 }
 
 /* Advertisement on the Home page*/
@@ -198,6 +214,11 @@ p {
   background-color: #343840;
   border-radius: 20px;
   text-align: center;
+}
+
+.categories-heading {
+  font-size: 86px;
+  text-align: left;
 }
 
 /* Link styles*/
@@ -226,27 +247,30 @@ footer {
 
 /* Advertisement on the Home page*/
 .adcontainer {
-  position: relative;
+  width: 1412px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
+  width: 59.91px;
   /* ADJUST WIDth*/
-  height: auto;
+  height: 59.91px;
   /* Maintain aspect ratio */
   cursor: pointer;
 }
 
 /* Arrow icons next to Ad on homepage*/
 .left-arrow {
-  left: 10px;
+  left: 100px;
 }
 
 .right-arrow {
-  right: 10px;
+  right: 100px;
 }
 
 /* Styles for the categories section */
@@ -449,7 +473,7 @@ footer {
   padding: 10px 0px 0px;
   font-size: 25px;
   color: #000000;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
   text-align: left;
 }
 
@@ -458,7 +482,7 @@ footer {
   padding: 0px 70px 0px;
   font-size: 20px;
   color: #000000;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
 }
 
 /* Responsive adjustments can be made here */
