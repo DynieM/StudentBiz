@@ -798,10 +798,10 @@ h2 {
     color: #FFFFFF;
 }
 
-.studentseal {
+#studentseal {
     position: absolute;
-    width: 128px;
-    height: 128px;
-    left: 881px;
-    top: 352px;
+    width: 80px;
+    height: 80px;
+    left: 920px;
+    top: 240px;
 }
