@@ -880,3 +880,19 @@ h2 {
     border-radius: 100px;
     background: #D9D9D9;
 }
+
+.my-reviews-heading {
+    position: absolute;
+    width: 516px;
+    height: 61px;
+    left: 174px;
+    top: 882px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #000000;
+}
