@@ -273,14 +273,26 @@ p {
   height: 159px;
 }
 
+.shopping-text {
+  margin-right: 50px;
+}
+
 #art {
   width: 181.03px;
   height: 151.25px;
 }
 
+.art-text {
+  margin-right: 50px;
+}
+
 #pets {
   width: 152px;
   height: 161.15px;
+}
+
+.pets-text {
+  margin-right: 60px;
 }
 
 /* Link styles*/
