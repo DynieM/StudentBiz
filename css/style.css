@@ -921,6 +921,7 @@ h2 {
 }
 
 .favorites {
+    position: absolute;
     width: 491px;
     height: 279px;
     left: 1194px;
