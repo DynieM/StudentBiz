@@ -903,3 +903,19 @@ h2 {
     border: 1px solid #D2D2D2;
     border-radius: 30px;
 }
+
+.favorites-heading {
+    position: absolute;
+    width: 517px;
+    height: 61px;
+    left: 1211px;
+    top: 886px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #000000;
+}
