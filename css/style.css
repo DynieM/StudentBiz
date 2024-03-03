@@ -828,7 +828,6 @@ h2 {
     height: 50px;
     left: 742px;
     top: 370px;
-  
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -837,6 +836,5 @@ h2 {
     /* or 48px */
     letter-spacing: -0.022em;
     text-decoration-line: underline;
-  
     color: #FFFFFF;
 }
