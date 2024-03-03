@@ -175,6 +175,10 @@ h1 {
   font-size: 35px;
 }
 
+.about-footer {
+  margin-left: 40px;
+}
+
 /* Styles for the subheaders */
 
 .submitted-search-container {
