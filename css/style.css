@@ -47,6 +47,7 @@ header {
   height: 35px;
   display: block;
   transition: width 1s ease, height 1s ease;
+  margin-right: 10px;
   /* Add a transition for width and height */
 }
 
@@ -54,6 +55,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 10px;
+  padding-left: 10px;
 }
 
 .navbar .rightnav img {
