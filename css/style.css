@@ -932,3 +932,18 @@ h2 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.my-businesses-heading {
+    position: absolute;
+    width: 516px;
+    height: 61px;
+    left: 1211px;
+    top: 1371px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #1E1E1E;
+}
