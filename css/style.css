@@ -797,3 +797,11 @@ h2 {
     letter-spacing: -0.022em;
     color: #FFFFFF;
 }
+
+.studentseal {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 881px;
+    top: 352px;
+}
