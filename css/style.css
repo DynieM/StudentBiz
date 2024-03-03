@@ -882,11 +882,10 @@ h2 {
 }
 
 .my-reviews-heading {
-    position: absolute;
     width: 516px;
     height: 61px;
     left: 174px;
-    top: 882px;
+    top: 600px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
