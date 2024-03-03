@@ -787,8 +787,7 @@ h2 {
     width: 446px;
     height: 74px;
     left: 669px;
-    top: 381px;
-  
+    top: 200px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -796,6 +795,5 @@ h2 {
     line-height: 150%;
     /* or 72px */
     letter-spacing: -0.022em;
-  
     color: #FFFFFF;
 }
