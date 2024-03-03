@@ -765,3 +765,14 @@ h2 {
   align-items: center;
   /* Center align the flex items */
 }
+
+.user-profile-rectangle1 {
+  position: absolute;
+    width: 1728px;
+    height: 516px;
+    left: 0px;
+    top: 252px;
+    background: #B0B0B0;
+    box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.38);
+    border-radius: 0px 0px 0px 70px;
+}
