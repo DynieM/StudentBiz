@@ -41,21 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
     changeImage(1);
   });
 });
-
-document.getElementById('inboxLink').addEventListener('click', function(event) {
-  event.preventDefault();
-  document.getElementById('inbox-container').style.display = 'block';
-});
-
-document.getElementById('inboxicon').addEventListener('click', function(event) {
-  event.preventDefault();
-  document.getElementById('inbox-container').style.display = 'block';
-});
-
-document.getElementById('inboxLink').addEventListener('click', function(event) {
-  event.preventDefault();
-  document.getElementById('inbox-container').style.display = 'block';
-});
-
-document.getElementById('inboxicon').addEventListener('click', showInbox);
-document.getElementById('inboxLink').addEventListener('click', showInbox);
