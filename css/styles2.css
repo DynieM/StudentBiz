@@ -169,11 +169,15 @@ p {
   cursor: pointer;
 }
 
-#logo {
+#logo-signup {
   width: 135px;
   height: 156px;
   margin-right: 200px;
   margin-top: 20px;
+}
+
+#logo-login {
+
 }
 
 .login-text {
