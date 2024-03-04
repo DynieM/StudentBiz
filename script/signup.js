@@ -1,8 +1,10 @@
-document.getElementById("student").addEventListener("change", function() {
-  var content = document.querySelector("student");
-  if (this.checked) {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
-});
+window.onload = function() {
+  document.getElementById('student').addEventListener('change', function() {
+    var studentDiv = document.querySelector('.student');
+    if (this.checked) {
+      studentDiv.style.display = 'block';
+    } else {
+      studentDiv.style.display = 'none';
+    }
+  });
+};
