@@ -72,12 +72,15 @@ body {
 
 .loginto-text {
   font-family: 'Montserrat', Helvetica;
-  font-style: normal;
-  color: #000000;
-  font-size: 20px;
-  width: 349px;
-  height: 66px;
-  margin-left: 40px;
+    font-style: normal;
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 40px;
+    position: absolute;
+    width: 349px;
+    height: 66px;
+    left: 380px;
+    top: 60px;
 }
 
 .studentbiz-text2 {
