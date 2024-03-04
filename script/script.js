@@ -41,3 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
     changeImage(1);
   });
 });
+
+document.getElementById('inboxLink').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('inboxOverlay').style.display = 'block';
+});
