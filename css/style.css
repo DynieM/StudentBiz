@@ -682,7 +682,7 @@ h2 {
   padding: 10px;
 }
 /* Styles for Inbox */
-.inbox-container {
+#inbox-container {
   position: fixed;
   top: 50px;
   right: 50px;
