@@ -78,7 +78,7 @@ p {
     padding-left: 18px;
 }
 
-#studentDiv{
+#studentDiv input{
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   border: 2px solid;
@@ -88,7 +88,7 @@ p {
   width: 290px;
   height: 50px;
   padding-left:18px;
-  display: none;
+  display
 }
 .user input::placeholder, .student input::placeholder{
   font-family: 'Montserrat', sans-serif;
