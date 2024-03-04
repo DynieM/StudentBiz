@@ -46,3 +46,13 @@ document.getElementById('inboxLink').addEventListener('click', function(event) {
   event.preventDefault();
   document.getElementById('inboxOverlay').style.display = 'block';
 });
+
+document.getElementById('inboxSVG').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('inboxOverlay').style.display = 'block';
+});
+
+document.getElementById('inboxText').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('inboxOverlay').style.display = 'block';
+});
