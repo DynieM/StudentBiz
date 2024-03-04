@@ -66,7 +66,7 @@ p {
   font-family: 'Montserrat-Light', Helvetica;
   font-size: 12px;
 }
-.user input, .student input{
+.user input, #student input{
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   border: 2px solid;
