@@ -47,7 +47,7 @@ document.getElementById('inboxLink').addEventListener('click', function(event) {
   document.getElementById('inboxOverlay').style.display = 'block';
 });
 
-document.getElementById('inboxSVG').addEventListener('click', function(event) {
+document.getElementById('inboxicon').addEventListener('click', function(event) {
   event.preventDefault();
   document.getElementById('inboxOverlay').style.display = 'block';
 });
