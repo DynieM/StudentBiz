@@ -1,6 +1,6 @@
 window.onload = function() {
-  document.getElementById('student').addEventListener('change', function() {
-    var studentDiv = document.querySelector('.student');
+  document.getElementById('studentCheckbox').addEventListener('change', function() {
+    var studentDiv = document.querySelector('.studentDiv');
     if (this.checked) {
       studentDiv.style.display = 'block';
     } else {
