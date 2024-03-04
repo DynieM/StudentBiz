@@ -9,5 +9,6 @@
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "files.autoSave": "afterDelay",
-  "git.autoStash": true
+  "git.autoStash": true,
+  "cmake.configureOnOpen": true
 }
