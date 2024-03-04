@@ -44,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById('inboxLink').addEventListener('click', function(event) {
   event.preventDefault();
-  document.getElementById('inboxOverlay').style.display = 'block';
+  document.getElementById('inbox-container').style.display = 'block';
 });
 
 document.getElementById('inboxicon').addEventListener('click', function(event) {
   event.preventDefault();
-  document.getElementById('inboxOverlay').style.display = 'block';
+  document.getElementById('inbox-container').style.display = 'block';
 });
 
 document.getElementById('inboxLink').addEventListener('click', function(event) {
   event.preventDefault();
-  document.getElementById('inboxOverlay').style.display = 'block';
+  document.getElementById('inbox-container').style.display = 'block';
 });

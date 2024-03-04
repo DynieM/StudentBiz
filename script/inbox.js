@@ -16,5 +16,5 @@ function showNewMessageForm() {
 }
 
 document.getElementById('closeInbox').addEventListener('click', function() {
-  document.getElementById('inboxOverlay').style.display = 'none';
+  document.getElementById('inbox-container').style.display = 'none';
 });
