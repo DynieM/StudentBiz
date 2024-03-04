@@ -14,3 +14,7 @@ function showNewMessageForm() {
     document.getElementById('sendMsg').style.display = 'none';
     document.getElementById('newMessageForm').style.display = 'block';
 }
+
+document.getElementById('closeInbox').addEventListener('click', function() {
+  document.getElementById('inboxOverlay').style.display = 'none';
+});
