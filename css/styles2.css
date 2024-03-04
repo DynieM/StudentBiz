@@ -66,7 +66,19 @@ p {
   font-family: 'Montserrat-Light', Helvetica;
   font-size: 12px;
 }
-.user input, #student input{
+.user input{
+  font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #ddd6d6;
+    display: block;
+    margin: 20px;
+    width: 290px;
+    height: 50px;
+    padding-left: 18px;
+}
+
+#student input{
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   border: 2px solid;
@@ -76,6 +88,7 @@ p {
   width: 290px;
   height: 50px;
   padding-left:18px;
+  visibility: hidden;
 }
 .user input::placeholder, .student input::placeholder{
   font-family: 'Montserrat', sans-serif;
