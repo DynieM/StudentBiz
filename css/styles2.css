@@ -152,6 +152,7 @@ p {
   text-align: center;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 #LoginButton
@@ -165,6 +166,7 @@ p {
   border-width: 1px;
   border-radius: 10.25px;
   text-align: center;
+  cursor: pointer;
 }
 
 #logo {
