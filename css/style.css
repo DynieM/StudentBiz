@@ -315,6 +315,7 @@ footer {
   padding: 10px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
+  column-gap: 15px;
 }
 
 .tag {
