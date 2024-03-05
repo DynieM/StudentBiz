@@ -26,9 +26,15 @@ async function submitForm() {
         const { data, error } = await supabase
             .from('users')
             .insert([
-                { first_name, last_name },
-                { first_nam}
+                { first_name, },
+                { last_name }
             ])
             
+    }
+
+    catch (error)
+    {
+        console.error("Error saving data to Supabase:", error);
+        res.status(500).json({ error: "Internal server error" });
     }
 }
