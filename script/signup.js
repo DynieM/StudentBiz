@@ -17,3 +17,13 @@ googleSignIn.addEventListener("click", () => {
         provider: "google",
     });
 });
+
+async function submitForm() {
+    try {
+        const first_name = document.getElementById("firstName").value  
+        const last_name = document.getElementById("lastName").value
+
+        const { data, error } = await supabaseKey
+            .from()
+    }
+}
