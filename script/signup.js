@@ -27,7 +27,7 @@ async function submitForm() {
             .from('users')
             .insert([
                { some_column: first_name },
-               { some_column: 'otherValue' },
+               { some_column: last_name },
             ])
             
     }
