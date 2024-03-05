@@ -326,6 +326,11 @@ footer {
   border-radius: 20px;
   font-family: "Montserrat", sans-serif;
 }
+.tag-header {
+  margin: 0 10px;
+  padding: 8px 16px;
+    color: black;
+}
 
 .tag:hover {
   background-color: #777;
