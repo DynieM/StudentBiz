@@ -38,3 +38,9 @@ async function submitForm() {
         res.status(500).json({ error: "Internal server error" });
     }
 }
+
+const form = document.getElementById("myForm");
+form.addEventListener("submit", (event) => {
+	event.preventDefault(); // Prevent the form from submitting normally
+	submitForm();
+});
