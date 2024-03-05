@@ -23,7 +23,7 @@ async function submitForm() {
         const first_name = document.getElementById("firstName").value  
         const last_name = document.getElementById("lastName").value
 
-        const { data, error } = await supabase
+        const { data, error } = await supaClient
             .from('test')
             .insert([
                { first_name_db: "john" },
