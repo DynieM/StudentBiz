@@ -26,8 +26,8 @@ async function submitForm() {
         const { data, error } = await supabaseKey
             .from('users')
             .insert([
-               { some_column: first_name },
-               { some_column: last_name },
+               { first_name_db: first_name },
+               { last_name_db: last_name },
             ])
             
     }
