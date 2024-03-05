@@ -24,7 +24,7 @@ async function submitForm() {
         const last_name = document.getElementById("lastName").value
 
         const { data, error } = await supabaseKey
-            .from('users')
+            .from('test')
             .insert([
                { first_name_db: first_name },
                { last_name_db: last_name },
