@@ -24,6 +24,8 @@ googleSignIn.addEventListener("click", () => {
     });
 });
 
+
+//Basic User Input
 async function submitForm() {
     try {
         const first_name = document.getElementById("firstName").value  
@@ -55,6 +57,32 @@ async function submitForm() {
     }
 }
 
+//If user is student
+
+async function submitForm2() {
+	try {
+		const first_name = document.getElementById("firstName").value;
+		const last_name = document.getElementById("lastName").value;
+		const id = uuid.v4();
+		const email = document.getElementById("email").value;
+		const phone_number = document.getElementById("phoneNumber").value;
+		const password = document.getElementById("password").value;
+
+        const { data, error } = await supabase.from("businesses")
+            .insert({
+			id: id,
+			first_name_db: first_name,
+			last_name_db: last_name,
+			email_db: email,
+			phone_number_db: phone_number,
+			password_db: password,
+		});
+	} catch (error) {
+		console.error("Error saving data to Supabase:", error);
+		res.status(500).json({ error: "Internal server error" });
+	}
+}
+
 
 
 const is_Student = document.getElementById("student")
@@ -70,7 +98,7 @@ is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
         content.style.visibility = "visible"
         sign_up_button.style.marginTop = "0px";
-       container.style.height = "1180px";
+       container.style.height = "1185px";
         
     } else {
         content.style.visibility = "hidden"
