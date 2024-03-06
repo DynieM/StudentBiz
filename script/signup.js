@@ -34,7 +34,8 @@ async function submitForm() {
 
         const { data, error } = await supabase
             .from('users')
-            .insert({ id: id, first_name_db: first_name, last_name_db: last_name});
+            .insert({ id: id, first_name_db: first_name, last_name_db: last_name });
+            
             
     }
 
