@@ -27,26 +27,26 @@ googleSignIn.addEventListener("click", () => {
 
 //Basic User Input
 async function submitForm() {
-    try {
-        const first_name = document.getElementById("firstName").value  
-        const last_name = document.getElementById("lastName").value
-        const email = document.getElementById("email").value
-        const phone_number = document.getElementById("phoneNumber").value
-        const password = document.getElementById("password").value
+    // try {
+    //     const first_name = document.getElementById("firstName").value  
+    //     const last_name = document.getElementById("lastName").value
+    //     const email = document.getElementById("email").value
+    //     const phone_number = document.getElementById("phoneNumber").value
+    //     const password = document.getElementById("password").value
 
 
-        const { data, error } = await supabase
-					.from("users")
-					.insert({
-						first_name_db: first_name,
-						last_name_db: last_name,
-                        email_db: email,
-                        phone_number_db: phone_number,
-                        password_db: password,
+    //     const { data, error } = await supabase
+	// 				.from("users")
+	// 				.insert({
+	// 					first_name_db: first_name,
+	// 					last_name_db: last_name,
+    //                     email_db: email,
+    //                     phone_number_db: phone_number,
+    //                     password_db: password,
                         
-					});
+	// 				});
 
-    }
+    // }
 
     catch (error)
     {
@@ -73,6 +73,25 @@ async function submitForm2() {
 			service_type_db: service_type,
             business_phone_number_db: business_phone_number,
 		});
+
+        const first_name = document.getElementById("firstName").value  
+        const last_name = document.getElementById("lastName").value
+        const email = document.getElementById("email").value
+        const phone_number = document.getElementById("phoneNumber").value
+        const password = document.getElementById("password").value
+
+
+        const { data, error } = await supabase
+					.from("users")
+					.insert({
+						first_name_db: first_name,
+						last_name_db: last_name,
+                        email_db: email,
+                        phone_number_db: phone_number,
+                        password_db: password,
+                        
+					});
+
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
 		res.status(500).json({ error: "Internal server error" });
