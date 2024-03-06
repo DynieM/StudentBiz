@@ -77,7 +77,8 @@ p {
     background-color: #212427;
     font-family: 'Montserrat', sans-serif;
     border-radius: 10.25px;
-    text-align: center;
+    position: relative;
+    left: 82px;
     outline: none;
     border: none;
 }
