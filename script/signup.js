@@ -71,9 +71,9 @@ async function submitForm2() {
             .insert({
 			business_email_db: business_email,
 			business_name_db: business_name,
-            business_description_db:
-			service_type_db: password,
-            business_phone_number_db:
+            business_description_db: business_description,
+			service_type_db: service_type,
+            business_phone_number_db: business_phone_number
 		});
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
