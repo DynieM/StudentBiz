@@ -66,11 +66,11 @@ content.style.visibility = "hidden"
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
         content.style.visibility = "visible"
-        sign_up_button.style.marginTop = "0px";
+        sign_up_button.style.marginTop = "-1000000px";
         
     } else {
         content.style.visibility = "hidden"
-        sign_up_button.style. = "600px";
+        sign_up_button.style.marginTop = "-90000px";
     }
 
 })
