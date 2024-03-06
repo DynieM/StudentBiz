@@ -26,7 +26,7 @@ googleSignIn.addEventListener("click", () => {
 
 
 //Basic User Input
-async function submitForm() {
+/*async function submitForm() {
     // try {
     //     const first_name = document.getElementById("firstName").value  
     //     const last_name = document.getElementById("lastName").value
@@ -48,12 +48,12 @@ async function submitForm() {
 
     // }
 
-    catch (error)
-    {
-        console.error("Error saving data to Supabase:", error);
-        res.status(500).json({ error: "Internal server error" });
-    }
-}
+    // catch (error)
+    // {
+    //     console.error("Error saving data to Supabase:", error);
+    //     res.status(500).json({ error: "Internal server error" });
+    // }
+} */
 
 //If user is student
 
