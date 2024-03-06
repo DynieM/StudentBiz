@@ -32,7 +32,7 @@ async function submitForm() {
 
         const { data, error } = await supabase
             .from('users')
-            .upsert({ first_name_db: first_name, last_name_db: last_name,  });
+            .upsert({ first_name_db: first_name, last_name_db: last_name});
             
     }
 
