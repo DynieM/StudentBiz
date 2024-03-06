@@ -63,17 +63,8 @@ async function submitForm2() {
 		const business_description = document.getElementById("businessDescription").value;
 		const business_name = document.getElementById("businessName").value;
 		const business_phone_number = document.getElementById("businessPhoneNumber").value;
-		const service_type = document.getElementById("serviceType").value;
-
-        const { data, error } = await supabase.from("businesses")
-            .insert({
-			business_email_db: business_email,
-			business_name_db: business_name,
-            business_description_db: business_description,
-			service_type_db: service_type,
-            business_phone_number_db: business_phone_number,
-		});
-
+        const service_type = document.getElementById("serviceType").value;
+        
         const first_name = document.getElementById("firstName").value  
         const last_name = document.getElementById("lastName").value
         const email = document.getElementById("email").value
@@ -82,7 +73,15 @@ async function submitForm2() {
 
 
         const { data, error } = await supabase
-					.from("users")
+            .from("businesses")
+            .insert({
+			business_email_db: business_email,
+			business_name_db: business_name,
+            business_description_db: business_description,
+			service_type_db: service_type,
+            business_phone_number_db: business_phone_number,
+		});
+         .from("users")
 					.insert({
 						first_name_db: first_name,
 						last_name_db: last_name,
@@ -91,6 +90,7 @@ async function submitForm2() {
                         password_db: password,
                         
 					});
+
 
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
