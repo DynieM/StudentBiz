@@ -52,18 +52,18 @@
               // Convert searchText to an integer
               const searchId = parseInt(searchText, 10);
       
-              // Check if the conversion was successful (searchId is not NaN)
+              // Checks if the conversion was successful 
               if (!isNaN(searchId)) {
                   const { data, error } = await supabase
                       .from('business_profiles')
                       .select('*')
-                      .eq('id', searchId) // Use .eq to match the exact id
-                      .single(); // Assuming you want a single result because ID is unique
+                      .eq('id', searchId)
+                      .single(); 
       
                   if (error) {
                       console.error('error', error);
                   } else {
-                      displayResults([data]); // Wrap data in an array to reuse the displayResults function
+                      displayResults([data]);
                   }
               } else {
                   console.error('Invalid ID input');
@@ -74,7 +74,7 @@
       function displayResults(results) {
           const resultsContainer = document.getElementById('search-results');
           resultsContainer.innerHTML = '';
-          // Check if results array is not empty
+         
           if (results.length > 0 && results[0] !== null) {
               results.forEach(business => {
                   const li = document.createElement('li');
