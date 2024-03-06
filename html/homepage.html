@@ -37,8 +37,67 @@
     <h1>What are you looking for?</h1>
     <!--Search Bar-->
     <div class="search-bar">
-      <input type="text" placeholder="Search..." >
+      <input type="text" placeholder="Search..." id="search-input">
+      <button id="search-btn">Search</button>
     </div>
+    <script>window.onload = function() {
+      const { createClient } = supabase;
+      const supabaseUrl = 'https://sozsdklrdymnlkaillqs.supabase.co';
+      const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvenNka2xyZHltbmxrYWlsbHFzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwOTE1NjQ5NSwiZXhwIjoyMDI0NzMyNDk1fQ.YVxLLcVZo_k0adoaEqRoR8kK6FLbQxjYvU6SChX55Z4";
+      const supaClient = createClient(supabaseUrl, supabaseKey);
+      
+      document.getElementById('search-btn').addEventListener('click', async () => {
+          const searchText = document.getElementById('search-input').value;
+          if (searchText) {
+              // Convert searchText to an integer
+              const searchId = parseInt(searchText, 10);
+      
+              // Check if the conversion was successful (searchId is not NaN)
+              if (!isNaN(searchId)) {
+                  const { data, error } = await supabase
+                      .from('business_profiles')
+                      .select('*')
+                      .eq('id', searchId) // Use .eq to match the exact id
+                      .single(); // Assuming you want a single result because ID is unique
+      
+                  if (error) {
+                      console.error('error', error);
+                  } else {
+                      displayResults([data]); // Wrap data in an array to reuse the displayResults function
+                  }
+              } else {
+                  console.error('Invalid ID input');
+              }
+          }
+      });
+      
+      function displayResults(results) {
+          const resultsContainer = document.getElementById('search-results');
+          resultsContainer.innerHTML = '';
+          // Check if results array is not empty
+          if (results.length > 0 && results[0] !== null) {
+              results.forEach(business => {
+                  const li = document.createElement('li');
+                  li.textContent = `${business.id} - ${business.name} - ${business.description}`;
+                  resultsContainer.appendChild(li);
+              });
+          } else {
+              resultsContainer.innerHTML = '<li>No business found with that ID.</li>';
+          }
+      }
+      
+  
+      function displayResults(results) {
+          const resultsContainer = document.getElementById('search-results');
+          resultsContainer.innerHTML = '';
+          results.forEach(business => {
+              const li = document.createElement('li');
+              li.textContent = `${business.name} - ${business.description}`;
+              resultsContainer.appendChild(li);
+          });
+      }
+  };
+  </script>
 
    <!-- Categories Section -->
 <div class="categories">
