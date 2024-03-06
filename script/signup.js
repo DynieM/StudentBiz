@@ -70,11 +70,8 @@ async function submitForm2() {
 
         const { data, error } = await supabase.from("businesses")
             .insert({
-			id: id,
-			first_name_db: first_name,
-			last_name_db: last_name,
 			email_db: email,
-			phone_number_db: phone_number,
+			business_name_db: phone_number,
 			password_db: password,
 		});
 	} catch (error) {
