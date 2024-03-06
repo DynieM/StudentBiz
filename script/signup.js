@@ -73,7 +73,7 @@ async function submitForm2() {
 			business_name_db: business_name,
             business_description_db: business_description,
 			service_type_db: service_type,
-            business_phone_number_db: business_phone_number
+            business_phone_number_db: business_phone_number,
 		});
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
