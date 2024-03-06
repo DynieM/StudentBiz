@@ -61,16 +61,15 @@ async function submitForm() {
 
 async function submitForm2() {
 	try {
-		const first_name = document.getElementById("firstName").value;
-		const last_name = document.getElementById("lastName").value;
-		const id = uuid.v4();
-		const email = document.getElementById("email").value;
-		const phone_number = document.getElementById("phoneNumber").value;
-		const password = document.getElementById("password").value;
+		const business_email = document.getElementById("businessEmail").value;
+		const business_description = document.getElementById("businessDescription").value;
+		const business_name = document.getElementById("businessName").value;
+		const business_phone_number = document.getElementById("businessPhoneNumber").value;
+		const service_type = document.getElementById("serviceType").value;
 
         const { data, error } = await supabase.from("businesses")
             .insert({
-			email_db: email,
+			business_email_db: busines,
 			business_name_db: phone_number,
             business_description_db:
 			service_type_db: password,
