@@ -72,24 +72,30 @@ async function submitForm2() {
         const password = document.getElementById("password").value
 
 
-        const { data, error } = await supabase
-            .from("businesses")
-            .insert({
-			business_email_db: business_email,
-			business_name_db: business_name,
-            business_description_db: business_description,
-			service_type_db: service_type,
-            business_phone_number_db: business_phone_number,
-		});
-         .from("users")
-					.insert({
-						first_name_db: first_name,
-						last_name_db: last_name,
-                        email_db: email,
-                        phone_number_db: phone_number,
-                        password_db: password,
-                        
-					});
+     const { data: businessData, error: businessError } = await supabase
+				.from("businesses")
+				.insert({
+					business_email_db: business_email,
+					business_name_db: business_name,
+					business_description_db: business_description,
+					service_type_db: service_type,
+					business_phone_number_db: business_phone_number,
+				});
+
+			if (businessError) {
+				console.error(businessError);
+				return;
+			}
+
+			const { data: userData, error: userError } = await supabase
+				.from("users")
+				.insert({
+					first_name_db: first_name,
+					last_name_db: last_name,
+					email_db: email,
+					phone_number_db: phone_number,
+					password_db: password,
+				});
 
 
 	} catch (error) {
