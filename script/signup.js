@@ -30,10 +30,11 @@ async function submitForm() {
     try {
         const first_name = document.getElementById("firstName").value  
         const last_name = document.getElementById("lastName").value
+        const id = uuidv4();
 
         const { data, error } = await supabase
             .from('users')
-            .insert({ first_name_db: first_name, last_name_db: last_name});
+            .insert({ id: id, first_name_db: first_name, last_name_db: last_name});
             
     }
 
