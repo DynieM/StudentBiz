@@ -45,8 +45,8 @@ async function submitForm() {
 
 window.submitForm = submitForm;
 
-// const form = document.getElementById("myForm");
-// form.addEventListener("submit", (event) => {
-// 	event.preventDefault(); // Prevent the form from submitting normally
-// 	submitForm();
-// });
+const form = document.getElementById("myForm");
+form.addEventListener("submit", (event) => {
+	event.preventDefault(); // Prevent the form from submitting normally
+	submitForm();
+});
