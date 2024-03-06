@@ -56,13 +56,17 @@ async function submitForm() {
 }
 
 
+
 const is_Student = document.getElementById("student")
 const content = document.getElementById("studentInfo")
+
+content.style.opacity = "0"
+
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
-        content.style.visibility = "visible"
+        content.style.opacity = "1"
     } else {
-        content.style.visibility= "hidden"
+        content.style.opacity= "0"
     }
 
 })
