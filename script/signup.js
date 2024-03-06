@@ -109,7 +109,7 @@ is_Student.addEventListener("change", () => {
 
 
 window.submitForm = submitForm;
-window.submitForm = submitForm2;
+window.submitForm2 = submitForm2;
 
 
 // const form = document.getElementById("myForm");
