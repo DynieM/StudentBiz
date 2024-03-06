@@ -30,6 +30,7 @@ async function submitForm() {
     try {
         const first_name = document.getElementById("firstName").value  
         const last_name = document.getElementById("lastName").value
+    
         const email = document.getElementById("email").value
         const phone_number = document.getElementById("phoneNumber").value
         const password = document.getElementById("password").value
