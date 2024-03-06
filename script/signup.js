@@ -66,7 +66,7 @@ content.style.visibility = "hidden"
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
         content.style.visibility = "visible"
-        sign_up_button.style.marginTop = "-300px";
+        sign_up_button.style.marginTop = "0px";
         
     } else {
         content.style.visibility = "hidden"
