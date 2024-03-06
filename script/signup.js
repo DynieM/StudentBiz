@@ -30,7 +30,6 @@ async function submitForm() {
     try {
         const first_name = document.getElementById("firstName").value  
         const last_name = document.getElementById("lastName").value
-        const id = uuid.v4();
         const email = document.getElementById("email").value
         const phone_number = document.getElementById("phoneNumber").value
         const password = document.getElementById("password").value
@@ -39,7 +38,6 @@ async function submitForm() {
         const { data, error } = await supabase
 					.from("users")
 					.insert({
-						id: id,
 						first_name_db: first_name,
 						last_name_db: last_name,
                         email_db: email,
