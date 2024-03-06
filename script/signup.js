@@ -60,13 +60,13 @@ async function submitForm() {
 const is_Student = document.getElementById("student")
 const content = document.getElementById("studentInfo")
 
-
+content.style.visibility = "hidden"
 
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
-       content.classList.remove("hide");
+        content.style.visibility = "visible"
     } else {
-        content.classList.add("hide");
+        content.style.visibility= "hidden"
     }
 
 })
