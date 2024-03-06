@@ -42,8 +42,6 @@ async function submitForm() {
 						first_name_db: first_name,
 						last_name_db: last_name,
 						email: email,
-						phone_number: phone_number,
-						password: password
 					});
 
     }
