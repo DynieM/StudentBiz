@@ -131,7 +131,8 @@ is_Student.addEventListener("change", () => {
 
 
 
-window.submitForm = submitForm;
+//window.submitForm = submitForm;
+
 window.submitForm2 = submitForm2;
 
 
