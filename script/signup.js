@@ -32,7 +32,7 @@ async function submitForm() {
 
         const { data, error } = await supabase
             .from('test')
-            .upsert({ first_name_db: first_name, last_name_db: last_name });
+            .upsert({ first_name_db: first_name, last_name_db: last_name,  });
             
     }
 
@@ -44,6 +44,7 @@ async function submitForm() {
 }
 
 window.submitForm = submitForm;
+
 // const form = document.getElementById("myForm");
 // form.addEventListener("submit", (event) => {
 // 	event.preventDefault(); // Prevent the form from submitting normally
