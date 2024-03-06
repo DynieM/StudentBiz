@@ -60,9 +60,9 @@ const is_Student = document.getElementById("student")
 const content = document.getElementById("studentInfo")
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
-        content.style.display = "visible"
+        content.style.display = "block"
     } else {
-        content.style.display = "hidden"
+        content.style.display = "none"
     }
 
 })
