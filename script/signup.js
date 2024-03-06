@@ -6,9 +6,9 @@
 import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
 
 const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
-const supabaseKey =
-	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmc3poc2x1dnVtd2tscW94dGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDkxNTY3NjAsImV4cCI6MjAyNDczMjc2MH0.is0LfBvWwr63vwRYyNPeT-2JVtGn0wtCTR__0CJqBAs";
 
+// const supabaseKey =
+// 	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmc3poc2x1dnVtd2tscW94dGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDkxNTY3NjAsImV4cCI6MjAyNDczMjc2MH0.is0LfBvWwr63vwRYyNPeT-2JVtGn0wtCTR__0CJqBAs";
 // for Google Auth
 // const supaClient = createClient(supabaseUrl, supabaseKey);
 
@@ -37,7 +37,7 @@ async function submitForm() {
 
         const { data, error } = await supabase
             .from('users')
-            .insert({ id: id, first_name_db: first_name, last_name_db: last_name });
+            .insert({ id: id, email: email, phone_number: phone_number, password: password, first_name_db: first_name, last_name_db: last_name });
 
             
     }
