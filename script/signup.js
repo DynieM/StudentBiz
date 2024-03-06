@@ -39,7 +39,6 @@ async function submitForm() {
             .from('users')
             .insert({ id: id, email: email, phone_number: phone_number, password: password, first_name_db: first_name, last_name_db: last_name });
 
-            
     }
 
     catch (error)
