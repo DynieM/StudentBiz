@@ -60,8 +60,10 @@ async function submitForm() {
 const is_Student = document.getElementById("student")
 const content = document.getElementById("studentInfo")
 const sign_up_button = document.getElementById("SignUpButton");
+const container = document.getElementById
 
 content.style.visibility = "hidden"
+sign_up_button.style.marginTop = "-460px";
 
 is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
