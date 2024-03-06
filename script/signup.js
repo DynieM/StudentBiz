@@ -70,7 +70,7 @@ is_Student.addEventListener("change", () => {
         
     } else {
         content.style.visibility = "hidden"
-        sign_up_button.style.marginTop= "460px";
+        sign_up_button.style.marginTop= "-460px";
     }
 
 })
