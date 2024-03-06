@@ -36,8 +36,15 @@ async function submitForm() {
         const password = document.getElementById("password").value
 
         const { data, error } = await supabase
-            .from('users')
-            .insert({ id: id, email: email, phone_number: phone_number, password: password, first_name_db: first_name, last_name_db: last_name });
+					.from("users")
+					.insert({
+						id: id,
+						first_name_db: first_name,
+						last_name_db: last_name,
+						email: email,
+						phone_number: phone_number,
+						password: password
+					});
 
     }
 
