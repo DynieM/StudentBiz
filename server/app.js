@@ -10,14 +10,11 @@ const SB = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI
 
 const supabase = createClient(supabaseUrl, SB);
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
 
 app.post('/adduser', async (req, res) => {
     const { fname, lname, email, number, password } = req.body;
 
-    const { data, error } = await supabase
+    const error = await supabase
         .from("users")
         .insert({
             first_name_db: fname,
@@ -28,9 +25,11 @@ app.post('/adduser', async (req, res) => {
 
         });
 
-    console.log(data)
-
-    res.send("new user added")
+    if (error != null) {
+        res.status(403).send("user add unsuccessful")
+        return
+    }
+    res.status(200).send("new user added")
 })
 
 app.listen(port, () => {
