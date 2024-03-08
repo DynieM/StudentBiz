@@ -9,6 +9,8 @@ const port = 3001
 
 // allow json to be sent
 app.use(express.json());
+
+// allow cors for api calls on site
 app.use(cors());
 
 // db info
@@ -17,6 +19,7 @@ const SB = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI
 
 const supabase = createClient(supabaseUrl, SB);
 
+// adduser will add a user to the database from signup.html
 app.post('/adduser', async (req, res) => {
     const { fname, lname, email, number, password } = req.body;
     const { error } = await supabase
