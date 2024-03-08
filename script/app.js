@@ -2,6 +2,7 @@ import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
 const express = require('express')
 const app = express()
 const port = 3001
+app.use(express.json());
 
 
 const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
