@@ -9,7 +9,7 @@ const port = 3001
 
 // allow json to be sent
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 
 // db info
 const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
