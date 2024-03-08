@@ -17,7 +17,7 @@ const supabase = createClient(supabaseUrl, SB);
 
 app.post('/adduser', async (req, res) => {
     const { fname, lname, email, number, password } = req.body;
-    const { data, error } = await supabase
+    const { error } = await supabase
         .from("users")
         .insert({
             first_name_db: fname,
