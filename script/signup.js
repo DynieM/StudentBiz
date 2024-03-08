@@ -8,7 +8,6 @@ googleSignIn.addEventListener("click", () => {
 });
 
 
-
 //Basic User Input
 async function submitForm() {
     try {
