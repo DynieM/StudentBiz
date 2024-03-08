@@ -1,5 +1,15 @@
 /** @format */
 
+import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+
+
+// This is the google client key, and we use SB for the API.
+const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
+const supabaseKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmc3poc2x1dnVtd2tscW94dGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDkxNTY3NjAsImV4cCI6MjAyNDczMjc2MH0.is0LfBvWwr63vwRYyNPeT-2JVtGn0wtCTR__0CJqBAs";
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+
 const googleSignIn = document.getElementsByName("GoogleSignUp")[0]
 if (googleSignIn) {
     googleSignIn.addEventListener("click", () => {
