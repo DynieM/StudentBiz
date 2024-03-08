@@ -15,16 +15,22 @@ app.get('/', (req, res) => {
 })
 
 app.post('/adduser', async (req, res) => {
+    const { fname, lname, email, number, password } = req.body;
+
     const { data, error } = await supabase
         .from("users")
         .insert({
-            first_name_db: first_name,
-            last_name_db: last_name,
+            first_name_db: fname,
+            last_name_db: lname,
             email_db: email,
-            phone_number_db: phone_number,
+            phone_number_db: number,
             password_db: password,
 
         });
+
+    console.log(data)
+
+    res.send("new user added")
 })
 
 app.listen(port, () => {
