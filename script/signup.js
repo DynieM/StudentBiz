@@ -1,6 +1,6 @@
 /** @format */
 
-const googleSignIn = document.getElementById("GoogleSignUp")
+const googleSignIn = document.getElementsByName("GoogleSignUp")
 
 googleSignIn.addEventListener("click", () => {
     supabase.auth.signInWithOAuth({
