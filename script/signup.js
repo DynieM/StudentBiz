@@ -1,12 +1,14 @@
 /** @format */
 
 const googleSignIn = document.getElementsByName("GoogleSignUp")[0]
-
-googleSignIn.addEventListener("click", () => {
-    supabase.auth.signInWithOAuth({
-        provider: "google",
+setTimeout(() => {
+    googleSignIn.addEventListener("click", () => {
+        supabase.auth.signInWithOAuth({
+            provider: "google",
+        });
     });
-});
+}, 3000); // Delay in milliseconds (3000ms is equal to 3 seconds)
+
 
 
 //Basic User Input
