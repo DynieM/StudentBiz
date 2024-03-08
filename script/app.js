@@ -1,5 +1,5 @@
 import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
-const express = require('express')
+import express = require('express')
 const app = express()
 const port = 3001
 app.use(express.json());
@@ -29,7 +29,7 @@ app.post('/adduser', async (req, res) => {
         });
 
     console.log(data)
-
+    
     res.send("new user added")
 })
 
