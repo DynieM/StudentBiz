@@ -1,4 +1,4 @@
-import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+import { createClient } from '@supabase/supabase-js';
 import express from 'express';
 const app = express()
 const port = 3001
