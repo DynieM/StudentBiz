@@ -33,5 +33,5 @@ app.post('/adduser', async (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`StudentBiz API running on port ${port}`)
 })
