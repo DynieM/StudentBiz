@@ -1,6 +1,7 @@
 // import statements
 import { createClient } from '@supabase/supabase-js';
 import express from 'express';
+import cors from 'cors';
 
 // const variables
 const app = express()
@@ -8,8 +9,7 @@ const port = 3001
 
 // allow json to be sent
 app.use(express.json());
-
-const cors = require('cors');
+app.use(cors);
 
 // db info
 const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
