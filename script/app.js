@@ -1,15 +1,20 @@
+import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
 const express = require('express')
 const app = express()
 const port = 3001
 
 
+const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
+const SB = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmc3poc2x1dnVtd2tscW94dGF4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwOTE1Njc2MCwiZXhwIjoyMDI0NzMyNzYwfQ.4sAKoiqIDkMaRcy9RKIKTtlBSAn2Y3PXxM8dh_LBMqQ";
 
+// for POST to DB
+const supabase = createClient(supabaseUrl, SB);
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.post('/adduser', (req, res) => {
+app.post('/adduser', async (req, res) => {
     const { data, error } = await supabase
         .from("users")
         .insert({
