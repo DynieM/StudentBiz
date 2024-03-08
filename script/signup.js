@@ -28,32 +28,38 @@ googleSignIn.addEventListener("click", () => {
 //Basic User Input
 async function submitForm() {
     try {
-        const first_name = document.getElementById("firstName").value
-        const last_name = document.getElementById("lastName").value
+        const first_name = document.getElementById("firstName").value;
+        const last_name = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phone_number = document.getElementById("phoneNumber").value;
+        const password = document.getElementById("password").value;
 
-        const email = document.getElementById("email").value
-        const phone_number = document.getElementById("phoneNumber").value
-        const password = document.getElementById("password").value
+        const userData = {
+            fname: first_name,
+            lname: last_name,
+            email: email,
+            number: phone_number,
+            password: password
+        };
 
+        const response = await fetch('/adduser', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        });
 
-        const { data, error } = await supabase
-            .from("users")
-            .insert({
-                first_name_db: first_name,
-                last_name_db: last_name,
-                email_db: email,
-                phone_number_db: phone_number,
-                password_db: password,
+        if (!response.ok) {
+            throw new Error('User add unsuccessful');
+        }
 
-            });
-
-    }
-
-    catch (error) {
-        console.error("Error saving data to Supabase:", error);
-        res.status(500).json({ error: "Internal server error" });
+    } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("Error submitting form. Check console for details.");
     }
 }
+
 
 //If user is student
 
