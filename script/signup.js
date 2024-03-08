@@ -2,6 +2,7 @@
 
 const googleSignIn = document.getElementsByName("GoogleSignUp")[0]
 setTimeout(() => {
+    console.log(googleSignIn)
     googleSignIn.addEventListener("click", () => {
         supabase.auth.signInWithOAuth({
             provider: "google",
