@@ -17,7 +17,7 @@ const supabase = createClient(supabaseUrl, SB);
 
 app.post('/adduser', async (req, res) => {
     const { fname, lname, email, number, password } = req.body;
-    const error = await supabase
+    const { data, error } = await supabase
         .from("users")
         .insert({
             first_name_db: fname,
@@ -29,7 +29,6 @@ app.post('/adduser', async (req, res) => {
 
 
     if (error != null) {
-        console.log(error)
         res.status(403).send("user add unsuccessful")
         return
     }
