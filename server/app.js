@@ -25,7 +25,6 @@ app.post('/adduser', async (req, res) => {
             email_db: email,
             phone_number_db: number,
             password_db: password,
-
         });
 
     if (error != null) {
