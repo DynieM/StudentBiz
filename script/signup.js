@@ -28,30 +28,28 @@ googleSignIn.addEventListener("click", () => {
 //Basic User Input
 async function submitForm() {
     try {
-        const first_name = document.getElementById("firstName").value  
+        const first_name = document.getElementById("firstName").value
         const last_name = document.getElementById("lastName").value
-    
+
         const email = document.getElementById("email").value
         const phone_number = document.getElementById("phoneNumber").value
         const password = document.getElementById("password").value
 
 
         const { data, error } = await supabase
-					.from("users")
-					.insert({
-						
-						first_name_db: first_name,
-						last_name_db: last_name,
-                        email_db: email,
-                        phone_number_db: phone_number,
-                        password_db: password,
-                        
-					});
+            .from("users")
+            .insert({
+                first_name_db: first_name,
+                last_name_db: last_name,
+                email_db: email,
+                phone_number_db: phone_number,
+                password_db: password,
+
+            });
 
     }
 
-    catch (error)
-    {
+    catch (error) {
         console.error("Error saving data to Supabase:", error);
         res.status(500).json({ error: "Internal server error" });
     }
@@ -60,25 +58,25 @@ async function submitForm() {
 //If user is student
 
 async function submitForm2() {
-	try {
-		const business_email = document.getElementById("businessEmail").value;
-		const business_description = document.getElementById("businessDescription").value;
-		const business_name = document.getElementById("businessName").value;
-		const business_phone_number = document.getElementById("businessPhoneNumber").value;
-		const service_type = document.getElementById("serviceType").value;
+    try {
+        const business_email = document.getElementById("businessEmail").value;
+        const business_description = document.getElementById("businessDescription").value;
+        const business_name = document.getElementById("businessName").value;
+        const business_phone_number = document.getElementById("businessPhoneNumber").value;
+        const service_type = document.getElementById("serviceType").value;
 
         const { data, error } = await supabase.from("businesses")
             .insert({
-			business_email_db: business_email,
-			business_name_db: business_name,
-            business_description_db: business_description,
-			service_type_db: service_type,
-            business_phone_number_db: business_phone_number,
-		});
-	} catch (error) {
-		console.error("Error saving data to Supabase:", error);
-		res.status(500).json({ error: "Internal server error" });
-	}
+                business_email_db: business_email,
+                business_name_db: business_name,
+                business_description_db: business_description,
+                service_type_db: service_type,
+                business_phone_number_db: business_phone_number,
+            });
+    } catch (error) {
+        console.error("Error saving data to Supabase:", error);
+        res.status(500).json({ error: "Internal server error" });
+    }
 }
 
 
@@ -96,8 +94,8 @@ is_Student.addEventListener("change", () => {
     if (is_Student.checked) {
         content.style.visibility = "visible"
         sign_up_button.style.marginTop = "0px";
-       container.style.height = "1185px";
-        
+        container.style.height = "1185px";
+
     } else {
         content.style.visibility = "hidden"
         sign_up_button.style.marginTop = "-460px";
