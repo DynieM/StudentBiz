@@ -5,7 +5,7 @@ import cors from 'cors';
 
 // const variables
 const app = express()
-const port = 5000
+const port = 9999
 
 // Allow json to be sent
 app.use(express.json());

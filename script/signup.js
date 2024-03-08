@@ -40,7 +40,7 @@ async function submitForm() {
             password: password
         };
 
-        const response = await fetch('http://localhost:5000/adduser', {
+        const response = await fetch('http://localhost:9999/adduser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
