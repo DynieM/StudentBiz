@@ -1,9 +1,24 @@
 /** @format */
 
 const googleSignIn = document.getElementsByName("GoogleSignUp")[0]
-googleSignIn.addEventListener("click", () => {
-    supabase.auth.signInWithOAuth({
-        provider: "google",
+if (googleSignIn) {
+    googleSignIn.addEventListener("click", () => {
+        supabase.auth.signInWithOAuth({
+            provider: "google",
+        });
+    });
+}
+
+// Goes to signup if profile has not been added
+document.addEventListener('DOMContentLoaded', () => {
+    const profileLink = document.getElementById('profileLink');
+    profileLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (!localStorage.getItem('username')) {
+            window.location.href = '/html/signup.html';
+        } else {
+            window.location.href = this.getAttribute('href');
+        }
     });
 });
 
