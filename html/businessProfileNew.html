@@ -6,7 +6,7 @@
   <title>New Business Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style3.css">
-  <style></style>
+  <script src="../script/createBiz.js"></script>
 </head>
 
 <body>
@@ -25,56 +25,38 @@
       </div>
     </nav>
   </header>
+  <form id="editForm">
+    <label for="businessName">Business Name:</label>
+    <input type="text" id="businessName" name="businessName" required><br>
 
-  <!--New Business Profile Container -->
-  <main>
-    <div id="bProfile">
+    <!-- Input field for logo 
+    <label for="logo">Logo:</label>
+    <input type="file" id="logo" name="logo"><br>-->
 
-      <div class="grid-container">
-        <div id="bLogo" class="grid-item">
-          <img src="../assets/pictures/Blog-header-1-13.png" alt="businessLogo" class="bProfileImg">
-          <h3>Business Name</h3>
-          <p>⭐⭐⭐⭐⭐ 0.0 <a href="" class="specialLink">(0 Reviews)</p></a>
+    <!-- Input fields for gallery images 
+    <label for="gallery">Gallery Images:</label>
+    <input type="file" id="gallery" name="gallery" multiple><br> -->
 
-        </div>
-        <div class="grid-item" id="bPictures">
-          <a href="">Edit</a>
-          <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon">
-          <img src="../assets/pictures/summer-lawn-care-0422-2a46e4142f2849c28040519ba83c06fc.png"
-            alt="Lawn being Mowed" class="businessPic">
-          <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon">
-          <div class="inline-container">
-            <p><strong>Tags:</strong></p>
-            <p class="tag" class="spacer">tag</p>
-            <p class="tag" class="spacer">tag</p>
-            <p class="tag" class="spacer">tag</p>
-          </div>
-        </div>
+    <!-- Input field for email with regex validation -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br>
 
-        <div id="bInfoAll" class="grid-item">
-          <div class="inline-container"><img src="../assets/Icons/location.svg" alt="Map Marker Icon" class="smallIcon">
-            <p>Your address</p>
-          </div>
-          <div class="inline-container"><img src="../assets/Icons/email.svg" alt="Letter Icon" class="smallIcon">
-            <p>Your email</p>
-          </div>
-          <div class="inline-container"><img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" class="smallIcon">
-            <p>Your number</p>
-          </div>
-          <div class="bInfoText">
+    <!-- Input field for phone number with regex validation -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
 
-          </div>
-        </div>
-      </div>
+    <!-- Input field for address -->
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea><br>
 
-    </div>
+    <!-- Input field for business description -->
+    <label for="description">Business Description:</label>
+    <textarea id="description" name="description" required></textarea><br>
 
-    <div id="bDescription" class="grid-item">
+    <!-- Add more input fields for other business information -->
 
-      <p class="textDescription">Your Text goes in here.</p>
-    </div>
-
-  </main>
+    <button type="submit">Save Changes</button>
+  </form>
 
   <!--Footer -->
   <footer>
@@ -86,6 +68,8 @@
       <li><a href="about.html">Contact Us</a></li>
     </ul>
   </footer>
+
+</body>
 </body>
 
 </html>
