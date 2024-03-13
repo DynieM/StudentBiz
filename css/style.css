@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -415,10 +417,10 @@ footer {
   padding: 10px;
   color: #000000;
   font-family: "Montserrat", sans-serif;
+  column-gap: 15px;
 }
 
 .tag {
-  margin: 0 10px;
   padding: 8px 16px;
   background-color: white;
   color: black;
@@ -427,6 +429,11 @@ footer {
   border-color: black;
   border-radius: 20px;
   font-family: "Montserrat", sans-serif;
+}
+.tag-header {
+  margin: 10px 15px;
+  padding: 8px 20px;
+  color: black;
 }
 
 .tag:hover {
@@ -494,6 +501,8 @@ footer {
   gap: 15px;
   max-width: 600px;
   margin: 20px;
+font-family: "Montserrat", sans-serif;
+
 }
 
 .logo img {
@@ -524,7 +533,6 @@ footer {
   display: flex;
   justify-content: start;
   gap: 15px;
-  padding: 10px 0px 0px;
   border-radius: 30px;
 }
 

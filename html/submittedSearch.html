@@ -1,160 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submitted Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Submitted Search</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
+  <body>
+    <header>
+      <!-- Navigation Bar (with search bar included) -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../html/homepage.html"
+            ><img
+              src="../assets/Logo/studentbizlogo.svg"
+              alt="Home"
+              id="mainLogo"
+            />StudentBiz</a
+          >
+        </div>
+        <!--Search Bar-->
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <!-- Right side of the navigation bar on the Home Page-->
+        <div class="rightnav">
+          <a href="../html/businessProfileNew.html"
+            ><img
+              src="../assets/Icons/profilepic.svg"
+              alt="Profile Icon"
+            />Profile</a
+          >
+          <a href="../html/inbox.html"
+            ><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" /> Inbox</a
+          >
+        </div>
+      </nav>
+    </header>
+    <h2>Best Matches For Beauty</h2>
+    <!-- Container for the Tags at the top of the submitted search page-->
 
-<body>
-  <header>
-    <!-- Navigation Bar (with search bar included) -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="../html/homepage.html"><img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo">StudentBiz</a>
-      </div>
-       <!--Search Bar-->
-       <div class="search-bar">
-        <input type="text" placeholder="Search...">
-      </div>
-      <!-- Right side of the navigation bar on the Home Page-->
-      <div class="rightnav">
-        <a href="../html/businessProfileNew.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon">Profile</a>
-        <a href="../html/inbox.html"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon"> Inbox</a>
-      </div>
-    </nav>
-  </header>
-  <h2>Best Matches For Beauty</h2>
-  <!-- Container for the Tags at the top of the submitted search page-->
-  <div class="tag-container">
-    <p>Tags</p>
     <div class="tag-container">
+      <h2 class="tag-header">Tags</h2>
       <button class="tag" type="button">Hair</button>
       <button class="tag" type="button">Nails</button>
       <button class="tag" type="button">Skincare</button>
       <button class="tag" type="button">Filter By:</button>
     </div>
-  </div>
 
-  <!-- Generated Searches container -->
-  <div class="searches">
-<!-- Business #1-->
-    <div class="card">
-      <div class="business-info">
-        <div class="submitted-search-container">
-          <div class="logo">
-            <img class="submitted-search-image" src="../assets/Icons/bymieSalon.svg" alt="byMie Hair Salon Logo">
-          </div>
-          <div class="name">
-            <h2 class="submitted-search-header">byMie Hair Salon</h2>
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <div class="tags">
-              <span>Beauty</span>
-              <span>Hair</span>
-              <span>Salon</span>
+    <!-- Generated Searches container -->
+    <div class="searches">
+      <!-- Business #1-->
+      <div class="card">
+        <div class="business-info">
+          <div class="submitted-search-container">
+            <div class="logo">
+              <img
+                class="submitted-search-image"
+                src="../assets/Icons/bymieSalon.svg"
+                alt="byMie Hair Salon Logo"
+              />
+            </div>
+            <div class="name">
+              <h2 class="submitted-search-header">byMie Hair Salon</h2>
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <div class="tags">
+                <span>Beauty</span>
+                <span>Hair</span>
+                <span>Salon</span>
+              </div>
+            </div>
+            <div class="rating">
+              <div id="rating-0-miles">12 miles away</div>
+              <div id="rating-0-reviews">
+                5.0 rating <span class="blue-text">(22 reviews)</span>
+              </div>
             </div>
           </div>
-          <div class="rating">
-            <div id="rating-0-miles">12 miles away</div>
-            <div id="rating-0-reviews">5.0 rating <span class=" blue-text">(22 reviews)</span></div>
-          </div>
+        </div>
+        <div class="about">
+          <p class="about-header">About The Business</p>
+          <p class="about-text">
+            byMie Hair Salon - where trends meet transformation. Our salon is a
+            haven for the fashion-forward, offering personalized services that
+            redefine your style. Embrace the beauty of individuality! Book a
+            service with us today!
+          </p>
         </div>
       </div>
-      <div class="about">
-        <p class="about-header">About The Business</p>
-        <p class="about-text"> byMie Hair Salon - where trends meet transformation. Our salon is a haven for the
-          fashion-forward,
-          offering
-          personalized services that redefine your style. Embrace the beauty of individuality! Book a service with us
-          today!</p>
-      </div>
-    </div>
-<!-- Business #2-->
-    <div class="card">
-      <div class="business-info">
-        <div class="submitted-search-container">
-          <div class="logo">
-            <img class="submitted-search-image" src="../assets/Icons/tianalogo.svg" alt="byMie Hair Salon Logo">
-          </div>
-          <div class="name">
-            <h2 class="submitted-search-header">Tiana's Makeup Services</h2>
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <div class="tags">
-              <span>Beauty</span>
-              <span>Makeup</span>
-              <span>Skincare</span>
+      <!-- Business #2-->
+      <div class="card">
+        <div class="business-info">
+          <div class="submitted-search-container">
+            <div class="logo">
+              <img
+                class="submitted-search-image"
+                src="../assets/Icons/tianalogo.svg"
+                alt="byMie Hair Salon Logo"
+              />
+            </div>
+            <div class="name">
+              <h2 class="submitted-search-header">Tiana's Makeup Services</h2>
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <div class="tags">
+                <span>Beauty</span>
+                <span>Makeup</span>
+                <span>Skincare</span>
+              </div>
+            </div>
+            <div class="rating">
+              <div class="rating-1-miles">17 miles away</div>
+              <div class="rating-1-reviews">
+                4.0 rating <span class="blue-text">(42 reviews)</span>
+              </div>
             </div>
           </div>
-          <div class="rating">
-            <div class="rating-1-miles">17 miles away</div>
-            <div class="rating-1-reviews">4.0 rating <span class=" blue-text">(42 reviews)</span></div>
-          </div>
+        </div>
+        <div class="about">
+          <p class="about-header">About The Business</p>
+          <p class="about-text">
+            Makeup Artistry specializes in professional and advanced makeup
+            application. Highly suggested andrecommended for Weddings,
+            photography, film and special occasion. Cleanliness and good hygiene
+            are consistently practiced and exercised with the efficient use of
+            all products. All services begin with a skincare consultation and
+            prep according to your skin type.
+          </p>
+          <p class="about-text"><strong>Come get Glammed!</strong></p>
         </div>
       </div>
-      <div class="about">
-        <p class="about-header">About The Business</p>
-        <p class="about-text">Makeup Artistry specializes in professional and advanced makeup application. Highly
-          suggested andrecommended for
-          Weddings, photography, film and special occasion. Cleanliness and good hygiene are consistently practiced and
-          exercised
-          with the efficient use of all products. All services begin with a skincare consultation and prep according to
-          your
-          skin
-          type.
-        </p>
-        <p class="about-text"><strong>Come get Glammed!</strong></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="business-info">
-        <div class="submitted-search-container">
-          <div class="logo">
-            <img class="submitted-search-image" src="../assets/Icons/drybarLogo.svg" alt="byMie Hair Salon Logo">
-          </div>
-          <div class="name">
-            <h2 class="submitted-search-header">Tiana's Makeup Services</h2>
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon">
-            <div class="tags">
-              <span>Beauty</span>
-              <span>Makeup</span>
-              <span>Skincare</span>
+      <div class="card">
+        <div class="business-info">
+          <div class="submitted-search-container">
+            <div class="logo">
+              <img
+                class="submitted-search-image"
+                src="../assets/Icons/drybarLogo.svg"
+                alt="byMie Hair Salon Logo"
+              />
+            </div>
+            <div class="name">
+              <h2 class="submitted-search-header">Tiana's Makeup Services</h2>
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <img
+                class="search-rating-star"
+                src="../assets/Icons/star.svg"
+                alt="Blue Star Icon"
+              />
+              <div class="tags">
+                <span>Beauty</span>
+                <span>Makeup</span>
+                <span>Skincare</span>
+              </div>
+            </div>
+            <div class="rating">
+              <div id="rating-1-miles">17 miles away</div>
+              <div id="rating-1-reviews">
+                4.0 rating <span class="blue-text">(42 reviews)</span>
+              </div>
             </div>
           </div>
-          <div class="rating">
-            <div id="rating-1-miles">17 miles away</div>
-            <div id="rating-1-reviews">4.0 rating <span class=" blue-text">(42 reviews)</span></div>
-          </div>
+        </div>
+        <div class="about">
+          <p class="about-header">About The Business</p>
+          <p class="about-text">
+            Makeup Artistry specializes in professional and advanced makeup
+            application. Highly suggested andrecommended for Weddings,
+            photography, film and special occasion. Cleanliness and good hygiene
+            are consistently practiced and exercised with the efficient use of
+            all products. All services begin with a skincare consultation and
+            prep according to your skin type.
+          </p>
+          <p class="about-text"><strong>Come get Glammed!</strong></p>
         </div>
       </div>
-      <div class="about">
-        <p class="about-header">About The Business</p>
-        <p class="about-text">Makeup Artistry specializes in professional and advanced makeup application. Highly
-          suggested andrecommended for
-          Weddings, photography, film and special occasion. Cleanliness and good hygiene are consistently practiced and
-          exercised
-          with the efficient use of all products. All services begin with a skincare consultation and prep according to
-          your
-          skin
-          type.
-        </p>
-        <p class="about-text"><strong>Come get Glammed!</strong></p>
-      </div>
     </div>
-  </div>
 
 
 
