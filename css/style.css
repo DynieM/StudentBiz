@@ -45,11 +45,21 @@ header {
 
 /* Styling for Main Logo */
 #mainLogo {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   display: block;
   transition: width 1s ease, height 1s ease;
+  margin-right: 10px;
   /* Add a transition for width and height */
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .navbar .rightnav img {
@@ -76,6 +86,16 @@ header {
   border-radius: 20px;
 }
 
+#profilepicicon {
+  width: 50px;
+  height: 50px;
+}
+
+#inboxicon {
+  width: 50px;
+  height: 50px;
+}
+
 .centered {
   text-align: center;
   margin: 0;
@@ -86,6 +106,10 @@ header {
   flex-grow: 1;
   border-radius: 20px;
   margin: 10px;
+  width: 808px;
+  height: 71px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type="text"] {
@@ -114,9 +138,9 @@ button {
 /* Styles for the main heading */
 h1 {
   text-align: center;
-  color: #b6b6b6;
+  color: #ffffff;
   font-size: 60px;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
 }
 
 .firstcontainer,
@@ -147,6 +171,16 @@ h1 {
   top: 315px;
 }
 
+.about-subheading {
+  padding: 10px;
+  font-family: "Oswald", Helvetica;
+  font-size: 35px;
+}
+
+.about-footer {
+  margin-left: 40px;
+}
+
 /* Styles for the subheaders */
 
 .submitted-search-container {
@@ -159,7 +193,7 @@ h1 {
   flex-direction: column;
   font-size: 30px;
   color: #000000;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
   padding: 0px 0px 10px;
   text-align: center;
 }
@@ -167,7 +201,7 @@ h1 {
 h2 {
   font-size: 30px;
   color: #ffffff;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
   text-align: center;
 }
 
@@ -181,6 +215,12 @@ p {
   font-size: 20px;
   display: block;
   text-align: left;
+}
+
+.alt-heading {
+  color: black;
+  font-family: "Oswald", Helvetica;
+  font-size: 70px;
 }
 
 /* Advertisement on the Home page*/
@@ -200,6 +240,65 @@ p {
   background-color: #343840;
   border-radius: 20px;
   text-align: center;
+}
+
+.categories-heading {
+  font-size: 86px;
+  text-align: left;
+}
+
+#beauty {
+  width: 109px;
+  height: 167px;
+}
+
+.beauty-text {
+  margin-right: 50px;
+}
+
+#food {
+  width: 149.97px;
+  height: 159px;
+}
+
+.food-text {
+  margin-right: 70px;
+}
+
+#tutor {
+  width: 153.69px;
+  height: 162.93px;
+}
+
+.tutor-text {
+  margin-right: 60px;
+}
+
+#shopping {
+  width: 176px;
+  height: 159px;
+}
+
+.shopping-text {
+  margin-right: 50px;
+}
+
+#art {
+  width: 181.03px;
+  height: 151.25px;
+}
+
+.art-text {
+  margin-right: 50px;
+}
+
+#pets {
+  width: 152px;
+  height: 161.15px;
+}
+
+.pets-text {
+  margin-right: 60px;
 }
 
 /* Link styles*/
@@ -228,27 +327,30 @@ footer {
 
 /* Advertisement on the Home page*/
 .adcontainer {
-  position: relative;
+  width: 1412px;
+  height: 530px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
+  width: 59.91px;
   /* ADJUST WIDth*/
-  height: auto;
+  height: 59.91px;
   /* Maintain aspect ratio */
   cursor: pointer;
 }
 
 /* Arrow icons next to Ad on homepage*/
 .left-arrow {
-  left: 10px;
+  left: 100px;
 }
 
 .right-arrow {
-  right: 10px;
+  right: 100px;
 }
 
 /* Styles for the categories section */
@@ -457,7 +559,7 @@ font-family: "Montserrat", sans-serif;
   padding: 10px 0px 0px;
   font-size: 25px;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", Helvetica;
   text-align: left;
 }
 
@@ -466,7 +568,7 @@ font-family: "Montserrat", sans-serif;
   padding: 0px 70px 0px;
   font-size: 20px;
   color: #000000;
-  font-family: "Oswald-SemiBold", Helvetica;
+  font-family: "Oswald", Helvetica;
 }
 
 /* Responsive adjustments can be made here */
@@ -588,7 +690,7 @@ h2 {
   padding: 10px;
 }
 /* Styles for Inbox */
-.inbox-container {
+#inbox-container {
   position: fixed;
   top: 50px;
   right: 50px;
@@ -598,6 +700,7 @@ h2 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 1000;
+  display: none;
 }
 
 .inbox-header,
@@ -670,4 +773,198 @@ h2 {
   flex-direction: column;
   align-items: center;
   /* Center align the flex items */
+}
+
+.profile-column {
+    width: 100%;
+    height: 516px;
+    background: #B0B0B0;
+    box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.38);
+    border-radius: 0px 0px 0px 70px;
+}
+
+.profile-picture {
+    position: absolute;
+    width: 366px;
+    height: 381px;
+    left: 174px;
+    top: 200px;
+}
+
+.username-text {
+  position: absolute;
+    width: 446px;
+    height: 74px;
+    left: 669px;
+    top: 200px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    /* or 72px */
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+}
+
+#studentseal {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 920px;
+    top: 240px;
+}
+
+#emailicon {
+    position: absolute;
+    width: 48px;
+    height: 44px;
+    left: 669px;
+    top: 370px;
+}
+
+#phoneicon {
+    position: absolute;
+    width: 48px;
+    height: 47px;
+    left: 669px;
+    top: 450px;
+}
+
+.emailinfo {
+    position: absolute;
+    width: 551px;
+    height: 50px;
+    left: 742px;
+    top: 370px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    /* or 48px */
+    letter-spacing: -0.022em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.phoneinfo {
+    position: absolute;
+    width: 551px;
+    height: 50px;
+    left: 742px;
+    top: 450px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    /* or 48px */
+    letter-spacing: -0.022em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+#add {
+    position: absolute;
+    width: 58px;
+    height: 64px;
+    left: 1595px;
+    top: 530px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 32px;
+    letter-spacing: -0.019em;
+    color: #9A9A9A;
+}
+
+.addicon {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 1565px;
+    top: 500px;
+    border-radius: 100px;
+    background: #D9D9D9;
+}
+
+.my-reviews-heading {
+    width: 516px;
+    height: 61px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding: 50px;
+}
+
+.my-reviews {
+    width: 817px;
+    height: 510px;
+    margin-left: 174px;
+    background: #D9D9D9;
+    border: 1px solid #D2D2D2;
+    border-radius: 30px;
+}
+
+.favorites-heading {
+    position: absolute;
+    width: 517px;
+    height: 61px;
+    left: 1211px;
+    top: 688px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.favorites {
+    position: absolute;
+    width: 491px;
+    height: 279px;
+    left: 1340px;
+    top: 800px;
+    background: #D9D9D9;
+    border: 1px solid #D2D2D2;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.my-businesses-heading {
+    position: absolute;
+    width: 516px;
+    height: 61px;
+    left: 1265px;
+    top: 1100px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 150%;
+    /* or 82px */
+    letter-spacing: 0.03em;
+    color: #1E1E1E;
+}
+
+.my-businesses {
+    position: absolute;
+    width: 491px;
+    height: 170px;
+    left: 1340px;
+    top: 1200px;
+    background: #D9D9D9;
+    border: 1px solid #D2D2D2;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }

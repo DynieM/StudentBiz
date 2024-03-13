@@ -24,36 +24,113 @@ body {
 {
   position: relative;
   width: 800px;
-  height: 1180px;
+  height: auto;
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  border: 1px solid #ffffff; /* Add this line */
+  border: 1px solid #ffffff;
   filter: none;
   z-index: 100;
   border-radius: 45px;
   flex-direction: column;
 }
 
-.signup{
-font-family: 'Montserrat-Regular', Helvetica;
-color:#000000;
-font-size: 20px;
-margin-bottom: 40px;
+.login_container
+{
+  position: relative;
+  width: 800px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  filter: none;
+  z-index: 100;
+  border-radius: 45px;
+  flex-direction: column;
+}
+
+.signupfor-text{
+  font-family: 'Montserrat', Helvetica;
+  font-style: normal;
+  color:#000000;
+  font-size: 20px;
+  margin-bottom: 40px;
+  position: absolute;
+  width: 349px;
+  height: 66px;
+  left: 380px;
+  top: 60px;
+}
+
+.studentbiz-text {
+  font-family: 'Montserrat', Helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 380px;
+}
+
+.loginto-text {
+  font-family: 'Montserrat', Helvetica;
+    font-style: normal;
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 40px;
+    position: absolute;
+    width: 349px;
+    height: 66px;
+    left: 380px;
+    top: 60px;
+}
+
+.studentbiz-text2 {
+  font-family: 'Montserrat', Helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 380px;
+}
+
+.studentbiz-text {
+  font-family: 'Montserrat', Helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 380px;
 }
 
 .markStudent {
-font-family: 'Montserrat-Light', Helvetica;
-color:#000000;
-font-size: 16px;  
-font-weight: 100;
+  font-family: 'Montserrat-Light', Helvetica;
+  color:#000000;
+  font-size: 16px;  
+  font-weight: 100;
 }
 
 p {
-    font-family: 'Montserrat-Light', Helvetica;
-    font-size: 12px;
+  font-family: 'Montserrat-Light', Helvetica;
+  font-size: 12px;
 }
-.user input, .student input{
+.user input{
+  font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: #ddd6d6;
+    display: block;
+    margin: 20px;
+    width: 290px;
+    height: 50px;
+    padding-left: 18px;
+}
+
+#studentDiv {
+  display: none;
+}
+
+#studentDiv input{
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   border: 2px solid;
@@ -71,14 +148,52 @@ p {
 
 #SignUpButton
 {
-    width: 150px;
-    height: 40px;
-    color:#ffffff;
-    background-color: #212427;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 10.25px;
-    position: relative;
-    left: 82px;
-    outline: none;
-    border: none;
+  width: 150px;
+  height: 40px;
+  color:#ffffff;
+  background-color: #212427;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10.25px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#LoginButton
+{
+  width: 150px;
+  height: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border-width: 1px;
+  border-radius: 10.25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#logo-signup {
+  width: 135px;
+  height: 156px;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+#logo-login {
+  width: 135px;
+  height: 156px;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.login-text {
+  color: #1976D2;
+  text-decoration: underline;
+}
+
+.signup-text {
+  color: #1976D2;
+  text-decoration: underline;
 }

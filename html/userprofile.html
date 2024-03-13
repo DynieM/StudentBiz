@@ -5,44 +5,118 @@
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="../script/inbox.js"></script>
 </head>
-
 <body>
     <header>
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <a href="../html/homepage.html" class="logo">StudentBiz</a>
-            <!--Search Bar-->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-            </div>
-            <a href="#" class="rightnav">Profile</a>
-            <a href="#" class="rightnav">Inbox</a>
+                <div class="logo">
+                    <a href="../html/homepage.html" class="logo-link">
+                        <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo">StudentBiz
+                    </a>
+                </div>
+                <div class="search-bar-header">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="rightnav">
+                    <a href="../html/userprofile.html"><img src="../assets/Icons/businessprofilepic.svg" alt="Profile Icon"
+                            id="profilepicicon">Profile</a>
+                    <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon"> Inbox</a>
+                </div>
+            </nav>
         </nav>
     </header>
 <div class="userprofile_container">
        <!-- Left Column: Profile Picture -->
        <div class="profile-column">
-        <img src="../assets/Icons/Profile PictureMale.png" alt="Profile Picture" class="profile-picture">
+        <img src="../assets/Logo/johndoe.jpg" alt="Profile Picture" class="profile-picture">
         </div>
         <div class="info-actions-column">
             <div class="user-info">
                 <div class="username">
-                    <p>John Doe</p>
-                    <img src="../assets/Icons/studentseal.png" alt="Student Verification Badge">
+                    <p class="username-text">John Doe</p>
+                    <img src="../assets/Icons/studentseal.svg" alt="Student Verification Badge" id="studentseal">
                 </div>
                 <!--EMAIL -->
                 <div class="contact-info">
-                    <img src="../assets/Icons/email.png" alt="Email Icon">
-                    <span>officialpawspa@gmail.com</span>
+                    <img src="../assets/Icons/email.svg" alt="Email Icon" id="emailicon">
+                    <span class="emailinfo">officialpawspa@gmail.com</span>
                 <!--PHONE NUM -->
-                    <img src="../assets/Icons/phonenumber.png" alt="Phone Icon">
-                    <span>(156)-345-6789</span>
+                    <img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" id="phoneicon">
+                    <span class="phoneinfo">(156)-345-6789</span>
+                </div>
+                <div class="addicon"></div>
+                <div>
+                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business" id="add"></a>
                 </div>
             </div>
-    <!--<footer>
-      <p>About </p>
-    </footer>-->
-    </div></div>
-</body>
+            <h2 class="my-reviews-heading">My Reviews:</h2>
+            <div class="my-reviews"></div>
+            <h2 class="favorites-heading">Favorites:</h2>
+            <div class="favorites"></div>
+            <h2 class="my-businesses-heading">My Businesses:</h2>
+            <div class="my-businesses"></div>
+            <footer>
+                <h3><a href="about.html" class="about-footer">About</a></h3>
+                <ul class="footer">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+                    <li><a href="about.html">Accessibility Statement </a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </footer>
+            <!-- Inbox Container -->
+            <div id="inbox-container">
+                <div class="inbox-header">
+                    <div>
+                        <button id="closeInbox">X</button>
+                    </div>
+                    <input type="text" placeholder="Search Service">
+                    <button type="button" onclick="showNewMessageForm()">New Message</button>
+                </div>
+                <div id="inboxMessages" class="inbox-messages">
+                    <!-- Sample messages -->
+                    <div class="message">
+                        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+                        <div>
+                            <strong>Mie Hair Salon</strong>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>18h ago</span>
+                    </div>
+                    <div class="message">
+                        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+                        <div>
+                            <strong>LM Tree Services</strong>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>15h ago</span>
+                    </div>
+                    <div class="message">
+                        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
+                        <div>
+                            <strong>Tutor Wise</strong>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>10m ago</span>
+                    </div>
+                </div>
+                <div id="sendMsg" class="send-message">
+                    <input type="text" placeholder="Send Message Here">
+                </div>
+                <!-- New Message Form -->
+                <div id="newMessageForm" class="new-message-form">
+                    <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+                    <div class="controls">
+                        <input type="text" placeholder="Search for people">
+                        <textarea placeholder="Type your message..."></textarea>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+    </body>
 </html>
