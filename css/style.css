@@ -547,7 +547,7 @@ font-family: "Montserrat", sans-serif;
 
 /* Main About Div */
 .about {
-  padding: 0px 20px 0px;
+  padding: 0px 20px 0px 0px;
   grid-area: about;
   border-radius: 30px;
   border: 1px solid transparent;
