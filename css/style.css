@@ -556,6 +556,7 @@ font-family: "Montserrat", sans-serif;
 
 /* About Header Title */
 .about-header {
+  padding: 10px 0px 0px 0px;
   font-size: 25px;
   color: #000000;
   font-family: "Oswald", Helvetica;
