@@ -153,7 +153,6 @@ h1 {
   position: relative;
   border-radius: 80px;
   box-shadow: inset 0px 4px 4px #00000040;
-  justify-content: center;
   display: flex;
   top: 150px;
   left: 50%;
@@ -172,7 +171,7 @@ h1 {
 }
 
 .about-subheading {
-  padding: 10px;
+  padding: 20px;
   font-family: "Oswald", Helvetica;
   font-size: 35px;
 }
