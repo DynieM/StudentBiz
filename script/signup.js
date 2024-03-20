@@ -1,6 +1,6 @@
 /** @format */
 
-import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+//import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
 
 
 // This is the google client key, and we use SB for the API.
