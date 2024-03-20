@@ -105,8 +105,6 @@ sign_up_button.style.marginTop = "-460px";
 container.style.height = "740px";
 
 studentCheckbox.addEventListener("change", () => {
-    console.log("Checkbox state changed");
-    console.log("Checkbox checked:", studentCheckbox.checked);
 
     if (studentCheckbox.checked) {
         studentDiv.style.display = "block";
