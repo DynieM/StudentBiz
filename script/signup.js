@@ -94,30 +94,14 @@ async function submitForm2() {
 }
 
 
-
-const studentCheckbox = document.getElementById("studentCheckbox")
-const studentDiv = document.getElementById("studentDiv")
-const sign_up_button = document.getElementById("SignUpButton");
-const container = document.getElementById("container")
-
-studentDiv.style.display = "none";
-sign_up_button.style.marginTop = "-460px";
-container.style.height = "740px";
-
-studentCheckbox.addEventListener("change", () => {
-
-    if (studentCheckbox.checked) {
-        studentDiv.style.display = "block";
-        sign_up_button.style.marginTop = "0px";
-        container.style.height = "1185px";
-
-    } else {
-        studentDiv.style.display = "none";
-        sign_up_button.style.marginTop = "-460px";
-        container.style.height = "740px";
-    }
-
-})
+document.getElementById("studentCheckbox").addEventListener("change", function() {
+  var content = document.getElementById("studentDiv");
+  if (this.checked) {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+});
 
 
 
