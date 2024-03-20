@@ -104,14 +104,14 @@ content.style.visibility = "hidden"
 sign_up_button.style.marginTop = "-460px";
 container.style.height = "740px";
 
-is_Student.addEventListener("change", () => {
-    if (is_Student.checked) {
-        content.style.visibility = "visible"
+studentCheckbox.addEventListener("change", () => {
+    if (studentCheckbox.checked) {
+        studentDiv.style.visibility = "visible"
         sign_up_button.style.marginTop = "0px";
         container.style.height = "1185px";
 
     } else {
-        content.style.visibility = "hidden"
+        studentDiv.style.visibility = "hidden"
         sign_up_button.style.marginTop = "-460px";
         container.style.height = "740px";
     }
