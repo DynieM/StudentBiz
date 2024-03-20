@@ -103,7 +103,8 @@ body {
   left: 380px;
 }
 
-.newToStudentBizText .alreadyOnStudentBizText {
+.newToStudentBizText, 
+.alreadyOnStudentBizText {
   font-size: 15px;
 }
 
