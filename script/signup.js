@@ -95,10 +95,10 @@ async function submitForm2() {
 
 
 
-const is_Student = document.getElementById("student")
-const content = document.getElementById("studentInfo")
+const is_Student = document.getElementById("studentCheckbox");
+const content = document.getElementById("studentInfo");
 const sign_up_button = document.getElementById("SignUpButton");
-const container = document.getElementById("container")
+const container = document.getElementById("container");
 
 content.style.visibility = "hidden"
 sign_up_button.style.marginTop = "-460px";
