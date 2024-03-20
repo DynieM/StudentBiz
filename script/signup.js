@@ -20,7 +20,7 @@ if (googleSignIn) {
 }
 
 // Goes to signup if profile has not been added
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (event) => {
     const profileLink = document.getElementById('profileLink');
     profileLink.addEventListener('click', function (event) {
         event.preventDefault();
