@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles2.css"/>
+    <link rel="stylesheet" href="/css/styles2.css"/>
+    
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
@@ -11,38 +12,46 @@
         <title>Sign Up</title>
 </head>
 <body>
-    <div class="signup_container">
-      <img src="../assets/Logo/studentbizlogo.svg" alt="logo" id="logo-signup">
-      <h2 class="signupfor-text">Sign Up for</h2>
-      <span class="studentbiz-text">StudentBiz</span>
+    <script type="module" src="../script/signup.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <div class="signup_container" id="container">
+      
+    <h2 class="signup"> Sign Up for </h2>
+     <button id="GoogleSignUp"> Continue with Google </button>
+     
+      <form id="myForm">
       <div class="user">
-      <input type="text" placeholder="First Name" >
-      <input type="text" placeholder="Last Name" >
-      <input type="number" placeholder="Phone Number" >
-      <input type="email" placeholder="Email" >
-      <input type="password" placeholder="Password" >
-      <input type="password" placeholder="Confirm Password" >
+      <input type="text" id="firstName" name="first" placeholder="First Name" >
+      <input type="text" id="lastName" name="last"  placeholder="Last Name" >
+      <input type="text" id="phoneNumber" name="number" placeholder="Phone Number" >
+      <input type="email" id="email" name="_email" placeholder="Email" >
+      <input type="password" id="password" name="password"  placeholder="Password" >
+      <input type="password" name="password"  placeholder="Confirm Password" >
+      <button type="button" onclick="submitForm2()">Submit</button>
     </div>
+    </form>
       <div>
         <p> Already on StudentBiz? <a href="../html/login.html" class="login-text">Log in</a> </p>
       </div>
       <div class="markStudent">
-       <input type="checkbox" id="studentCheckbox" name="isStudent" value="accepted">
+       <input type="checkbox" id="student" value="accepted">
         <label for="student">I am a Student and I have a business </label><br>
       </div>
-      <div id="studentDiv">
-      <input type="email" placeholder="Student Email" >
+
+      <div class="student">
+      <div id=studentInfo >
+      <input type="email" id="businessEmail" placeholder="Student Email" >
       <input type="email" placeholder="Confirm Student Email" >
-      <input type="text" placeholder="Enter Business Name" >
-      <input type="text" placeholder="Business Description" >
-      <input type="text" placeholder="Service Type" >
-      <input type="number" placeholder="Business Phone Number" >
-     
+      <input type="text" id="businessName" placeholder="Enter Business Name" >
+      <input type="text" id="businessDescription" placeholder="Business Description" >
+      <input type="text" id="serviceType" placeholder="Service Type" >
+      <input type="number" id="businessPhoneNumber" placeholder="Business Phone Number" >
     </div>
-    <br/>
-   <div class="buttonSignUp">
-     <a href="../html/homepage.html"><input type="submit" id="SignUpButton" value="Sign Up" ></a>
+    <div class="buttonSignUp">
+     <input type="submit" id="SignUpButton" onclick="submitForm2()" value="Sign Up" >
    </div>
-   <br/>
+    </div>
+  
+
 </body>
 </html>
