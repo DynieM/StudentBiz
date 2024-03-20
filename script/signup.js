@@ -94,15 +94,16 @@ async function submitForm2() {
 }
 
 
-document.getElementById("studentCheckbox").addEventListener("change", function() {
-  var content = document.getElementById("studentDiv");
-  if (this.checked) {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
-});
-
+window.onload = function() {
+  document.getElementById('studentCheckbox').addEventListener('change', function() {
+    var studentDiv = document.getElementById('studentDiv');
+    if (this.checked) {
+      studentDiv.style.display = 'block';
+    } else {
+      studentDiv.style.display = 'none';
+    }
+  });
+};
 
 
 window.submitForm = submitForm;
