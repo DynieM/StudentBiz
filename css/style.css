@@ -569,6 +569,7 @@ font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #000000;
   font-family: "Oswald", Helvetica;
+  overflow-wrap: break-word;
 }
 
 /* Responsive adjustments can be made here */
