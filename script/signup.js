@@ -100,18 +100,18 @@ const studentDiv = document.getElementById("studentDiv")
 const sign_up_button = document.getElementById("SignUpButton");
 const container = document.getElementById("container")
 
-content.style.visibility = "hidden"
+studentDiv.style.display = "none";
 sign_up_button.style.marginTop = "-460px";
 container.style.height = "740px";
 
 studentCheckbox.addEventListener("change", () => {
     if (studentCheckbox.checked) {
-        studentDiv.style.visibility = "visible"
+        studentDiv.style.display = "block";
         sign_up_button.style.marginTop = "0px";
         container.style.height = "1185px";
 
     } else {
-        studentDiv.style.visibility = "hidden"
+        studentDiv.style.display = "none";
         sign_up_button.style.marginTop = "-460px";
         container.style.height = "740px";
     }
