@@ -96,7 +96,7 @@ async function submitForm2() {
 
 
 const studentCheckbox = document.getElementById("studentCheckbox")
-const studentDiv = document.getElementById("studenDiv")
+const studentDiv = document.getElementById("studentDiv")
 const sign_up_button = document.getElementById("SignUpButton");
 const container = document.getElementById("container")
 
