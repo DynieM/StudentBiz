@@ -132,7 +132,7 @@ p {
 }
 
 #studentDiv {
-  visibility: hidden;
+  display: none;
 }
 
 #studentDiv input{
