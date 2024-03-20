@@ -131,10 +131,6 @@ p {
     padding-left: 18px;
 }
 
-#studentDiv {
-  display: none;
-}
-
 #studentDiv input{
   font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
