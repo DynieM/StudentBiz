@@ -113,7 +113,6 @@ body {
   color:#000000;
   font-size: 16px;  
   font-weight: 100;
-  cursor: pointer;
 }
 
 p {
@@ -202,5 +201,9 @@ p {
 .signup-text {
   color: #1976D2;
   text-decoration: underline;
+}
+
+#studentCheckbox {
+  cursor: pointer;
 }
 
