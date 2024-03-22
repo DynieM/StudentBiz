@@ -153,3 +153,111 @@ p {
     display: block;
     text-align: left;
 }
+
+.alt-heading {
+    color: black;
+    font-family: "Oswald", Helvetica;
+    font-size: 70px;
+}
+
+/* Advertisement on the Home page*/
+.advertise {
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px;
+}
+
+/* Styles for the categories section */
+.categories {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding: 40px;
+    color: white;
+    background-color: #343840;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.categories-heading {
+    font-size: 86px;
+    text-align: left;
+}
+
+#beauty {
+    width: 109px;
+    height: 167px;
+}
+
+.beauty-text {
+    margin-right: 50px;
+}
+
+#food {
+    width: 149.97px;
+    height: 159px;
+}
+
+.food-text {
+    margin-right: 70px;
+}
+
+#tutor {
+    width: 153.69px;
+    height: 162.93px;
+}
+
+.tutor-text {
+    margin-right: 60px;
+}
+
+#shopping {
+    width: 176px;
+    height: 159px;
+}
+
+.shopping-text {
+    margin-right: 50px;
+}
+
+#art {
+    width: 181.03px;
+    height: 151.25px;
+}
+
+.art-text {
+    margin-right: 50px;
+}
+
+#pets {
+    width: 152px;
+    height: 161.15px;
+}
+
+.pets-text {
+    margin-right: 60px;
+}
+
+/* Link styles*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+}
+
+footer {
+    /* Styles for the footer */
+    position: sticky;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    margin-top: 100px;
+    text-decoration: none;
+    background-color: #212427;
+    min-height: 20vh;
+    flex: 1;
+}
