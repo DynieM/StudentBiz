@@ -249,6 +249,10 @@ ul {
     list-style-type: none;
 }
 
+.about-footer {
+    margin-left: 40px;
+}
+
 footer {
     /* Styles for the footer */
     position: sticky;
