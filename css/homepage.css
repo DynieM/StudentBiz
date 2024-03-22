@@ -340,3 +340,38 @@ footer {
     margin-bottom: 10px;
     /* Adjust spacing between icon and text */
 }
+
+/* Styling for pop up page */
+.maincontainer {
+    background: #000000;
+    padding: 15px;
+    width: 100%;
+    height: 220vh;
+}
+
+.blur-background {
+    /* NOT BEING USED RN */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background-image.jpg") center/cover fixed no-repeat;
+    /* Set your blurred background image */
+    filter: blur(10px);
+    /* Adjust the blur effect */
+}
+
+.popup-box {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 650px;
+    width: 80%;
+    display: flex;
+}
