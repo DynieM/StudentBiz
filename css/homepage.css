@@ -389,6 +389,26 @@ footer {
     flex: 1;
 }
 
+.category {
+    color: #888;
+    margin-top: 5px;
+}
+
+.caption {
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.description {
+    margin-top: 5px;
+    color: #555;
+    font-size: 15px;
+    padding: 5px;
+    padding-right: 15px;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
