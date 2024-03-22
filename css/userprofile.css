@@ -376,7 +376,7 @@ footer {
 .right-column {
     flex: 1;
     display: grid;
-    flex-direction: repeat(2, auto);
+    flex-direction: repeat(4, auto);
     gap: 20px;
 }
 
