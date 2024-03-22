@@ -222,3 +222,7 @@ footer {
     font-family: "Montserrat", Helvetica;
     overflow-wrap: break-word;
 }
+
+a {
+    color: white;
+}
