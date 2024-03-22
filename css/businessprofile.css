@@ -421,6 +421,13 @@ h2 {
   margin-top: 20px;
 }
 
+#addBusiness {
+  margin-top: 20px;
+  background-color: black;
+  height: 50px;
+  width: 200px;
+}
+
 /* Business Profile Styles - Joao */
 
 .bProfileImg {
