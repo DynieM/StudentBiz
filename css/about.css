@@ -189,3 +189,9 @@ footer {
     min-height: 20vh;
     flex: 1;
 }
+
+.logo img {
+    width: 100px;
+    /* Adjust as necessary */
+    height: auto;
+}
