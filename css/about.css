@@ -170,3 +170,9 @@ p {
     display: block;
     text-align: left;
 }
+
+.alt-heading {
+    color: black;
+    font-family: "Oswald", Helvetica;
+    font-size: 70px;
+}
