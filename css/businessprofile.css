@@ -2,21 +2,23 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, sans-serif;
   padding-bottom: 25px;
 }
 
 header {
-  color: #ffffff;
-  background-color: white;
-  padding: 10px;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 
 .button {
+
   color: white;
   background-color: #000000;
   padding: 10px 130px;
+
 }
 
 .navbar {
@@ -37,102 +39,29 @@ header {
 .navbar .icon {
   font-family: sans-serif;
   margin-right: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   /* Adjust spacing between icon and text */
-  font-size: 25px;
-}
-
-/* Styling for Main Logo */
-#mainLogo {
-  width: 50px;
-  height: 50px;
-  display: block;
-  transition: width 1s ease, height 1s ease;
-  margin-right: 10px;
-  /* Add a transition for width and height */
-}
-
-.logo-link {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  padding-left: 10px;
-  font-weight: bold;
   font-size: 24px;
+
 }
 
-.navbar .rightnav img {
+.navbar img {
   display: block;
   /* Make the image a block element */
   margin: 0 auto 5px;
   /* Center the image and adjust spacing */
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  /* Set the width of the images */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
-/* Styles for the right navigation bar links */
-.rightnav {
-  font-size: 20px;
-  right: 25px;
-  position: relative;
-  color: #000000;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.navbar a:hover {
-  background-color: #d2d0d0;
-  color: black;
-  border-radius: 20px;
-}
-
-#profilepicicon {
-  width: 50px;
-  height: 50px;
-}
-
-#inboxicon {
-  width: 50px;
-  height: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ .navbar a:hover {
+            background-color: #d2d0d0;
+            color: black;
+            border-radius:20px;
+            
+        }
 
 .search-bar {
   flex-grow: 1;
