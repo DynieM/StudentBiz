@@ -277,7 +277,7 @@ footer {
 }
 
 #studentseal {
-    flex: 2 0 auto;
+    flex: 0 0 auto;
     width: 80px;
     height: 80px;
 }
