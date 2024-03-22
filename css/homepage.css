@@ -129,3 +129,10 @@ button {
     cursor: pointer;
 }
 
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: "Oswald", Helvetica;
+}
+
