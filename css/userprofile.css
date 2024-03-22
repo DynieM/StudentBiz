@@ -257,19 +257,15 @@ footer {
 }
 
 .profile-picture {
-    position: absolute;
+    flex: 0 0 auto;
     width: 366px;
     height: 381px;
-    left: 174px;
-    top: 200px;
 }
 
 .username-text {
-    position: absolute;
+    flex: 1 0 auto;
     width: 446px;
     height: 74px;
-    left: 669px;
-    top: 200px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
