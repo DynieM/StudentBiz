@@ -14,3 +14,35 @@ header {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling for Links in the Nav Bar */
+.navbar a {
+    float: left;
+    color: rgb(21, 20, 20);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar .icon {
+    font-family: sans-serif;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    /* Adjust spacing between icon and text */
+    font-size: 25px;
+}
+
+/* Styling for Main Logo */
+#mainLogo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    transition: width 1s ease, height 1s ease;
+    margin-right: 10px;
+    /* Add a transition for width and height */
+}
