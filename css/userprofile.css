@@ -245,6 +245,13 @@ footer {
     /* Center align the flex items */
 }
 
+.userprofile_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .profile-column {
     width: 100%;
     height: 516px;
