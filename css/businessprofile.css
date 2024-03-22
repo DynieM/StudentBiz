@@ -487,13 +487,6 @@ padding: 0px 300px;
 
 }
 
-input {
-  background-color: #dddddd;
-  height: 100px;
-  text-align: center;
-
-}
-
 .inline-container img,
 .inline-container p {
   display: inline-block; /* or use "inline" depending on your specific requirements */
