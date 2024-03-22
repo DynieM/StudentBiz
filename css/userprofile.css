@@ -277,11 +277,9 @@ footer {
 }
 
 #studentseal {
-    position: absolute;
+    flex: 2 0 auto;
     width: 80px;
     height: 80px;
-    left: 920px;
-    top: 240px;
 }
 
 #emailicon {
