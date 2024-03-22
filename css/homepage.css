@@ -261,3 +261,82 @@ footer {
     min-height: 20vh;
     flex: 1;
 }
+
+/* Advertisement on the Home page*/
+.adcontainer {
+    width: 1412px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 59.91px;
+    /* ADJUST WIDth*/
+    height: 59.91px;
+    /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+/* Arrow icons next to Ad on homepage*/
+.left-arrow {
+    left: 100px;
+}
+
+.right-arrow {
+    right: 100px;
+}
+
+/* Styles for the categories section */
+.categories {
+    margin-top: 100px;
+    padding-top: 20px;
+    padding: 30px;
+    color: white;
+    background-color: #343840;
+    border-top-left-radius: 0px;
+    /* Straight top-left corner */
+    border-bottom-left-radius: 0px;
+    /* Straight bottom-left corner */
+    border-bottom-right-radius: 0px;
+    /* Straight bottom-right corner */
+    text-align: left;
+}
+
+/* Grid styles */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns with equal width */
+    gap: 20px;
+    /* Adjust the gap between grid items */
+}
+
+/* Styles for each category item */
+.category-item {
+    text-align: center;
+    transform: scale(1);
+}
+
+.category-item:hover {
+    text-align: center;
+    border-color: #01ffff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transform: scale(1.2);
+    /* Set the initial scale */
+    transition: transform 0.3s ease;
+    /* Add a transition for the transform property */
+}
+
+.category-item img {
+    width: 50px;
+    /* Set the width of the icons */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Adjust spacing between icon and text */
+}
