@@ -13,12 +13,6 @@ header {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button {
-    color: white;
-    background-color: #000000;
-    padding: 10px 130px;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
