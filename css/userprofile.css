@@ -364,6 +364,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 150px;
 }
 
 .left-column {
