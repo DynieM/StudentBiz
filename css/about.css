@@ -55,3 +55,38 @@ header {
     font-weight: bold;
     font-size: 24px;
 }
+
+.navbar .rightnav img {
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto 5px;
+    /* Center the image and adjust spacing */
+    width: 25px;
+    height: 25px;
+}
+
+/* Styles for the right navigation bar links */
+.rightnav {
+    font-size: 20px;
+    right: 25px;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.navbar a:hover {
+    background-color: #d2d0d0;
+    color: black;
+    border-radius: 20px;
+}
+
+#profilepicicon {
+    width: 50px;
+    height: 50px;
+}
+
+#inboxicon {
+    width: 50px;
+    height: 50px;
+}
