@@ -413,6 +413,10 @@ h2 {
   color: #555;
 }
 
+.addBusinessForm {
+  padding: 50px;
+}
+
 #editForm {
   text-align: center;
 }
