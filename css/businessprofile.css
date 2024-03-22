@@ -424,6 +424,7 @@ h2 {
 .formInput {
   margin-top: 20px;
   height: 20px;
+  width: 25%;
 }
 
 #addBusiness {
