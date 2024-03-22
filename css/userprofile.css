@@ -380,6 +380,12 @@ footer {
     gap: 20px;
 }
 
+.row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
 .my-reviews-heading {
     width: 516px;
     height: 61px;
