@@ -177,19 +177,6 @@ p {
     font-size: 70px;
 }
 
-footer {
-    /* Styles for the footer */
-    position: sticky;
-    padding: 15px;
-    color: white;
-    text-align: left;
-    margin-top: 100px;
-    text-decoration: none;
-    background-color: #212427;
-    min-height: 20vh;
-    flex: 1;
-}
-
 .logo img {
     width: 100px;
     /* Adjust as necessary */
