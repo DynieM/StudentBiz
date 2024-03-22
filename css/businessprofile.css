@@ -413,6 +413,10 @@ h2 {
   color: #555;
 }
 
+#editForm {
+  text-align: center;
+}
+
 /* Business Profile Styles - Joao */
 
 .bProfileImg {
