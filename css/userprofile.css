@@ -363,7 +363,7 @@ footer {
 .flex-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .my-reviews-heading {
