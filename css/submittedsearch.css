@@ -198,6 +198,7 @@ h2 {
     color: #ffffff;
     font-family: "Oswald", Helvetica;
     text-align: center;
+    margin: 0;
 }
 
 p {
@@ -436,11 +437,6 @@ ul {
 /* Blue Text for Reviews*/
 .blue-text {
     color: blue;
-}
-
-h2 {
-    font-size: 24px;
-    margin: 0;
 }
 
 /* Styles for Inbox */
