@@ -312,6 +312,66 @@ ul {
     padding: 10px;
 }
 
+/* Styling for Business Card - Submitted Search Page*/
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-areas:
+        "logo name rating"
+        "tags tags tags"
+        "about about about";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust as necessary */
+    height: auto;
+}
+
+.name {
+    grid-area: name;
+    display: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.rating {
+    grid-area: rating;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 0.8em;
+    gap: 10px;
+}
+
+.tags {
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    border-radius: 30px;
+}
+
+.tags span {
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    border: 1px solid transparent;
+    border-color: black;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
