@@ -9,32 +9,44 @@
 
   <body>
     <header>
-      <!-- Navigation Bar (with search bar included) -->
+      <!-- Navigation Bar -->
       <nav class="navbar">
         <div class="logo">
-          <a href="../html/homepage.html"
-            ><img
+          <a href="../html/homepage.html" class="logo-link">
+            <img
               src="../assets/Logo/studentbizlogo.svg"
               alt="Home"
               id="mainLogo"
-            />StudentBiz</a
-          >
-        </div>
-        <!--Search Bar-->
-        <div class="search-bar">
-          <input type="text" placeholder="Search..." />
+            />StudentBiz
+          </a>
         </div>
         <!-- Right side of the navigation bar on the Home Page-->
         <div class="rightnav">
-          <a href="../html/businessProfileNew.html"
+          <div id="userLoggedOut">
+            <a href="../html/login.html">
+              <button id="loginButton">Login</button>
+            </a>
+            <a href="../html/signup.html">
+              <button id="signUpButton">Sign Up</button>
+            </a>
+          </div>
+          <div id="userLoggedIn">
+            <a href="../html/userprofile.html"
             ><img
               src="../assets/Icons/profilepic.svg"
               alt="Profile Icon"
+              id="profilepicicon"
             />Profile</a
           >
           <a href="#" id="openInbox"
-            ><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" /> Inbox</a
+            ><img
+              src="../assets/Icons/inbox.svg"
+              alt="Inbox Icon"
+              id="inboxicon"
+            />
+            Inbox</a
           >
+          </div>
         </div>
       </nav>
     </header>
