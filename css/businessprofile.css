@@ -48,9 +48,9 @@ header {
   /* Make the image a block element */
   margin: 0 auto 5px;
   /* Center the image and adjust spacing */
-  width: 24px;
+  width: 25px;
   /* Set the width of the images */
-  height: auto;
+  height: 25px;
   /* Maintain aspect ratio */
 }
 
