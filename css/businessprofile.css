@@ -43,7 +43,7 @@ header {
 
 }
 
-.navbar img {
+.navbar .rightnav img {
   display: block;
   /* Make the image a block element */
   margin: 0 auto 5px;
