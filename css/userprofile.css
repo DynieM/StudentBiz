@@ -220,6 +220,11 @@ footer {
     padding: 10px;
 }
 
+.message p {
+    color: black;
+    font-size: 14px;
+}
+
 .send-message input {
     width: 100%;
     box-sizing: border-box;
