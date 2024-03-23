@@ -361,14 +361,14 @@ ul {
     align-items: flex-end;
     justify-content: center;
     font-size: 0.8em;
-    gap: 10px;
+    gap: 5px;
 }
 
 .tags {
     flex-direction: row;
     display: flex;
     justify-content: start;
-    gap: 15px;
+    gap: 10px;
     border-radius: 30px;
 }
 
