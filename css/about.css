@@ -321,7 +321,7 @@ input[type="text"] {
     padding: 10px;
 }
 
-.previewMessage {
+.message p {
     color: black;
     font-size: 14px;
 }
