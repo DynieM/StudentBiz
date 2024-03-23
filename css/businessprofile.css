@@ -57,11 +57,10 @@ header {
 }
 
  .navbar a:hover {
-            background-color: #d2d0d0;
-            color: black;
-            border-radius:20px;
-            
-        }
+  background-color: #d2d0d0;
+  color: black;
+  border-radius:20px;    
+}
 
 .search-bar {
   flex-grow: 1;
