@@ -49,7 +49,15 @@
         <textarea id="description" class="formInput" name="description" required></textarea><br><br>
         <!-- Input fields for service type -->
         <label for="serviceType">Service Type:</label>
-        <datalist></datalist>
+        <input type="text" list="serviceTypeList" class="formInput" placeholder="Service Type" >
+        <datalist id="serviceTypeList">
+          <option value="Beauty">
+          <option value="Food">
+          <option value="Education/Tutor">
+          <option value="Shopping">
+          <option value="Arts & Crafts">
+          <option value="Pets">
+        </datalist>
         <!-- Optional input fields-->
         <h2>Optional</h2>
         <!-- Optional input field for adding business profile picture -->
