@@ -433,6 +433,11 @@ ul {
     text-align: left;
 }
 
+/* Blue Text for Reviews*/
+.blue-text {
+    color: blue;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
