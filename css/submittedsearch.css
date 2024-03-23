@@ -138,3 +138,13 @@ header {
     text-decoration: none;
     font-size: 24px;
 }
+
+.about-footer {
+    margin-left: 40px;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust as necessary */
+    height: auto;
+}
