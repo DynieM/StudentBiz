@@ -78,6 +78,15 @@ button {
   cursor: pointer;
 }
 
+#mainLogo {
+  width: 50px;
+  height: 50px;
+  display: block;
+  transition: width 1s ease, height 1s ease;
+  margin-right: 10px;
+  /* Add a transition for width and height */
+}
+
 .logo {
   /* Styles for the logo */
   color: #fff;
