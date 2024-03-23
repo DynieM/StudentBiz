@@ -404,7 +404,7 @@ ul {
     padding: 0px 70px 0px 0px;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Montserrat", Helvetica;
     overflow-wrap: break-word;
 }
