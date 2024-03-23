@@ -91,11 +91,13 @@ header {
 }
 
 #loginButton {
-  width: 100px;
+  background-color: white;
+  color: black;
 }
 
 #signUpButton {
-  width: 100px;
+  background-color: blue;
+  color: white;
 }
 
 #userLoggedIn {
