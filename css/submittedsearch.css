@@ -297,6 +297,15 @@ ul {
     /* Adjust spacing between logo and text */
 }
 
+.business-info {
+    width: 220%;
+    height: 500%;
+    margin: 10;
+    padding: 15px;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .rating img {
     size: 10px 10px;
 }
