@@ -321,6 +321,10 @@ input[type="text"] {
     padding: 10px;
 }
 
+.previewMessage {
+    color: black;
+}
+
 .send-message input {
     width: 100%;
     box-sizing: border-box;
