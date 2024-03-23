@@ -85,6 +85,15 @@ button {
   font-size: 24px;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .rightnav {
   /* Styles for the right navigation links */
   float: right;
