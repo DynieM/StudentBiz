@@ -176,6 +176,30 @@ button {
     cursor: pointer;
 }
 
+/* Styles for the subheaders */
+
+.submitted-search-container {
+    display: flex;
+    align-items: center;
+}
+
+.submitted-search-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: #000000;
+    font-family: "Oswald", Helvetica;
+    padding: 0px 0px 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Oswald", Helvetica;
+    text-align: center;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
