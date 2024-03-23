@@ -92,7 +92,7 @@ header {
     border-radius: 5px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    padding: 5px;
+    padding: 8px;
 }
 
 #signUpButton {
@@ -103,7 +103,7 @@ header {
     border-radius: 5px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    padding: 5px;
+    padding: 8px;
 }
 
 #userLoggedIn {
