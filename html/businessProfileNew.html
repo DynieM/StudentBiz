@@ -34,10 +34,10 @@
       <form id="editForm">
         <!-- Input field for adding business profile picture -->
         <label for="profilePic">Business Logo:</label>
-        <input type="file" id="businessLogo" class="imageFormInput" name="businessLogo" accept="image/*" required><br>
+        <input type="file" id="businessLogo" class="imageFormInput" name="businessLogo" accept="image/*"><br>
         <!-- Input field for picture -->
         <label for="businessPic">Picture:</label>
-        <input type="file" id="businessPic" class="imageFormInput" name="businessPic" accept="image/*" required><br>
+        <input type="file" id="businessPic" class="imageFormInput" name="businessPic" accept="image/*"><br>
         <!-- Input field for business name-->
         <label for="businessName">Business Name:</label>
         <input type="text" id="businessName" class="formInput" name="businessName" required><br>  
@@ -53,9 +53,13 @@
         <!-- Input field for business description -->
         <label for="description">Business Description:</label>
         <textarea id="description" class="formInput" name="description" required></textarea><br>
-        <!-- Input field for tags -->
+        <!-- Optional input fields for tags -->
         <label for="tag1">Tag 1:</label>
-        <input type="text" id="tag1" class="formInput" name="tag1" required><br>
+        <input type="text" id="tag1" class="formInput" name="tag1"><br>
+        <label for="tag2">Tag 2:</label>
+        <input type="text" id="tag2" class="formInput" name="tag2"><br>
+        <label for="tag3">Tag 3:</label>
+        <input type="text" id="tag3" class="formInput" name="tag3"><br>
         <!-- Submit button -->  
         <button id="addBusiness" type="submit">Publish Your Business</button>
       </form>
