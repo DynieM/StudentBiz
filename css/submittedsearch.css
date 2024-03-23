@@ -372,6 +372,30 @@ ul {
     border-color: black;
 }
 
+/* Responsive adjustments can be made here */
+@media (max-width: 800px) {
+    .card {
+        grid-template-areas:
+            "logo name"
+            "logo rating"
+            "tags tags"
+            "about about";
+        grid-template-columns: 100px 1fr;
+    }
+
+    #mainLogo {
+        width: 40px;
+        transition: width 1s ease, height 1s ease;
+        /* Add a transition for width and height */
+    }
+}
+
+.name,
+.rating {
+    margin-left: 0;
+    text-align: left;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
