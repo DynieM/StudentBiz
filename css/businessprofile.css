@@ -461,6 +461,13 @@ h2 {
   margin-top: 20px;
 }
 
+.tagFormInput {
+  margin-top: 20px;
+  height: 20px;
+  width: 15%;
+  font-size: 20px;
+}
+
 #addBusiness {
   margin-top: 40px;
   background-color: black;
