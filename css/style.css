@@ -113,7 +113,7 @@ header {
 }
 
 #userLoggedIn {
-  display: none;
+  display: block;
 }
 
 #profilepicicon {
