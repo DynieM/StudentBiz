@@ -148,3 +148,8 @@ header {
     /* Adjust as necessary */
     height: auto;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
