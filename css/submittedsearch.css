@@ -211,6 +211,19 @@ p {
     text-align: left;
 }
 
+footer {
+    /* Styles for the footer */
+    position: sticky;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    margin-top: 100px;
+    text-decoration: none;
+    background-color: #212427;
+    min-height: 20vh;
+    flex: 1;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
