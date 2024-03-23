@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 25px;
+}
+
+header {
+    color: #ffffff;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling for Links in the Nav Bar */
+.navbar a {
+    float: left;
+    color: rgb(21, 20, 20);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar .icon {
+    font-family: sans-serif;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    /* Adjust spacing between icon and text */
+    font-size: 25px;
+}
+
+/* Styling for Main Logo */
+#mainLogo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    transition: width 1s ease, height 1s ease;
+    margin-right: 10px;
+    /* Add a transition for width and height */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar .rightnav img {
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto 5px;
+    /* Center the image and adjust spacing */
+    width: 25px;
+    height: 25px;
+}
+
+/* Styles for the right navigation bar links */
+.rightnav {
+    font-size: 20px;
+    right: 25px;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.navbar a:hover {
+    background-color: #d2d0d0;
+    color: black;
+    border-radius: 20px;
+}
+
+#userLoggedOut {
+    display: block;
+}
+
+#loginButton {
+    background-color: white;
+    color: black;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+#signUpButton {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+#userLoggedIn {
+    display: none;
+}
+
+#profilepicicon {
+    width: 50px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#inboxicon {
+    width: 50px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.search-bar {
+    flex-grow: 1;
+    border-radius: 20px;
+    margin: 10px;
+    width: 808px;
+    height: 71px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    /* Styles for the logo */
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+}
