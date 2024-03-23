@@ -84,10 +84,6 @@ header {
     display: block;
 }
 
-#loginButton {
-    display: none;
-}
-
 #userLoggedIn {
     display: none;
 }
