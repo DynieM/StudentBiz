@@ -228,6 +228,11 @@ ul {
     list-style-type: none;
 }
 
+.search-rating-star {
+    width: 25px;
+    height: 25px;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
