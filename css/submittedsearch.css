@@ -224,6 +224,10 @@ footer {
     flex: 1;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Styles for Inbox */
 #inbox-container {
     position: fixed;
