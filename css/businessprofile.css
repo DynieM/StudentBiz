@@ -457,6 +457,10 @@ h2 {
   font-size: 20px;
 }
 
+.imageFormInput {
+  margin-top: 20px;
+}
+
 #addBusiness {
   margin-top: 40px;
   background-color: black;
