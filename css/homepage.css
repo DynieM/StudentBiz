@@ -80,7 +80,11 @@ header {
     border-radius: 20px;
 }
 
-#profile {
+#userLoggedOut {
+    display: block;
+}
+
+#userLoggedIn {
     display: none;
 }
 
