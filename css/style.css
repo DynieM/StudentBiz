@@ -144,6 +144,10 @@ header {
   margin-right: auto;
 }
 
+.search-button {
+  display: in
+}
+
 input[type="text"] {
   width: 100%;
   padding: 10px;
