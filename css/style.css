@@ -135,11 +135,15 @@ header {
 }
 
 .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   border-radius: 20px;
   margin: 10px;
   width: 808px;
   height: 71px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
