@@ -516,4 +516,15 @@ footer {
     display: none;
 }
 
+#cookieConsentContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
 /* Note: Incomplete styling of the advertisement and the pop-up ad */
