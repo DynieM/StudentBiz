@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+<script type="module" src="../script/signup.js"></script>
+        <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="signup_container">
+      <img src="../assets/Logo/studentbizlogo.svg" alt="logo" id="logo-signup">
+      <h2 class="signupfor-text">Sign Up for</h2>
+      <span class="studentbiz-text">StudentBiz</span>
+      <div class="user">
+      <input type="text" placeholder="First Name" required/>
+      <input type="text" placeholder="Last Name" required/>
+      <input type="text" placeholder="Phone Number" required/>
+      <input type="email" placeholder="Email" required/>
+      <input type="password" placeholder="Password" required/>
+      <input type="password" placeholder="Confirm Password" required/>
+    </div>
+      <div>
+        <p class="alreadyOnStudentBizText"> Already on StudentBiz? <a href="../html/login.html" class="login-text">Log in</a> </p>
+      </div>
+      <div class="markStudent">
+       <input type="checkbox" id="studentCheckbox" name="isStudent" value="accepted">
+        <label for="student">I am a Student and I have a business </label><br>
+      </div>
+      <div id="studentDiv">
+        <input type="email" placeholder="Student Email" >
+        <input type="email" placeholder="Confirm Student Email" >
+        <input type="text" placeholder="Enter Business Name" >
+        <input type="text" placeholder="Business Description" >
+        <input type="text" list="serviceTypeList" placeholder="Service Type" >
+        <datalist id="serviceTypeList">
+          <option value="Beauty">
+          <option value="Food">
+          <option value="Education/Tutor">
+          <option value="Shopping">
+          <option value="Arts & Crafts">
+          <option value="Pets">
+        </datalist>
+        <input type="text" placeholder="Business Phone Number" >
+      </div>
+    <br/>
+   <div class="buttonSignUp">
+     <a href="../html/homepage.html"><input type="submit" id="SignUpButton" value="Sign Up" ></a>
+   </div>
+   <br/>
+</body>
+</html>
