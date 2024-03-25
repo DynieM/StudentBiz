@@ -154,6 +154,7 @@ header {
 
 .search-button {
   display: inline-block;
+  margin: 10px;
 }
 
 input[type="text"] {
