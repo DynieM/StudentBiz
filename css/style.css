@@ -165,12 +165,14 @@ input[type="text"] {
 }
 
 button {
-  background-color: #000000;
-  color: #fff;
   padding: 8px 12px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+#closePopUpAd {
+  background-color: black;
 }
 
 .logo {
