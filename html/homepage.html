@@ -15,26 +15,65 @@
     <script src="../script/popup_ad.js"></script>
   </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../css/homepage.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
-    rel="stylesheet" />
-  <script src="../script/inbox.js"></script>
-  <script src="../script/popup_ad.js"></script>
-</head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../html/homepage.html" class="logo-link">
+            <img
+              src="../assets/Logo/studentbizlogo.svg"
+              alt="Home"
+              id="mainLogo"
+            />StudentBiz
+          </a>
+        </div>
+        <!-- Right side of the navigation bar on the Home Page-->
+        <div class="rightnav">
+          <div id="userLoggedOut">
+            <a href="../html/login.html">
+              <button id="loginButton">Login</button>
+            </a>
+            <a href="../html/signup.html">
+              <button id="signUpButton">Sign Up</button>
+            </a>
+          </div>
+          <div id="userLoggedIn">
+            <a href="../html/userprofile.html"
+            ><img
+              src="../assets/Icons/profilepic.svg"
+              alt="Profile Icon"
+              id="profilepicicon"
+            />Profile</a
+          >
+          <a href="#" id="openInbox"
+            ><img
+              src="../assets/Icons/inbox.svg"
+              alt="Inbox Icon"
+              id="inboxicon"
+            />
+            Inbox</a
+          >
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="../html/homepage.html" class="logo-link">
-          <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo" />StudentBiz
+    <!--Advertisement Container -->
+    <div class="adcontainer">
+      <!-- Left Arrow-->
+      <a href=""
+        ><img
+          src="../assets/Icons/leftslide.svg"
+          alt="Left Arrow"
+          class="arrow left-arrow"
+      /></a>
+      <div class="advertise">
+        <a href="#" id="openPopUpAd">
+          <img
+            src="../assets/Icons/Ad_Homepage.png"
+            alt="Advertisement on homepage"
+          />
         </a>
       </div>
       <!-- Right Arrow-->
@@ -71,161 +110,144 @@
             <p class="centered beauty-text">Beauty</p>
           </a>
         </div>
-        <div id="userLoggedIn">
-          <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
-              id="profilepicicon" />Profile</a>
-          <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon" />
-            Inbox</a>
+        <div class="category-item">
+          <!--Edit Link-->
+          <a href="category2.html">
+            <img
+              src="../assets/Icons/food.svg"
+              alt="Food Icon"
+              class="centered"
+              id="food"
+            />
+            <p class="centered food-text">Food</p>
+          </a>
+        </div>
+        <div class="category-item">
+          <img
+            src="../assets/Icons/tutor.svg"
+            alt="Education/Tutor Icon"
+            class="centered"
+            id="tutor"
+          />
+          <p class="centered tutor-text">Education/Tutor</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="../assets/Icons/shopping.svg"
+            alt="Shopping Icon"
+            class="centered"
+            id="shopping"
+          />
+          <p class="centered shopping-text">Shopping</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="../assets/Icons/art.svg"
+            alt="Arts & Crafts Icon"
+            class="centered"
+            id="art"
+          />
+          <p class="centered art-text">Arts &amp; Crafts</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="../assets/Icons/pets.svg"
+            alt="Pets Icon"
+            class="centered"
+            id="pets"
+          />
+          <p class="centered pets-text">Pets</p>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <!--Advertisement Container -->
-  <div class="adcontainer">
-    <!-- Left Arrow-->
-    <a href=""><img src="../assets/Icons/leftslide.svg" alt="Left Arrow" class="arrow left-arrow" /></a>
-    <div class="advertise">
-      <a href="#" id="openPopUpAd">
-        <img src="../assets/Icons/Ad_Homepage.png" alt="Advertisement on homepage" />
-      </a>
     </div>
-    <!-- Right Arrow-->
-    <a href=""><img src="../assets/Icons/rightslide.svg" alt="Right Arrow" class="arrow right-arrow" /></a>
-  </div>
 
-  <h1 class="alt-heading">What are you looking for?</h1>
-  <!--Search Bar-->
-  <div class="search-bar">
-    <input type="text" placeholder="Search..." />
-  </div>
-
-  <!-- Categories Section -->
-  <div class="categories">
-    <h2 class="categories-heading">Categories</h2>
-    <br />
-    <div class="category-grid">
-      <div class="category-item">
-        <!--Edit Link-->
-        <a href="../html/submittedSearch.html">
-          <img src="../assets/Icons/beauty.svg" alt="Beauty Icon" class="centered" id="beauty" />
-          <p class="centered beauty-text">Beauty</p>
-        </a>
-      </div>
-      <div class="category-item">
-        <!--Edit Link-->
-        <a href="category2.html">
-          <img src="../assets/Icons/food.svg" alt="Food Icon" class="centered" id="food" />
-          <p class="centered food-text">Food</p>
-        </a>
-      </div>
-      <div class="category-item">
-        <img src="../assets/Icons/tutor.svg" alt="Education/Tutor Icon" class="centered" id="tutor" />
-        <p class="centered tutor-text">Education/Tutor</p>
-      </div>
-      <div class="category-item">
-        <img src="../assets/Icons/shopping.svg" alt="Shopping Icon" class="centered" id="shopping" />
-        <p class="centered shopping-text">Shopping</p>
-      </div>
-      <div class="category-item">
-        <img src="../assets/Icons/art.svg" alt="Arts & Crafts Icon" class="centered" id="art" />
-        <p class="centered art-text">Arts &amp; Crafts</p>
-      </div>
-      <div class="category-item">
-        <img src="../assets/Icons/pets.svg" alt="Pets Icon" class="centered" id="pets" />
-        <p class="centered pets-text">Pets</p>
-      </div>
-    </div>
-  </div>
-
-  <!--Footer -->
-  <footer>
-    <h3><a href="about.html" class="about-footer">About</a></h3>
-    <ul class="footer">
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
-      <li><a href="about.html">Accessibility Statement </a></li>
-      <li><a href="about.html">Contact Us</a></li>
-    </ul>
-  </footer>
-  <!--Inbox-->
-  <div id="inbox-container">
-    <div class="inbox-header">
-      <div>
-        <button id="closeInbox">X</button>
-      </div>
-      <input type="text" placeholder="Search Service" />
-      <button type="button" onclick="showNewMessageForm()">
-        New Message
-      </button>
-    </div>
-    <div id="inboxMessages" class="inbox-messages">
-      <!-- Sample messages -->
-      <div class="message">
-        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+    <!--Footer -->
+    <footer>
+      <h3><a href="about.html" class="about-footer">About</a></h3>
+      <ul class="footer">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+        <li><a href="about.html">Accessibility Statement </a></li>
+        <li><a href="about.html">Contact Us</a></li>
+      </ul>
+    </footer>
+    <!--Inbox-->
+    <div id="inbox-container">
+      <div class="inbox-header">
         <div>
-          <p><strong>Mie Hair Salon</strong></p>
-          <p>Last message preview...</p>
+          <button id="closeInbox">X</button>
         </div>
-        <span>18h ago</span>
+        <input type="text" placeholder="Search Service" />
+        <button type="button" onclick="showNewMessageForm()">
+          New Message
+        </button>
       </div>
-      <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+      <div id="inboxMessages" class="inbox-messages">
+        <!-- Sample messages -->
+        <div class="message">
+          <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+          <div>
+            <p><strong>Mie Hair Salon</strong></p>
+            <p>Last message preview...</p>
+          </div>
+          <span>18h ago</span>
+        </div>
+        <div class="message">
+          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+          <div>
+            <p><strong>LM Tree Services</strong></p>
+            <p>Last message preview...</p>
+          </div>
+          <span>15h ago</span>
+        </div>
+        <div class="message">
+          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
+          <div>
+            <p><strong>Tutor Wise</strong></p>
+            <p>Last message preview...</p>
+          </div>
+          <span>10m ago</span>
+        </div>
+      </div>
+      <div id="sendMsg" class="send-message">
+        <input type="text" placeholder="Send Message Here" />
+      </div>
+      <!-- New Message Form -->
+      <div id="newMessageForm" class="new-message-form">
+        <button type="button" id="inbox-back-button" onclick="showInbox()">
+          &#8592; Back
+        </button>
+        <div class="controls">
+          <input type="text" placeholder="Search for people" />
+          <textarea placeholder="Type your message..."></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <!--Pop Up Ad-->
+    <div id="popUpAd-container">
+      <div class="popup-box">
         <div>
-          <p><strong>LM Tree Services</strong></p>
-          <p>Last message preview...</p>
+          <button id="closePopUpAd">X</button>
         </div>
-        <span>15h ago</span>
-      </div>
-      <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-        <div>
-          <p><strong>Tutor Wise</strong></p>
-          <p>Last message preview...</p>
+        <!-- Image Section -->
+        <div class="image-section">
+          <img src="../assets/Icons/pink_adpic.png" alt="Advertisement Image" />
         </div>
-        <span>10m ago</span>
+        <!-- Business Information Section -->
+        <div class="business-info">
+          <p class="caption">Tiana's Makeup Services</p>
+          <p class="category">Beauty</p>
+          <p class="caption">About the Business</p>
+          <p class="description">
+            Makeup Artistry specializes in professional and advanced makeup
+            application. Highly suggested and recommended for Weddings,
+            photography, film and special occasion. All services begin with a
+            skincare consultation and prep according to your skin type.
+            <b>Come get Glammed!</b>
+          </p>
+        </div>
       </div>
     </div>
-    <div id="sendMsg" class="send-message">
-      <input type="text" placeholder="Send Message Here" />
-    </div>
-    <!-- New Message Form -->
-    <div id="newMessageForm" class="new-message-form">
-      <button type="button" id="inbox-back-button" onclick="showInbox()">
-        &#8592; Back
-      </button>
-      <div class="controls">
-        <input type="text" placeholder="Search for people" />
-        <textarea placeholder="Type your message..."></textarea>
-        <button type="submit">Send</button>
-      </div>
-    </div>
-  </div>
-  <!--Pop Up Ad-->
-  <div id="popUpAd-container">
-    <div class="popup-box">
-      <div>
-        <button id="closePopUpAd">X</button>
-      </div>
-      <!-- Image Section -->
-      <div class="image-section">
-        <img src="../assets/Icons/pink_adpic.png" alt="Advertisement Image" />
-      </div>
-      <!-- Business Information Section -->
-      <div class="business-info">
-        <p class="caption">Tiana's Makeup Services</p>
-        <p class="category">Beauty</p>
-        <p class="caption">About the Business</p>
-        <p class="description">
-          Makeup Artistry specializes in professional and advanced makeup
-          application. Highly suggested and recommended for Weddings,
-          photography, film and special occasion. All services begin with a
-          skincare consultation and prep according to your skin type.
-          <b>Come get Glammed!</b>
-        </p>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
