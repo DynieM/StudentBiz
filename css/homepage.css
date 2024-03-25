@@ -98,6 +98,28 @@ header {
     height: 50px;
 }
 
+#loginButton {
+    background-color: white;
+    color: black;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+#signUpButton {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
 .search {
     display: flex;
     justify-content: center;
