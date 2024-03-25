@@ -32,8 +32,16 @@ document.getElementById("addBusiness").addEventListener("click", async function 
                 business_phone_number_db: business_phone_number,
             });
 
+        // Simple validation example
+        if (!business_email || !business_description || !business_name || !business_phone_number || !service_type) {
+            alert("Please fill in all the fields.");
+            return; // Stop the function from proceeding further
+        }
+
         if (error) {
-            throw new Error('Error saving data to Supabase:', error.message);
+            console.error('Error saving data to Supabase:', error.message);
+            alert(`Error saving data: ${error.message}. Please try again.`);
+
         } else {
             console.log("Data saved successfully:", data);
             alert("Business information saved successfully.");
