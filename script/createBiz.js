@@ -31,6 +31,8 @@ document.getElementById("addBusiness").addEventListener("click", async function 
                 service_type_db: service_type,
                 business_phone_number_db: business_phone_number,
             });
+        alert("Business information saved successfully. Welcome aboard, " + business_name + "!");
+
 
         // Simple validation example
         if (!business_email || !business_description || !business_name || !business_phone_number || !service_type) {
