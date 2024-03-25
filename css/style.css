@@ -135,6 +135,7 @@ header {
 }
 
 .search-bar {
+  display: inline-block;
   flex-grow: 1;
   border-radius: 20px;
   margin: 10px;
@@ -145,7 +146,7 @@ header {
 }
 
 .search-button {
-  display: in
+  display: inline-block;
 }
 
 input[type="text"] {
