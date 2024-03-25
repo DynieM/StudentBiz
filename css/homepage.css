@@ -129,7 +129,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #404140;
     color: #fff;
     padding: 8px 12px;
     border: none;
@@ -380,7 +380,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 18px;
+    padding: 18px 300px 18px 18px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 650px;
@@ -389,12 +389,10 @@ footer {
 }
 
 .business-info {
-    width: 220%;
     height: 500%;
     margin: 10;
     padding: 15px;
     color: #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-section {
