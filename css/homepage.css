@@ -380,7 +380,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 18px;
+    padding: 18px 18px 18px 18px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 650px;
