@@ -369,6 +369,12 @@ footer {
 
 }
 
+.paddingImg {
+
+  padding: 100px;
+
+}
+
 /* Responsive adjustments can be made here */
 @media (max-width: 800px) {
   .card {
