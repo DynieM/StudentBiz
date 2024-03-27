@@ -79,6 +79,23 @@ app.post('/addbusiness', async (req, res) => {
     }
     res.status(200).send("New Business Added")
 })
+
+// 'addtag' Will add a new business tag to the database
+app.post('/addtag', async (req, res) => {
+    const { tags, date } = req.body;
+    const { error } = await supabase
+        .from("tags")
+        .insert({
+            tag: tags,
+            created_at: date,
+        });
+    if (error != null) {
+        res.status(403).send("Business Sign Up unsuccessful")
+        return
+    }
+    res.status(200).send("New Business Added")
+})
+
 // Listens for port
 app.listen(port, () => {
     console.log(`StudentBiz API running on port ${port}`)
