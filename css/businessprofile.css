@@ -170,6 +170,11 @@ ul {
   list-style-type: none;
 }
 
+p {
+
+  color: #000000;
+}
+
 .about-footer {
   margin-left: 40px;
 }
