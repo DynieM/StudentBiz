@@ -327,6 +327,12 @@ footer {
   margin-left: 10px;
 }
 
+.grid-item {
+
+  background-color: 0;
+
+}
+
 .bText {
 
   color: #000000;
