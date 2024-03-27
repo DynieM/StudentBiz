@@ -694,6 +694,18 @@ h2 {
 .ratings {
 
   text-align: center;
+
+}
+
+.ratings p {
+
+  text-align: center;
   color: #000000;
+
+}
+
+.ratings img {
+
+  padding: 20px 10px 10px 20px;
 
 }
