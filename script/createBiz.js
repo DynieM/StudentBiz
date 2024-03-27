@@ -1,5 +1,12 @@
 /** @format */
 
+import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+
+const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
+const SB =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmc3poc2x1dnVtd2tscW94dGF4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwOTE1Njc2MCwiZXhwIjoyMDI0NzMyNzYwfQ.4sAKoiqIDkMaRcy9RKIKTtlBSAn2Y3PXxM8dh_LBMqQ";
+const supabase = createClient(supabaseUrl, SB);
+
 document.getElementById("addBusiness").addEventListener("click", async function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
