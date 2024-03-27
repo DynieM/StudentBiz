@@ -380,7 +380,8 @@ footer {
   background-color: #ECECEC;
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  width: 500px;
+  padding: 3rem;
+  width: auto;
   text-align: left;
   margin-left: 130px;
 }
