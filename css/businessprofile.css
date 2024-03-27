@@ -372,6 +372,7 @@ footer {
 .greyBack {
 
   background-color: #474747;
+  box-shadow: #000000 20px;
   border-radius: 30px;
   width: 500px;
   text-align: left;
