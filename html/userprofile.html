@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="../css/userprofile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
     <script src="../script/inbox.js"></script>
+    <script src="../script/userprofile.js"></script>
 </head>
+
 <body>
     <header>
         <!-- Navigation Bar -->
         <nav class="navbar">
-                <div class="logo">
-                    <a href="../html/homepage.html" class="logo-link">
-                        <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo">StudentBiz
-                    </a>
-                </div>
-                <div class="search-bar-header">
-                    <input type="text" placeholder="Search...">
-                </div>
-                <div class="rightnav">
-                    <a href="../html/businessProfileSet.html"><img src="../assets/Icons/businessprofilepic.svg" alt="Profile Icon"
-                            id="profilepicicon">Profile</a>
-                    <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon"> Inbox</a>
-                </div>
-            </nav>
+            <div class="logo">
+                <a href="../html/homepage.html" class="logo-link">
+                    <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo">StudentBiz
+                </a>
+            </div>
+            <div class="search-bar-header">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="rightnav">
+                <a href="../html/businessProfileSet.html"><img src="../assets/Icons/businessprofilepic.svg"
+                        alt="Profile Icon" id="profilepicicon">Profile</a>
+                <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
+                    Inbox</a>
+            </div>
+        </nav>
         </nav>
     </header>
-<div class="userprofile_container">
-       <!-- Left Column: Profile Picture -->
-       <div class="profile-column">
-        <img src="../assets/Logo/johndoe.jpg" alt="Profile Picture" class="profile-picture">
+    <div class="userprofile_container">
+        <!-- Left Column: Profile Picture -->
+        <div class="profile-column">
+            <img src="../assets/Logo/johndoe.jpg" alt="Profile Picture" class="profile-picture">
         </div>
         <div class="info-actions-column">
             <div class="user-info">
@@ -45,13 +48,14 @@
                 <div class="contact-info">
                     <img src="../assets/Icons/email.svg" alt="Email Icon" id="emailicon">
                     <span class="emailinfo">officialpawspa@gmail.com</span>
-                <!--PHONE NUM -->
+                    <!--PHONE NUM -->
                     <img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" id="phoneicon">
                     <span class="phoneinfo">(156)-345-6789</span>
                 </div>
                 <div class="addicon"></div>
                 <div>
-                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business" id="add"></a>
+                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business"
+                            id="add"></a>
                 </div>
             </div>
             <div class="flex-grid">
@@ -59,7 +63,7 @@
                     <h2 class="my-reviews-heading">My Reviews:</h2>
                     <div class="my-reviews"></div>
                 </div>
-                    <div class="right-column">
+                <div class="right-column">
                     <div class="row">
                         <h2 class="favorites-heading">Favorites:</h2>
                     </div>
@@ -95,7 +99,7 @@
                 <div id="inboxMessages" class="inbox-messages">
                     <!-- Sample messages -->
                     <div class="message">
-                        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile" width="20" height="20" >
                         <div>
                             <p><strong>Mie Hair Salon</strong></p>
                             <p>Last message preview...</p>
@@ -103,7 +107,7 @@
                         <span>18h ago</span>
                     </div>
                     <div class="message">
-                        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+                     <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile" width="40" height="40">
                         <div>
                             <p><strong>LM Tree Services</strong></p>
                             <p>Last message preview...</p>
@@ -111,8 +115,12 @@
                         <span>15h ago</span>
                     </div>
                     <div class="message">
-                        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-                        <div>
+   <img
+            src="../assets/Icons/tutor.svg"
+            alt="Profile"
+            width="40"
+            height="40"
+          />                        <div>
                             <p><strong>Tutor Wise</strong></p>
                             <p>Last message preview...</p>
                         </div>
@@ -126,11 +134,11 @@
                 <div id="newMessageForm" class="new-message-form">
                     <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
                     <div class="controls">
-                        <input type="text" placeholder="Search for people">
                         <textarea placeholder="Type your message..."></textarea>
                         <button type="submit">Send</button>
                     </div>
                 </div>
             </div>
-    </body>
+</body>
+
 </html>
