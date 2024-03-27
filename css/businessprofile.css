@@ -371,15 +371,11 @@ footer {
 
 .greyBack {
 
-  background-color: #007bff;
-
+  background-color: #474747;
+  border-radius: 10%;
 }
 
-.paddingImg {
 
-  padding: 100px;
-
-}
 
 /* Responsive adjustments can be made here */
 @media (max-width: 800px) {
