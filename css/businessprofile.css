@@ -345,6 +345,13 @@ footer {
   margin-left: 10px;
 }
 
+.bText {
+
+  color: #000000;
+  padding-left: 140px;
+
+}
+
 .rating {
   grid-area: rating;
   display: flex;
