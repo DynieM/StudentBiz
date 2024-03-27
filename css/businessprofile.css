@@ -408,6 +408,22 @@ footer {
     margin-left: 0;
     text-align: left;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+
+  .grid-item2 {
+
+    grid-column: span 1;
+
+  }
+
+
+
+
 }
 
 /* Styling for pop up page */
