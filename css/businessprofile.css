@@ -327,12 +327,6 @@ footer {
   margin-left: 10px;
 }
 
-.grid-itemB {
-
-  background-color: blue;
-
-}
-
 .bText {
 
   color: #000000;
@@ -559,6 +553,10 @@ h2 {
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+
+.grid-item2 {
+  span: 2;
 }
 
 .specialLink {
