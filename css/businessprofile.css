@@ -372,7 +372,9 @@ footer {
 .greyBack {
 
   background-color: #474747;
-  border-radius: 10%;
+  border-radius: 30px;
+  width: 500px;
+  text-align: left;
 }
 
 
