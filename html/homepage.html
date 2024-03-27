@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,11 +88,14 @@
     <h1 class="alt-heading">What are you looking for?</h1>
     <!--Search Bar-->
     <div class="search">
-      <input class="search-bar" type="text" placeholder="Search..." />
+      <input class="search-bar" id="searchInput" type="text" placeholder="Search..." />
+       <div id="searchResults"></div>
       <a class="search-button" href="../html/submittedSearch.html">
         <button type="submit">Search</button>
       </a>
+     
     </div>
+     
     <!-- Categories Section -->
     <div class="categories">
       <h2 class="categories-heading">Categories</h2>
@@ -112,7 +115,6 @@
         </div>
         <div class="category-item">
           <!--Edit Link-->
-          <a href="category2.html">
             <img
               src="../assets/Icons/food.svg"
               alt="Food Icon"
@@ -120,7 +122,6 @@
               id="food"
             />
             <p class="centered food-text">Food</p>
-          </a>
         </div>
         <div class="category-item">
           <img
@@ -249,5 +250,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="/script/test.js" defer></script>
   </body>
 </html>
