@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +15,18 @@
     <div class="signup_container">
       <img src="../assets/Logo/studentbizlogo.svg" alt="logo" id="logo-signup">
       <h2 class="signupfor-text">Sign Up for</h2>
-      <span class="studentbiz-text">StudentBiz</span>
+      <span class="studentbiz-text">StudentBiz</span> <br> 
+        
+    
+     <button id="GoogleSignUp"> Continue with Google </button>
+
       <div class="user">
-      <input type="text" placeholder="First Name" required/>
-      <input type="text" placeholder="Last Name" required/>
-      <input type="text" placeholder="Phone Number" required/>
-      <input type="email" placeholder="Email" required/>
-      <input type="password" placeholder="Password" required/>
-      <input type="password" placeholder="Confirm Password" required/>
+      <input type="text" id="firstName" placeholder="First Name" required/>
+      <input type="text" id="lastName" placeholder="Last Name" required/>
+      <input type="text" id="phoneNumber" placeholder="Phone Number" required/>
+      <input type="email" id="email" placeholder="Email" required/>
+      <input type="password" id="password" placeholder="Password" required/>
+      <input type="password"  placeholder="Confirm Password" required/>
     </div>
       <div>
         <p class="alreadyOnStudentBizText"> Already on StudentBiz? <a href="../html/login.html" class="login-text">Log in</a> </p>
@@ -50,7 +53,7 @@
       </div>
     <br/>
    <div class="buttonSignUp">
-     <a href="../html/homepage.html"><input type="submit" id="SignUpButton" value="Sign Up" ></a>
+   <input type="submit" onclick="submitForm()" id="SignUpButton" value="Sign Up" >
    </div>
    <br/>
 </body>

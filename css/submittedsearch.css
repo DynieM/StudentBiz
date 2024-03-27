@@ -536,3 +536,7 @@ ul {
 	align-items: center;
 	/* Center align the flex items */
 }
+
+#search-bar-header {
+	width: 600px;
+}
