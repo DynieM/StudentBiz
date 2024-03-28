@@ -434,6 +434,7 @@ left:1330px;
 .my-reviews p {
     margin-right:400px;
     text-align: right;
+    top:-200px;
 }
 .my-reviews a {
 display: inline-block;
