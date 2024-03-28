@@ -435,6 +435,10 @@ left:1330px;
     margin-right:400px;
     text-align: right;
 }
+.my-reviews a {
+margin-right:400px;
+text-align:right;
+}
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
     padding: 20px;
