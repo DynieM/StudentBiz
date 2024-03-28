@@ -354,7 +354,7 @@ footer {
 }
 /*top left was pushing the page over */
 .addicon {
-    
+    position:absolute;
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -362,9 +362,10 @@ footer {
 margin-left:auto;
 margin-top:20px;
 z-index:1;
+top:340px;
 }
 .info-actions-column {
-    display: flex;
+   
 }
 
 .flex-grid {
