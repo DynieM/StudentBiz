@@ -469,6 +469,9 @@ margin-right:330px;
     text-decoration: underline;
     
 }
+#viewtext {
+margin-top:-320px;
+}
 .rating-icon {
 height:150px;
 width:150px;
@@ -476,7 +479,7 @@ width:150px;
 }
 .review-item img {
 top: -275px;
-margin-left:50px;
+margin-left:40px;
 position:relative;
 }
 .favorites-heading {
