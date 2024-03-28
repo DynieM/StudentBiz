@@ -452,6 +452,10 @@ display: inline-block;
 display: flex;
 align-items: center;
 }
+.review-item p {
+flex:1;
+margin-right:20px;
+}
 .view-text {
     color: blue;
     padding-left: 20px;
