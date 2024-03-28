@@ -103,6 +103,10 @@ header {
 	padding: 10px;
 }
 
+#logoutButton {
+	display: none;
+}
+
 #signUpButton {
 	background-color: blue;
 	color: white;
