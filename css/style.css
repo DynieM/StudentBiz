@@ -551,7 +551,6 @@ footer {
 
 .logo img {
 	width: 100px;
-	/* Adjust as necessary */
 	height: auto;
 }
 
@@ -742,7 +741,7 @@ h2 {
 	right: 50px;
 	width: 350px;
 	background-color: #fff;
-	border-radius: 6px;
+	border-radius: 10px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	z-index: 1000;
@@ -779,6 +778,7 @@ h2 {
 
 .close-btn {
 	float: right;
+	padding-bottom: 10px;
 	justify-content: space-between;
 }
 

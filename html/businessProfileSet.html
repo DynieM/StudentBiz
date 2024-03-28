@@ -5,47 +5,33 @@
   <meta charset="UTF-8">
   <title>Business Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/businessprofile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
   <script type="module" src="../script/inbox.js"></script>
-</head>
+</head>s
 
 <body>
   <header>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="../html/homepage.html" class="logo-link">
-        <img
-          src="../assets/Logo/studentbizlogo.svg"
-          alt="Home"
-          id="mainLogo"
-        />StudentBiz
-      </a>
-    </div>
-    <!-- Right side of the navigation bar on the Home Page-->
-    <div class="rightnav">
-      <a href="../html/userprofile.html"
-        ><img
-          src="../assets/Icons/profilepic.svg"
-          alt="Profile Icon"
-          id="profilepicicon"
-        />Profile</a
-      >
-      <a href="#" id="openInbox"
-        ><img
-          src="../assets/Icons/inbox.svg"
-          alt="Inbox Icon"
-          id="inboxicon"
-        />
-        Inbox</a
-      >
-    </div>
-  </nav>
-</header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../html/homepage.html" class="logo-link">
+          <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo" />StudentBiz
+        </a>
+      </div>
+      <!-- Right side of the navigation bar on the Home Page-->
+      <div class="rightnav">
+        <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
+            id="profilepicicon" />Profile</a>
+        <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon" />
+          Inbox</a>
+      </div>
+    </nav>
+  </header>
 
   <!--New Business Profile Container -->
   <main>
@@ -55,8 +41,7 @@
         <div id="bLogo" class="grid-item">
           <img src="../assets/pictures/Blog-header-1-13.png" alt="businessLogo" class="bProfileImg">
           <h3>Business Name</h3>
-          <p>⭐⭐⭐⭐⭐ 0.0 <a href="" class="specialLink">(0 Reviews)</p></a>
-
+          <p class="bText">⭐⭐⭐⭐⭐ 0.0 <a href="" class="specialLink">(0 Reviews)</p></a>
         </div>
         <div class="grid-item" id="bPictures">
           <a href="">Edit</a>
@@ -71,68 +56,74 @@
             <p class="tag" class="spacer">tag</p>
           </div>
         </div>
+        <div class="greyBack">
+          <div id="bInfoAll" class="grid-item">
+            <div class="inline-container"><img src="../assets/Icons/location.svg" alt="Map Marker Icon"
+                class="smallIcon" class="paddingImg">
+              <p>Your address</p>
+            </div>
+            <div class="inline-container"><img src="../assets/Icons/email.svg" alt="Letter Icon" class="smallIcon"
+                class="paddingImg">
+              <p>Your email</p>
+            </div>
+            <div class="inline-container"><img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" class="smallIcon"
+                class="paddingImg">
+              <p>Your number</p>
+            </div>
+            <div class="bInfoText">
 
-        <div id="bInfoAll" class="grid-item">
-          <div class="inline-container"><img src="../assets/Icons/location.svg" alt="Map Marker Icon" class="smallIcon">
-            <p>Your address</p>
-          </div>
-          <div class="inline-container"><img src="../assets/Icons/email.svg" alt="Letter Icon" class="smallIcon">
-            <p>Your email</p>
-          </div>
-          <div class="inline-container"><img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" class="smallIcon">
-            <p>Your number</p>
-          </div>
-          <div class="bInfoText">
-
+            </div>
           </div>
         </div>
+
+
+        <div id="bDescription" class="grid-item2">
+          <div class="greyBack">
+            <p class="textDescription" class="bText">Welcome to <strong>GreenSculpt Lawns</strong>, where precision
+              meets
+              perfection! At
+              GreenSculpt, our dedicated team of lawn artisans is passionate about transforming your outdoor oasis into
+              a
+              masterpiece. Armed with state-of-the-art equipment and a commitment to detail, we go beyond mere mowing to
+              craft
+              a lush, vibrant canvas for your property. From meticulous edging to a carpet-like finish, GreenSculpt
+              Lawns
+              takes pride in providing customized solutions tailored to the unique needs of your landscape. Elevate your
+              curb
+              appeal with GreenSculpt: where every blade counts, and your satisfaction is our green-thumb guarantee!</p>
+          </div>
+        </div>
+
+
+        <!--Footer -->
+        <div class="grid-item2">
+          <article>
+            <div id="bForm">
+              <form action="/.php">
+                <input type="text" id="name" name="name" placeholder="Name"><br><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br><br>
+                <input type="text" id="text" name="text" placeholder="Description"><br><br>
+                <button type="submit" class="button">Book Service</button>
+              </form>
+            </div>
+        </div>
+
+
+        </article>
+        <div class="grid-item2">
+          <article class="ratings">
+            <div class="inline-container">
+              <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon" class="ratingArrow">
+              <img src="../assets/pictures/1-intro-photo-final.png" alt="businessLogo" class="bProfileImg">
+              <h2>Robert T.</h2>
+              <p>I Liked the Work They did at my house. Great Customer Support!</p>
+              <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon" class="ratingArrow">
+            </div>
+          </article>
+        </div>
       </div>
-
-
-
-    </div>
-
-    <div id="bDescription" class="grid-item">
-
-      <p class="textDescription">Welcome to <strong>GreenSculpt Lawns</strong>, where precision meets perfection! At
-        GreenSculpt, our dedicated team of lawn artisans is passionate about transforming your outdoor oasis into a
-        masterpiece. Armed with state-of-the-art equipment and a commitment to detail, we go beyond mere mowing to craft
-        a lush, vibrant canvas for your property. From meticulous edging to a carpet-like finish, GreenSculpt Lawns
-        takes pride in providing customized solutions tailored to the unique needs of your landscape. Elevate your curb
-        appeal with GreenSculpt: where every blade counts, and your satisfaction is our green-thumb guarantee!</p>
-    </div>
-
   </main>
 
-  <!--Footer -->
-
-  <article>
-    <div id="bForm">
-      <form action="/.php">
-        <input type="text" id="name" name="name" placeholder="Name"><br><br>
-        <input type="text" id="email" name="email" placeholder="Email"><br><br>
-        <input type="text" id="text" name="text" placeholder="Description"><br><br>
-        <button type="submit" class="button">Book Service</button>
-      </form>
-    </div>
-
-
-  </article>
-
-  <article>
-    <div class="inline-container">
-      <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon">
-      <img src="../assets/pictures/1-intro-photo-final.png" alt="businessLogo" class="bProfileImg">
-    </div>
-    <p>Robert T.</p>
-
-
-
-
-    <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon">
-
-    </div>
-  </article>
 
   <!--Footer -->
   <footer>
@@ -144,55 +135,55 @@
       <li><a href="about.html">Contact Us</a></li>
     </ul>
   </footer>
-  
-    <!-- Inbox Container -->
+
+  <!-- Inbox Container -->
   <div id="inbox-container">
-      <div class="inbox-header">
-          <div>
-              <button id="closeInbox">X</button>
-          </div>
-          <input type="text" placeholder="Search Service">
-          <button type="button" onclick="showNewMessageForm()">New Message</button>
+    <div class="inbox-header">
+      <div>
+        <button id="closeInbox">X</button>
       </div>
-      <div id="inboxMessages" class="inbox-messages">
-          <!-- Sample messages -->
-          <div class="message">
-              <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
-              <div>
-                  <p><strong>Mie Hair Salon</strong></p>
-                  <p>Last message preview...</p>
-              </div>
-              <span>18h ago</span>
-          </div>
-          <div class="message">
-              <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
-              <div>
-                  <p><strong>LM Tree Services</strong></p>
-                  <p>Last message preview...</p>
-              </div>
-              <span>15h ago</span>
-          </div>
-          <div class="message">
-              <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-              <div>
-                  <p><strong>Tutor Wise</strong></p>
-                  <p>Last message preview...</p>
-              </div>
-              <span>10m ago</span>
-          </div>
+      <input type="text" placeholder="Search Service">
+      <button type="button" onclick="showNewMessageForm()">New Message</button>
+    </div>
+    <div id="inboxMessages" class="inbox-messages">
+      <!-- Sample messages -->
+      <div class="message">
+        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+        <div>
+          <p><strong>Mie Hair Salon</strong></p>
+          <p>Last message preview...</p>
+        </div>
+        <span>18h ago</span>
       </div>
-      <div id="sendMsg" class="send-message">
-          <input type="text" placeholder="Send Message Here">
+      <div class="message">
+        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+        <div>
+          <p><strong>LM Tree Services</strong></p>
+          <p>Last message preview...</p>
+        </div>
+        <span>15h ago</span>
       </div>
-      <!-- New Message Form -->
-      <div id="newMessageForm" class="new-message-form">
-          <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
-          <div class="controls">
-              <input type="text" placeholder="Search for people">
-              <textarea placeholder="Type your message..."></textarea>
-              <button type="submit">Send</button>
-          </div>
+      <div class="message">
+        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
+        <div>
+          <p><strong>Tutor Wise</strong></p>
+          <p>Last message preview...</p>
+        </div>
+        <span>10m ago</span>
       </div>
+    </div>
+    <div id="sendMsg" class="send-message">
+      <input type="text" placeholder="Send Message Here">
+    </div>
+    <!-- New Message Form -->
+    <div id="newMessageForm" class="new-message-form">
+      <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+      <div class="controls">
+        <input type="text" placeholder="Search for people">
+        <textarea placeholder="Type your message..."></textarea>
+        <button type="submit">Send</button>
+      </div>
+    </div>
   </div>
 </body>
 

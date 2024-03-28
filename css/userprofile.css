@@ -334,9 +334,7 @@ footer {
     font-weight: 500;
     font-size: 32px;
     line-height: 150%;
-    /* or 48px */
     letter-spacing: -0.022em;
-    text-decoration-line: underline;
     color: #FFFFFF;
 }
 
@@ -394,18 +392,16 @@ footer {
 }
 
 .my-reviews-heading {
+    text-align: left;
     width: 516px;
     height: 61px;
     font-family: 'Oswald';
-    font-style: normal;
     font-weight: 400;
     font-size: 55px;
-    line-height: 150%;
-    /* or 82px */
+    line-height: 50px;
     letter-spacing: 0.03em;
     color: #000000;
     padding: 50px;
-    margin-left: 100px;
 }
 
 .my-reviews {
@@ -415,12 +411,22 @@ footer {
     border: 1px solid #D2D2D2;
     border-radius: 30px;
 }
+/* Business Logos - in the 'My Reviews' section */
+.review-logo {
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+.view-text {
+    color: blue;
+    padding-left: 20px;
+    text-decoration: underline;
+}
 
 .favorites-heading {
     width: 517px;
     height: 61px;
     font-family: 'Oswald';
-    font-style: normal;
     font-weight: 400;
     font-size: 55px;
     line-height: 150%;
@@ -432,6 +438,7 @@ footer {
 .favorites {
     width: 491px;
     height: 279px;
+    color: black;
     background: #D9D9D9;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
@@ -458,4 +465,10 @@ footer {
     border: 1px solid #D2D2D2;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.inbox-messages .message img {
+    width: 50px; /* Uniform width for all images */
+    height: 50px; /* Uniform height for all images */
+    object-fit: cover; 
+    border-radius: 60%; 
 }
