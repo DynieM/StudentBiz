@@ -352,13 +352,12 @@ footer {
     letter-spacing: -0.019em;
     color: #9A9A9A;
 }
-
+/*top left was pushing the page over */
 .addicon {
     position: absolute;
     width: 120px;
     height: 120px;
-    left: 1565px;
-        top: 500px;
+    
     border-radius: 100px;
     background: #D9D9D9;
 }
