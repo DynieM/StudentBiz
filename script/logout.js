@@ -1,3 +1,4 @@
-function show() {
-    document.getElementById('logout').style.display = 'block';
+window.onload = function() {
+    let logout = document.getElementById('logoutButton');
+
 }
