@@ -415,7 +415,13 @@ footer {
 }
 
 .categories-bg {
-
+width: 693px;
+height: 207px;
+background: #25222F;
+	border: 1.5px solid #2C2C2C;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 0px 85px 0px;
+	position:absolute;
 }
 
 /* Grid styles */
