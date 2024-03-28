@@ -454,7 +454,7 @@ align-items: center;
 flex-direction: column;
 }
 .review-item p {
-margin-right:15px;
+margin-right:60px;
 padding:15px;
 
 }
@@ -462,6 +462,7 @@ padding:15px;
 margin-right:330px;
 
 }
+/*view text stylings */
 .view-text {
     color: blue;
     margin-top:-200px;
