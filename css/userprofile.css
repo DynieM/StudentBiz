@@ -429,6 +429,7 @@ left:1330px;
     border-radius: 30px;
     margin-top:-80px;
     
+    
 }
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
@@ -440,7 +441,7 @@ left:1330px;
     color: blue;
     padding-left: 20px;
     text-decoration: underline;
-    text-align:left;
+    
 }
 
 .favorites-heading {
