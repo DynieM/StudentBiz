@@ -103,10 +103,6 @@ header {
 	padding: 10px;
 }
 
-#logoutButton {
-	display: block;
-}
-
 #signUpButton {
 	background-color: blue;
 	color: white;
@@ -119,13 +115,17 @@ header {
 }
 
 #userLoggedIn {
-	display: none;
+	display: block;
 }
 
 #profilepicicon {
 	width: 50px;
 	height: 50px;
 	font-family: "Montserrat", sans-serif;
+}
+
+#logoutButton {
+	display: block;
 }
 
 #inboxicon {
