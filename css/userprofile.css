@@ -472,6 +472,10 @@ margin-right:330px;
 .rating-icon {
 height:150px;
 width:150px;
+
+}
+.review-item img {
+top:200px;
 }
 .favorites-heading {
     width: 517px;
