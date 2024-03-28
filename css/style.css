@@ -89,7 +89,7 @@ header {
 }
 
 #userLoggedOut {
-	display: block;
+	display: none;
 }
 
 #loginButton {
@@ -104,7 +104,7 @@ header {
 }
 
 #logoutButton {
-	display: none;
+	display: block;
 }
 
 #signUpButton {
