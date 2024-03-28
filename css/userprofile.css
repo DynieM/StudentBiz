@@ -464,7 +464,7 @@ margin-right:330px;
 }
 .view-text {
     color: blue;
-    margin-top:-150px;
+    margin-top:-200px;
     padding-left: 20px;
     text-decoration: underline;
     
@@ -475,7 +475,8 @@ width:150px;
 
 }
 .review-item img {
-top: -159px;
+top: -275px;
+margin-left:50px;
 position:relative;
 }
 .favorites-heading {
