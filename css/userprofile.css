@@ -456,6 +456,7 @@ flex-direction: column;
 .review-item p {
 margin-right:20px;
 top:10px;
+    margin-bottom: 10px;
 
 }
 .view-text {
