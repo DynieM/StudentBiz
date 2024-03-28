@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
@@ -8,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
         rel="stylesheet">
-    <script src="../script/inbox.js"></script>
-    <script src="../script/userprofile.js"></script>
 </head>
 
 <body>
@@ -31,7 +30,6 @@
                     Inbox</a>
             </div>
         </nav>
-        </nav>
     </header>
     <div class="userprofile_container">
         <!-- Left Column: Profile Picture -->
@@ -52,24 +50,41 @@
                     <img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" id="phoneicon">
                     <span class="phoneinfo">(156)-345-6789</span>
                 </div>
-                <div class="addicon"></div>
-                <div>
-                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business"
-                            id="add"></a>
+                <div class="addicon">
+                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business" id="add"></a>
                 </div>
             </div>
             <div class="flex-grid">
                 <div class="left-column">
                     <h2 class="my-reviews-heading">My Reviews:</h2>
-                    <div class="my-reviews"></div>
+                    <div class="my-reviews">
+                        <!-- Review 1 -->
+                        <div>
+                        <img src="../assets/Icons/LMTreeLogo.svg" class="review-logo" alt="Tree Services Logo">
+                        <p>LM Tree Services</p>
+                            <a href="../html/businessProfileSet.html" class="view-text">View</a>
+                        </div>
+                        <!-- Review 2 -->
+                        <div>
+                            <img src="../assets/Icons/TutorLogo.svg" class="review-logo" alt="Tree Services Logo">
+                        <p>Tutor Wise</p>
+                            <a href="" class="view-text">View</a>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="right-column">
+                    <!-- User Profile Favorites-->
                     <div class="row">
                         <h2 class="favorites-heading">Favorites:</h2>
                     </div>
                     <div class="row">
-                        <div class="favorites"></div>
+                        <div class="favorites">
+                            <p>LM Tree Services</p>
+                
+                        </div>
                     </div>
+                    <!-- User Businesses -->
                     <div class="row">
                         <h2 class="my-businesses-heading">My Businesses:</h2>
                     </div>
@@ -78,6 +93,7 @@
                     </div>
                 </div>
             </div>
+            <!-- About Page (footer)-->
             <footer>
                 <h3><a href="about.html" class="about-footer">About</a></h3>
                 <ul class="footer">
@@ -99,7 +115,7 @@
                 <div id="inboxMessages" class="inbox-messages">
                     <!-- Sample messages -->
                     <div class="message">
-                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile" width="20" height="20" >
+                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
                         <div>
                             <p><strong>Mie Hair Salon</strong></p>
                             <p>Last message preview...</p>
@@ -107,7 +123,7 @@
                         <span>18h ago</span>
                     </div>
                     <div class="message">
-                     <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile" width="40" height="40">
+                        <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
                         <div>
                             <p><strong>LM Tree Services</strong></p>
                             <p>Last message preview...</p>
@@ -115,12 +131,8 @@
                         <span>15h ago</span>
                     </div>
                     <div class="message">
-   <img
-            src="../assets/Icons/tutor.svg"
-            alt="Profile"
-            width="40"
-            height="40"
-          />                        <div>
+                        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+                        <div>
                             <p><strong>Tutor Wise</strong></p>
                             <p>Last message preview...</p>
                         </div>
@@ -139,6 +151,8 @@
                     </div>
                 </div>
             </div>
-</body>
 
+</body>
+ <script src="../script/inbox.js"></script>
+<script src="../script/userprofile.js"></script>
 </html>
