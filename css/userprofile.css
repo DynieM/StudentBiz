@@ -436,8 +436,9 @@ left:1330px;
     text-align: right;
 }
 .my-reviews a {
-margin-right:20px;
-text-align:right;
+display: inline-block;
+    margin-left: 300px;
+    text-align: right;/
 }
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
