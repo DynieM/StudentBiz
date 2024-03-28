@@ -469,7 +469,10 @@ margin-right:330px;
     text-decoration: underline;
     
 }
-#viewtext {
+#viewtext1 {
+  margin-top:-300px;  
+}
+#viewtext2 {
 margin-top:-320px;
 }
 .rating-icon {
