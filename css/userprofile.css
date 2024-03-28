@@ -363,6 +363,9 @@ margin-left:auto;
 margin-top:20px;
 z-index:1;
 }
+.info-actions-column {
+    display: flex;
+}
 
 .flex-grid {
     display: flex;
