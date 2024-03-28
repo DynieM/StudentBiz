@@ -290,6 +290,7 @@ p {
 .categories-heading {
 	font-size: 86px;
 	text-align: left;
+	z-index:2;
 }
 
 #beauty {
