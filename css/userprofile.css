@@ -449,7 +449,8 @@ display: inline-block;
 
 }
 .review-item {
-
+display: flex;
+align-items: center;
 }
 .view-text {
     color: blue;
