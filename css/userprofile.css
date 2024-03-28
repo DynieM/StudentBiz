@@ -365,7 +365,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 45px;
 }
 
 .left-column {
@@ -373,6 +373,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding:15px;
 }
 
 .right-column {
