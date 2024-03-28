@@ -455,6 +455,7 @@ flex-direction: column;
 }
 .review-item p {
 margin-right:20px;
+padding:15px;
 
 }
 .review-item a{
