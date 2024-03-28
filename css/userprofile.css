@@ -455,9 +455,12 @@ flex-direction: column;
 }
 .review-item p {
 margin-right:20px;
-top:10px;
-    margin-bottom: 10px;
 
+
+
+}
+.review-item a{
+margin-right:330px;
 }
 .view-text {
     color: blue;
