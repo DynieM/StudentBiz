@@ -470,22 +470,26 @@ margin-right:330px;
     text-decoration: underline;
     
 }
+/*individual view text stylings mostly dealing with the positioning of the link in the container */
 #viewtext1 {
   margin-top:-300px;  
 }
 #viewtext2 {
 margin-top:-320px;
 }
+/*rating icon stylings */
 .rating-icon {
 height:200px;
 width:200px;
 
 }
+/*review image positioning */
 .review-item img {
 top: -275px;
 margin-left:30px;
 position:relative;
 }
+
 .favorites-heading {
     width: 517px;
     height: 61px;
