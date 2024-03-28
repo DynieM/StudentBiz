@@ -431,11 +431,15 @@ left:1330px;
     
     
 }
+.my-reviews p {
+    text-align: right;
+}
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
     padding: 20px;
     height: 70px;
     width: 70px;
+
 }
 .view-text {
     color: blue;
