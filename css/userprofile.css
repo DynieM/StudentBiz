@@ -469,7 +469,10 @@ margin-right:330px;
     text-decoration: underline;
     
 }
-
+.rating-icon {
+height:150px;
+width:100px;
+}
 .favorites-heading {
     width: 517px;
     height: 61px;
