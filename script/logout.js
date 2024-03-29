@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
-        logoutButtonLink.href = '../html/login.html';
         clearTimeout(timeout);
     });
 
