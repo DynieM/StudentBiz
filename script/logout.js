@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoutButtonLink = document.getElementById('logoutLink');
     let timeout;
 
+    logoutButton.style.display = 'none';
+    logoutButtonLink.href = '#';
+
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
         logoutButtonLink.href = '../html/login.html';
