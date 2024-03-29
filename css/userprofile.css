@@ -498,6 +498,7 @@ position:relative;
 .favorite-icon {
 height:30px;
 width:30px;
+margin-left:30px;
 }
 .favorites-heading {
     width: 517px;
