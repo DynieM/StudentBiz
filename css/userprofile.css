@@ -540,7 +540,10 @@ top:-60px;
     letter-spacing: 0.03em;
     color: #1E1E1E;
 }
-
+.business-picture {
+height:50px;
+width:50px;
+}
 .my-businesses {
     width: 491px;
     height: 170px;
