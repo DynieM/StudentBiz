@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     profilePicIcon.addEventListener('mouseleave', () => {
-        logoutButtonLink.href = '#';
          timeout = setTimeout(() => {
                 logoutButton.style.display = 'none';
             }, 3000);
