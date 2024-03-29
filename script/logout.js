@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
          timeout = setTimeout(() => {
                 logoutButton.style.display = 'none';
                 logoutButtonLink.href = '#';
-            }, 3000);
+            }, 2000);
     });
     }
 
