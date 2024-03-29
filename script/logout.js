@@ -5,20 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoutButtonLink = document.getElementById('logoutLink');
     let timeout;
 
-    logoutButton.style.display = 'none';
-    logoutButton.style.visibility = 'hidden';
+    logoutButton.style.position = 'absolute';
+    logoutButton.style.left = '-9999px';
     logoutButtonLink.href = '#';
 
     profilePicIcon.addEventListener('mouseenter', () => {
-        logoutButton.style.display = 'block';
-        logoutButton.style.visibility = 'visible';
+        logoutButton.style.position = 'static'; // Reset position
+        logoutButton.style.left = 'auto'; // Reset left
         logoutButtonLink.href = '../html/login.html';
         clearTimeout(timeout);
     });
 
     profilePicIcon.addEventListener('mouseleave', () => {
          timeout = setTimeout(() => {
-                logoutButton.style.display = 'none';
+                logoutButton.style.position = 'absolute';
+                logoutButton.style.left = '-9999px';
                 logoutButton.style.visibility = 'hidden';
                 logoutButtonLink.href = '#';
             }, 3000);
