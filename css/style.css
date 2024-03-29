@@ -34,7 +34,7 @@ header {
 	float: left;
 	color: rgb(21, 20, 20);
 	text-align: center;
-	margin: 14px 16px;
+	padding: 14px 16px;
 }
 
 .navbar .icon {
@@ -80,6 +80,12 @@ header {
 	color: #000000;
 	text-decoration: none;
 	margin-left: 5px;
+}
+
+.navbar a:hover {
+	background-color: #d2d0d0;
+	color: black;
+	border-radius: 20px;
 }
 
 #userLoggedOut {
