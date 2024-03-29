@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
-        logoutButton.disabled = false;
+        logoutButton.style.pointerEvents = auto;
         clearTimeout(timeout);
     });
 
     profilePicIcon.addEventListener('mouseleave', () => {
          timeout = setTimeout(() => {
                 logoutButton.style.display = 'none';
-                logoutButton.disabled = true;
+                logoutButton.style.pointerEvents = none;
             }, 3000);
     });
     }
