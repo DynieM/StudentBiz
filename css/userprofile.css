@@ -74,14 +74,50 @@ header {
     margin-left: 5px;
 }
 
+#userLoggedOut {
+    display: block;
+}
+
+#loginButton {
+    background-color: white;
+    color: black;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+#signUpButton {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+#userLoggedIn {
+    display: none;
+}
+
 #profilepicicon {
     width: 50px;
     height: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#logoutButton {
+    display: none;
 }
 
 #inboxicon {
     width: 50px;
     height: 50px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .search-bar {
