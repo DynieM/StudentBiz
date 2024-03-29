@@ -495,6 +495,10 @@ margin-left:30px;
 position:relative;
 }
 
+.favorite-icon {
+height:30px;
+width:30px;
+}
 .favorites-heading {
     width: 517px;
     height: 61px;
