@@ -86,6 +86,7 @@ header {
 	background-color: #d2d0d0;
 	color: black;
 	border-radius: 20px;
+	padding: 14px 16px;
 }
 
 #userLoggedOut {
