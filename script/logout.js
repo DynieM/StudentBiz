@@ -4,16 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoutButton = document.getElementById('logoutButton');
     let timeout;
 
+    if (logoutButton.style.display === 'block') {
+        
+    }
+
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
-        logoutButton.style.pointerEvents = auto;
         clearTimeout(timeout);
     });
 
     profilePicIcon.addEventListener('mouseleave', () => {
          timeout = setTimeout(() => {
                 logoutButton.style.display = 'none';
-                logoutButton.style.pointerEvents = none;
             }, 3000);
     });
     }
