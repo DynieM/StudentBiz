@@ -513,7 +513,7 @@ width:30px;
 
 .favorites {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 491px;
     height: 279px;
     color: black;
