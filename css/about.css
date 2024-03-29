@@ -207,6 +207,10 @@ p {
     text-align: left;
 }
 
+span {
+    text-decoration: underline;
+}
+
 .alt-heading {
     color: black;
     font-family: "Oswald", Helvetica;
