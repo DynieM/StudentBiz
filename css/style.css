@@ -125,12 +125,7 @@ header {
 }
 
 #logoutButton {
-	display: block;
-}
-
-.profile-logout {
-	display: flex;
-	align-items: center;
+	display: none;
 }
 
 #inboxicon {
