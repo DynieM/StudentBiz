@@ -4,10 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoutButton = document.getElementById('logoutButton');
     let timeout;
 
-    if (logoutButton.style.display === 'block') {
-        
-    }
-
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
         clearTimeout(timeout);
