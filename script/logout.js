@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profilePicIcon.addEventListener('mouseenter', () => {
         logoutButton.style.display = 'block';
+        logoutButton.style.visibility = 'visible';
         logoutButtonLink.href = '../html/login.html';
         clearTimeout(timeout);
     });
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     profilePicIcon.addEventListener('mouseleave', () => {
          timeout = setTimeout(() => {
                 logoutButton.style.display = 'none';
+                logoutButton.style.visibility = 'hidden';
                 logoutButtonLink.href = '#';
             }, 3000);
     });
