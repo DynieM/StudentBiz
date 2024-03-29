@@ -545,6 +545,7 @@ height:50px;
 width:50px;
 }
 .my-businesses {
+    display: flex;
     width: 491px;
     height: 170px;
     background: #D9D9D9;
