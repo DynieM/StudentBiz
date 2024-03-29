@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (logoutButton.style.display === 'block') {
         logoutButtonLink.href = '../html/login.html';
     } else {
+        logoutButton.style.cursor = 'default';
         logoutButtonLink.href = '#';
     }
 
