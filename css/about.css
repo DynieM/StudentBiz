@@ -74,14 +74,8 @@ header {
     margin-left: 5px;
 }
 
-.navbar a:hover {
-    background-color: #d2d0d0;
-    color: black;
-    border-radius: 20px;
-}
-
 #userLoggedOut {
-    display: block;
+    display: none;
 }
 
 #loginButton {
@@ -107,13 +101,17 @@ header {
 }
 
 #userLoggedIn {
-    display: none;
+    display: block;
 }
 
 #profilepicicon {
     width: 50px;
     height: 50px;
     font-family: "Montserrat", sans-serif;
+}
+
+#logoutButton {
+    display: none;
 }
 
 #inboxicon {
