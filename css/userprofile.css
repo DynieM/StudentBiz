@@ -25,7 +25,7 @@ header {
     float: left;
     color: rgb(21, 20, 20);
     text-align: center;
-    padding: 14px 16px;
+    margin: 14px 16px;
 }
 
 .navbar .icon {
@@ -108,6 +108,15 @@ input[type="text"] {
     border-radius: 20px;
 }
 
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .about-footer {
     margin-left: 40px;
 }
@@ -151,15 +160,6 @@ footer {
     background-color: #212427;
     min-height: 20vh;
     flex: 1;
-}
-
-button {
-    background-color: #000000;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
 }
 
 /* Styles for Inbox */
