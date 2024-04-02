@@ -459,7 +459,10 @@ left:1330px;
     color: #000000;
     padding: 50px;
 }
-
+.review-title {
+position:relative;
+top:20px;
+}
 .my-reviews {
     width: 817px;
     height: 510px;
