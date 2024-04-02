@@ -553,7 +553,9 @@ padding-top:20px;
     letter-spacing: 0.03em;
     color: #000000;
 }
-
+#favheading {
+margin:10px;
+}
 .favorites {
     display: flex;
     flex-direction: column;
