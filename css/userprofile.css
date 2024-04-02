@@ -556,6 +556,7 @@ padding-top:20px;
 #favheading {
 top:30px;
 position:relative;
+margin:5px;
 }
 .favorites {
     display: flex;
