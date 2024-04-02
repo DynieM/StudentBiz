@@ -284,6 +284,8 @@ p {
 .categories-heading {
 	font-size: 86px;
 	text-align: left;
+	z-index:2;
+	position: relative;
 }
 
 #beauty {
@@ -406,6 +408,19 @@ footer {
 	border-bottom-right-radius: 0px;
 	/* Straight bottom-right corner */
 	text-align: left;
+}
+
+.categories-bg {
+width: 693px;
+height: 170px;
+background: #25222F;
+	border: 1.5px solid #2C2C2C;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 0px 85px 0px;
+	position:absolute;
+	z-index:2;
+	left: 0px;
+		top: 1036px;
 }
 
 /* Grid styles */

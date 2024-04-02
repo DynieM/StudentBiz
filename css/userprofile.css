@@ -168,14 +168,24 @@ h2 {
 p {
     font-family: "Montserrat", sans-serif;
     position: relative;
+    font-weight:bold;
     left: 30px;
     bottom: 20px;
-    color: #ffffff;
+    color: #1E1E1E;
     font-size: 20px;
     display: block;
     text-align: left;
 }
+/*styles for the create a business text above the buttton */
+.cabbtn {
+color:#f1f1f1;
+z-index:1;
+position:absolute;
+top:425px;
+left:1295px;
+font-weight:normal;
 
+}
 a {
     text-decoration: none;
     color: white;
@@ -295,6 +305,7 @@ footer {
     background: #B0B0B0;
     box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.38);
     border-radius: 0px 0px 0px 70px;
+    z-index: 2;
 }
 
 .profile-picture {
@@ -376,13 +387,14 @@ footer {
     letter-spacing: -0.022em;
     color: #FFFFFF;
 }
-
+/*removed left and top */
 #add {
     position: absolute;
+    top:25px;
+    left:30px;
     width: 58px;
     height: 64px;
-    left: 1595px;
-    top: 530px;
+   
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -391,20 +403,18 @@ footer {
     letter-spacing: -0.019em;
     color: #9A9A9A;
 }
-
-.icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Diameter of the circular background */
-    height: 50px; /* Diameter of the circular background */
-    background-color: #f0f0f0; /* Background color of the circle */
-    border-radius: 50%; /* This makes the div circular */
-}
-
-#add-icon {
-    width: 30px; /* Adjust the size of the icon as needed */
-    height: auto; /* This maintains the aspect ratio of the icon */
+/*top left was pushing the page over */
+.addicon {
+    position:absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background: #D9D9D9;
+margin-left:auto;
+margin-top:20px;
+z-index:1;
+top:470px;
+left:1330px;
 }
 
 
@@ -412,8 +422,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 150px;
-    gap: 200px;
+    gap: 45px;
 }
 
 .left-column {
@@ -421,6 +430,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding:10px;
+
 }
 
 .right-column {
@@ -455,19 +466,80 @@ footer {
     background: #D9D9D9;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
+    margin-top:-80px;
+    
+    
+}
+.my-reviews p {
+    margin-right:400px;
+    text-align: right;
+    top:-200px;
+    
+}
+.my-reviews a {
+display: inline-block;
+    margin-left: 300px;
+    text-align: right;/
 }
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
-    padding: 20px;
-    height: 70px;
-    width: 70px;
+    padding: 15px;
+    height: 150px;
+    width: 150px;
+
 }
+.review-item {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.review-item p {
+margin-right:60px;
+padding:15px;
+font-size:25px;
+
+}
+.review-item a{
+margin-right:330px;
+
+}
+/*view text stylings */
 .view-text {
     color: blue;
+    margin-top:-200px;
     padding-left: 20px;
     text-decoration: underline;
+   
+    
+}
+/*individual view text stylings mostly dealing with the positioning of the link in the container */
+#viewtext1 {
+  margin-top:-390px;  
+margin-left:150px;
+}
+#viewtext2 {
+margin-top:-390px;
+margin-left:150px;
+}
+/*rating icon stylings */
+.rating-icon {
+height:200px;
+width:200px;
+
+}
+/*review image positioning */
+.review-item img {
+top: -320px;
+margin-left:30px;
+position:relative;
 }
 
+.heart-icon {
+height:30px;
+width:30px;
+margin-left:30px;
+margin:15px;
+}
 .favorites-heading {
     width: 517px;
     height: 61px;
@@ -481,6 +553,8 @@ footer {
 }
 
 .favorites {
+    display: flex;
+    flex-direction: column;
     width: 491px;
     height: 279px;
     color: black;
@@ -489,7 +563,11 @@ footer {
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
+.favorites p{
+margin-left:30px;
+top:-60px;
+font-weight: normal;
+}
 .my-businesses-heading {
     width: 516px;
     height: 61px;
@@ -502,14 +580,23 @@ footer {
     letter-spacing: 0.03em;
     color: #1E1E1E;
 }
-
+.business-picture {
+height:80px;
+width:80px;
+}
 .my-businesses {
+    padding: 10px;
+    display: flex;
     width: 491px;
     height: 170px;
     background: #D9D9D9;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.my-businesses p {
+padding:15px;
+font-weight: normal;
 }
 .inbox-messages .message img {
     width: 50px; /* Uniform width for all images */

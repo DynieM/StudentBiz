@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User Profile</title>
     <link rel="stylesheet" href="../css/userprofile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,110 +68,120 @@
                     <img src="../assets/Icons/phonenumber.svg" alt="Phone Icon" id="phoneicon">
                     <span class="phoneinfo">(156)-345-6789</span>
                 </div>
-                <div class="icon-container">
-                    <img src="../assets/Icons/add.svg" alt="Add Icon" id="add-icon">
+                <div class="btn-label">
+                    <p class="cabbtn">create a business</p>
+                </div>
+                <div class="addicon">
+                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business" id="add"></a>
                 </div>
             </div>
-        </div>
-        <div class="flex-grid">
-            <div class="left-column">
-                <h2 class="my-reviews-heading">My Reviews:</h2>
-                <div class="my-reviews">
-                    <!-- Review 1 -->
-                    <div>
+            <div class="flex-grid">
+                <div class="left-column">
+                    <h2 class="my-reviews-heading">My Reviews:</h2>
+                    <div class="my-reviews">
+                        <!-- Review 1 -->
                         <img src="../assets/Icons/LMTreeLogo.svg" class="review-logo" alt="Tree Services Logo">
-                        <p>LM Tree Services</p>
-                        <a href="../html/businessProfileSet.html" class="view-text">View</a>
-                    </div>
-                    <!-- Review 2 -->
-                    <div>
+                        <div class="review-item">
+                                            <p>LM Tree Services</p>
+                                            <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
+                        <a href="../html/businessProfileSet.html" class="view-text" id="viewtext1">View</a>
+                        </div>
+                        <!-- Review 2 -->
                         <img src="../assets/Icons/TutorLogo.svg" class="review-logo" alt="Tree Services Logo">
+                        <div class="review-item">
+                            
                         <p>Tutor Wise</p>
-                        <a href="" class="view-text">View</a>
+                        <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
+                            <a href="" class="view-text" id="viewtext2">View</a>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <!-- User Profile Favorites-->
+                    <div class="row">
+                        <h2 class="favorites-heading">Favorites:</h2>
+                    </div>
+                    <div class="row">
+                        <div class="favorites">
+                            <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
+                            <p>LM Tree Services</p>
+                            <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
+                            <p>Paul's Haircuts</p>
+                        </div>
+                        
+                    </div>
+                    <!-- User Businesses -->
+                    <div class="row">
+                        <h2 class="my-businesses-heading">My Businesses:</h2>
+                    </div>
+                    <div class="row">
+                        <div class="my-businesses">
+                        <img src="../assets/Logo/petspabusinesspic.jpg" alt="Business Picture" class="business-picture">
+                        <p>Paw Spa</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right-column">
-                <!-- User Profile Favorites-->
-                <div class="row">
-                    <h2 class="favorites-heading">Favorites:</h2>
-                </div>
-                <div class="row">
-                    <div class="favorites">
-                        <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
-                        <p>LM Tree Services</p>
-                        <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
-                        <p>Paul's Haircuts</p>
-                    </div>
-                </div>
-                <!-- User Businesses -->
-                <div class="row">
-                    <h2 class="my-businesses-heading">My Businesses:</h2>
-                </div>
-                <div class="row">
-                    <div class="my-businesses"></div>
-                </div>
-            </div>
-        </div>
-        <!-- About Page (footer)-->
-        <footer>
-            <h3><a href="about.html" class="about-footer">About</a></h3>
-            <ul class="footer">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
-                <li><a href="about.html">Accessibility Statement </a></li>
-                <li><a href="about.html">Contact Us</a></li>
-            </ul>
-        </footer>
-        <!-- Inbox Container -->
-        <div id="inbox-container">
-            <div class="inbox-header">
-                <div>
-                    <button id="closeInbox">X</button>
-                </div>
-                <input type="text" placeholder="Search Service">
-                <button type="button" onclick="showNewMessageForm()">New Message</button>
-            </div>
-            <div id="inboxMessages" class="inbox-messages">
-                <!-- Sample messages -->
-                <div class="message">
-                    <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
+            <!-- About Page (footer)-->
+            <footer>
+                <h3><a href="about.html" class="about-footer">About</a></h3>
+                <ul class="footer">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+                    <li><a href="about.html">Accessibility Statement </a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </footer>
+            <!-- Inbox Container -->
+            <div id="inbox-container">
+                <div class="inbox-header">
                     <div>
-                        <p><strong>Mie Hair Salon</strong></p>
-                        <p>Last message preview...</p>
+                        <button id="closeInbox">X</button>
                     </div>
-                    <span>18h ago</span>
+                    <input type="text" placeholder="Search Service">
+                    <button type="button" onclick="showNewMessageForm()">New Message</button>
                 </div>
-                <div class="message">
-                    <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
-                    <div>
-                        <p><strong>LM Tree Services</strong></p>
-                        <p>Last message preview...</p>
+                <div id="inboxMessages" class="inbox-messages">
+                    <!-- Sample messages -->
+                    <div class="message">
+                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
+                        <div>
+                            <p><strong>Mie Hair Salon</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>18h ago</span>
                     </div>
-                    <span>15h ago</span>
+                    <div class="message">
+                        <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
+                        <div>
+                            <p><strong>LM Tree Services</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>15h ago</span>
+                    </div>
+                    <div class="message">
+                        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+                        <div>
+                            <p><strong>Tutor Wise</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <span>10m ago</span>
+                    </div>
                 </div>
-                <div class="message">
-                    <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
-                    <div>
-                        <p><strong>Tutor Wise</strong></p>
-                        <p>Last message preview...</p>
+                <div id="sendMsg" class="send-message">
+                    <input type="text" placeholder="Send Message Here">
+                </div>
+                <!-- New Message Form -->
+                <div id="newMessageForm" class="new-message-form">
+                    <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+                    <div class="controls">
+                        <textarea placeholder="Type your message..."></textarea>
+                        <button type="submit">Send</button>
                     </div>
-                    <span>10m ago</span>
                 </div>
             </div>
-            <div id="sendMsg" class="send-message">
-                <input type="text" placeholder="Send Message Here">
-            </div>
-            <!-- New Message Form -->
-            <div id="newMessageForm" class="new-message-form">
-                <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
-                <div class="controls">
-                    <textarea placeholder="Type your message..."></textarea>
-                    <button type="submit">Send</button>
-                </div>
-            </div>
-        </div>
 </body>
 
 </html>
