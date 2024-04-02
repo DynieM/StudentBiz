@@ -594,6 +594,10 @@ margin-top:-40px;
     letter-spacing: 0.03em;
     color: #1E1E1E;
 }
+#businessheading{
+position:relative;
+top:1px;
+}
 .business-picture {
 height:80px;
 width:80px;
