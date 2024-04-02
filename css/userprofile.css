@@ -438,7 +438,7 @@ left:1330px;
     flex: 1;
     display: grid;
     flex-direction: repeat(4, auto);
-    gap: 20px;
+    gap: 10px;
 }
 
 .row {
