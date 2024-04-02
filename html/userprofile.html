@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
         rel="stylesheet">
+    <script src="../script/inbox.js"></script>
+    <script src="../script/logout.js"></script>
+    <script src="../script/userprofile.js"></script>
 </head>
-
 <body>
     <header>
         <!-- Navigation Bar -->
@@ -25,6 +27,18 @@
                 <input type="text" placeholder="Search...">
             </div>
             <div class="rightnav">
+                <div id="userLoggedOut">
+                    <a href="../html/login.html">
+                        <button id="loginButton">Login</button>
+                    </a>
+                <a href="../html/signup.html">
+                    <button id="signUpButton">Sign Up</button>
+                </a>
+                </div>
+            <div id="userLoggedIn">
+                <a href="../html/login.html" id="logoutLink">
+                    <button id="logoutButton">Log Out</button>
+                </a>
                 <a href="../html/businessProfileSet.html"><img src="../assets/Icons/businessprofilepic.svg"
                         alt="Profile Icon" id="profilepicicon">Profile</a>
                 <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
@@ -87,10 +101,17 @@
                     </div>
                     <div class="row">
                         <div class="favorites">
+<<<<<<< HEAD
                             <img src="../assets/Icons/favorite.svg" alt="Favorite Icon" class="favorite-icon"> 
                             <p>LM Tree Services</p>
                 <img src="../assets/Icons/favorite.svg" alt="Favorite Icon" class="favorite-icon">
                 <p>Paul's Haircuts</p>
+=======
+                            <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
+                            <p>LM Tree Services</p>
+                            <img src="../assets/Icons/heart-icon.svg" class="heart-icon" alt="Heart Icon Logo">
+                            <p>Paul's Haircuts</p>
+>>>>>>> d0e6a78dbe4f01d578a38ac0d110fbb9241662be
                         </div>
                         
                     </div>
@@ -165,8 +186,5 @@
                     </div>
                 </div>
             </div>
-
 </body>
- <script src="../script/inbox.js"></script>
-<script src="../script/userprofile.js"></script>
 </html>

@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="../script/inbox.js"></script>
+    <script src="../script/logout.js"></script>
     <script src="../script/popup_ad.js"></script>
   </head>
 
@@ -39,21 +40,24 @@
             </a>
           </div>
           <div id="userLoggedIn">
+            <a href="../html/login.html" id="logoutLink">
+              <button id="logoutButton">Log Out</button>
+            </a>
             <a href="../html/userprofile.html"
-            ><img
-              src="../assets/Icons/profilepic.svg"
-              alt="Profile Icon"
-              id="profilepicicon"
-            />Profile</a
-          >
-          <a href="#" id="openInbox"
-            ><img
-              src="../assets/Icons/inbox.svg"
-              alt="Inbox Icon"
-              id="inboxicon"
-            />
-            Inbox</a
-          >
+              ><img
+                src="../assets/Icons/profilepic.svg"
+                alt="Profile Icon"
+                id="profilepicicon"
+              />Profile</a
+            >
+            <a href="#" id="openInbox"
+              ><img
+                src="../assets/Icons/inbox.svg"
+                alt="Inbox Icon"
+                id="inboxicon"
+              />
+              Inbox</a
+            >
           </div>
         </div>
       </nav>
@@ -88,14 +92,18 @@
     <h1 class="alt-heading">What are you looking for?</h1>
     <!--Search Bar-->
     <div class="search">
-      <input class="search-bar" id="searchInput" type="text" placeholder="Search..." />
-       <div id="searchResults"></div>
+      <input
+        class="search-bar"
+        id="searchInput"
+        type="text"
+        placeholder="Search..."
+      />
+      <div id="searchResults"></div>
       <a class="search-button" href="../html/submittedSearch.html">
         <button type="submit">Search</button>
       </a>
-     
     </div>
-     
+
     <!-- Categories Section -->
     <div class="categories">
       <div class="categories-bg"></div>
@@ -116,13 +124,13 @@
         </div>
         <div class="category-item">
           <!--Edit Link-->
-            <img
-              src="../assets/Icons/food.svg"
-              alt="Food Icon"
-              class="centered"
-              id="food"
-            />
-            <p class="centered food-text">Food</p>
+          <img
+            src="../assets/Icons/food.svg"
+            alt="Food Icon"
+            class="centered"
+            id="food"
+          />
+          <p class="centered food-text">Food</p>
         </div>
         <div class="category-item">
           <img

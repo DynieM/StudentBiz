@@ -25,7 +25,7 @@ header {
     float: left;
     color: rgb(21, 20, 20);
     text-align: center;
-    padding: 14px 16px;
+    margin: 14px 16px;
 }
 
 .navbar .icon {
@@ -74,12 +74,6 @@ header {
     margin-left: 5px;
 }
 
-.navbar a:hover {
-    background-color: #d2d0d0;
-    color: black;
-    border-radius: 20px;
-}
-
 #userLoggedOut {
     display: block;
 }
@@ -114,6 +108,10 @@ header {
     width: 50px;
     height: 50px;
     font-family: "Montserrat", sans-serif;
+}
+
+#logoutButton {
+    display: none;
 }
 
 #inboxicon {
@@ -209,6 +207,10 @@ p {
     text-align: left;
 }
 
+span {
+    text-decoration: underline;
+}
+
 .alt-heading {
     color: black;
     font-family: "Oswald", Helvetica;
@@ -258,6 +260,15 @@ input[type="text"] {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* Styles for Inbox */

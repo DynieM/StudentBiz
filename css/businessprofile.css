@@ -38,7 +38,7 @@ main {
   float: left;
   color: rgb(21, 20, 20);
   text-align: center;
-  padding: 14px 16px;
+  margin: 14px 16px;
 }
 
 .navbar .icon {
@@ -61,12 +61,6 @@ main {
   /* Maintain aspect ratio */
 }
 
-.navbar a:hover {
-  background-color: #d2d0d0;
-  color: black;
-  border-radius: 20px;
-}
-
 .search-bar {
   flex-grow: 1;
   border-radius: 20px;
@@ -74,7 +68,7 @@ main {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #000000;
   color: #fff;
   padding: 8px 12px;
   border: none;
@@ -126,6 +120,52 @@ button {
   text-decoration: none;
   margin-left: 5px;
   /* Adjust the margin as needed */
+}
+
+#userLoggedOut {
+  display: none;
+}
+
+#loginButton {
+  background-color: white;
+  color: black;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+#signUpButton {
+  background-color: blue;
+  color: white;
+  width: 100px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+#userLoggedIn {
+  display: block;
+}
+
+#profilepicicon {
+  width: 50px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#logoutButton {
+  display: none;
+}
+
+#inboxicon {
+  width: 50px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Styles for the main heading */

@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
     rel="stylesheet" />
   <script type="module" src="../script/createBiz.js"></script>
+  <script type="module" src="../script/logout.js"></script>
   <script type="module" src="../script/inbox.js"></script>
 </head>
 
@@ -24,11 +25,28 @@
       </div>
       <!-- Right side of the navigation bar on the Home Page-->
       <div class="rightnav">
-        <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
-            id="profilepicicon" />Profile</a>
-        <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon" />
-          Inbox</a>
-      </div>
+        <div id="userLoggedOut">
+                    <a href="../html/login.html">
+                        <button id="loginButton">Login</button>
+                    </a>
+                <a href="../html/signup.html">
+                    <button id="signUpButton">Sign Up</button>
+                </a>
+                </div>
+            <div id="userLoggedIn">
+                <a href="../html/login.html" id="logoutLink">
+                    <button id="logoutButton">Log Out</button>
+                </a>
+                <a href="../html/userprofile.html"
+              ><img
+                src="../assets/Icons/profilepic.svg"
+                alt="Profile Icon"
+                id="profilepicicon"
+              />Profile</a
+            >
+                <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
+                    Inbox</a>
+          </div>
     </nav>
   </header>
   <div class="addBusinessForm">
