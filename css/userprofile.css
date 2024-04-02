@@ -553,6 +553,7 @@ padding-top:20px;
     letter-spacing: 0.03em;
     color: #000000;
 }
+/*positions the favorites heading */
 #favheading {
 top:30px;
 position:relative;
