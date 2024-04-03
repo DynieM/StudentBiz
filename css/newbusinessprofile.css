@@ -635,6 +635,27 @@ h2 {
 
 }
 
+.image-slider {
+    display: flex;
+    /* Activates Flexbox */
+    justify-content: center;
+    /* Centers the images horizontally */
+    align-items: center;
+    /* Aligns the images vertically */
+}
+
+.smallIcon {
+    margin: 0 10px;
+    /* Adds horizontal space around the small icons */
+}
+
+.businessPic {
+    flex-shrink: 0;
+    /* Prevents the main image from shrinking */
+    max-width: 80%;
+    /* Limits width, adjust as needed */
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
