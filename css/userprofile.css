@@ -504,7 +504,7 @@ font-size:14px;
 font-weight: normal;
 position: relative;
 top:-400px;
-word-wrap: wrap;
+word-wrap: break-word;
 display: inline-block;
 
 
@@ -513,7 +513,7 @@ display: inline-block;
 margin-left:350px;
 }
 .review-item a{
-margin-right:330px;
+margin-right:200px;
 
 }
 /*view text stylings */
