@@ -650,7 +650,9 @@ font-weight: bold;
 font-size:14px;
 font-weight:normal;
 padding:10px;
-margin:60px;
+top:20px;
+position: relative;
+margin-left:-20px;
 
 }
 .inbox-messages .message img {
