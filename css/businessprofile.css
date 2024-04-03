@@ -546,6 +546,8 @@ h2 {
   text-align: center;
   background-color: black;
   color: white;
+  border: solid 1px black;
+  border-radius: 25px;
 }
 
 .formInput {
