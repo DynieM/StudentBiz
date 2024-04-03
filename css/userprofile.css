@@ -608,8 +608,9 @@ margin:5px;
 }
 .favorites p{
 margin-left:30px;
-top:-50px;
+top:-70px;
 font-weight: normal;
+padding:5px;
 }
 /*this edits the position between the box and the favorites heading */
 .favorites {
