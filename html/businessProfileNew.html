@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
     rel="stylesheet" />
   <script type="module" src="../script/createBiz.js"></script>
-  <script type="module" src="../script/logout.js"></script>
   <script type="module" src="../script/inbox.js"></script>
 </head>
 
@@ -34,9 +33,6 @@
                 </a>
                 </div>
             <div id="userLoggedIn">
-                <a href="../html/login.html" id="logoutLink">
-                    <button id="logoutButton">Log Out</button>
-                </a>
                 <a href="../html/userprofile.html"
               ><img
                 src="../assets/Icons/profilepic.svg"
@@ -46,12 +42,15 @@
             >
                 <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
                     Inbox</a>
+                  <a href="../html/login.html" id="logoutLink">
+                    <button id="logoutButton">Log Out</button>
+                </a>
           </div>
     </nav>
   </header>
   <div class="addBusinessForm">
-    <h1>Create a New Business</h1>
     <form id="editForm">
+      <h1>Create a New Business</h1>
       <!-- Input field for business name-->
       <label for="businessName">Business Name:</label>
       <input type="text" id="businessName" class="formInput" name="businessName" required /><br />

@@ -1,10 +1,11 @@
 /** @format */
 
 window.onload = function () {
-    let firstName = localStorage.getItem("firstName");
-    let email = localStorage.getItem("email");
-    let phone = localStorage.getItem("phone");
-    // Displays user profile info
+    let firstName = sessionStorage.getItem("firstName");
+    let email = sessionStorage.getItem("email");
+    let phone = sessionStorage.getItem("phone");
+   
+
     if (firstName == null || firstName == "") {
         let firstName = document.querySelector(".username-text").textContent;
         localStorage.setItem("firstName", firstName);
