@@ -516,7 +516,7 @@ font-size:14px;
 font-weight:normal;
 position:relative;
 word-wrap:break-word;
-display:inline-block
+display:inline-block;
 font-style: italic;
 top:-400px;
 }
