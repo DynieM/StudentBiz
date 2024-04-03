@@ -504,16 +504,16 @@ font-size:14px;
 font-weight: normal;
 position: relative;
 top:-400px;
-word-wrap: break-word;
+word-wrap: breakw;
 display: inline-block;
 
 
 }
 .review-txt {
-margin-left:350px;
+margin-left:120px;
 }
 .review-item a{
-margin-right:200px;
+margin-right:330px;
 
 }
 /*view text stylings */
