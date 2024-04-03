@@ -504,12 +504,13 @@ font-size:14px;
 font-weight: normal;
 position: relative;
 top:-400px;
-word-wrap: break-word;
+word-wrap: wrap;
+display: inline-block;
 
 
 }
 .review-txt {
-margin-left:
+margin-left:350px;
 }
 .review-item a{
 margin-right:330px;
