@@ -406,8 +406,8 @@ footer {
 /*top left was pushing the page over */
 .addicon {
     position:absolute;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background: #D9D9D9;
 margin-left:auto;
