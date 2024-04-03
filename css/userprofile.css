@@ -643,10 +643,10 @@ width:80px;
     margin-top:-70px;
 }
 #pawspatitle {
-padding:15px;
 font-weight: bold;
-display: inline;
+display: inline-block;
 }
+
 #pawspatxt {
 font-size:14px;
 font-weight:normal;
