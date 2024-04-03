@@ -628,6 +628,7 @@ position:relative;
 top:-40px;
 }
 .business-picture {
+padding-top:20px;
 height:50px;
 width:50px;
 }
@@ -644,6 +645,7 @@ width:50px;
 }
 #pawspatitle {
 font-weight: bold;
+padding-top:20px;
 display: inline-block;
 
 }
