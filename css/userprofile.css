@@ -628,8 +628,8 @@ position:relative;
 top:-40px;
 }
 .business-picture {
-height:80px;
-width:80px;
+height:40px;
+width:40px;
 }
 .my-businesses {
     padding: 10px;
@@ -652,7 +652,7 @@ display: inline-block;
 font-size:14px;
 font-weight:normal;
 
-top:20px;
+top:30px;
 position: relative;
 margin-left:-150px;
 
