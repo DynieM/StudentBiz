@@ -546,7 +546,7 @@ h2 {
   text-align: center;
   background-color: black;
   color: white;
-  border: solid 1px black;
+  border: solid 5px black;
   border-radius: 25px;
 }
 
@@ -570,7 +570,8 @@ h2 {
 
 #addBusiness {
   margin-top: 40px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  color: black;
   height: 50px;
   width: 200px;
 }
