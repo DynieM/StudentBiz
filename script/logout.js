@@ -1,3 +1,4 @@
+// Former hover functionality with profile icon
 document.addEventListener('DOMContentLoaded', function() {
     function handleHover() {
     const profilePicIcon = document.getElementById('profilepicicon');
