@@ -607,11 +607,11 @@ margin:5px;
     margin-left:-20px;
     margin-top:-15px;
 }
-#favtextheading {
+#favtextheading2 {
 position:relative;
 top:-40px;
 }
-.favorites p{
+#favtextheading1{
 margin-left:30px;
 top:-70px;
 font-weight: normal;
