@@ -510,7 +510,8 @@ display: inline-block;
 
 }
 .review-txt {
-margin-right:-300px;
+margin-right:-440px;
+text-align: right;
 }
 .review-item a{
 margin-right:330px;
