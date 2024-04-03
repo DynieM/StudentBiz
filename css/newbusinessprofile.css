@@ -438,12 +438,18 @@ footer {
             "rating"
             "tags"
             "about";
-        grid-template-columns: 1fr;
+
         /* Single column layout */
     }
 
+    main {
+        
+margin: 10px;
+
+    }
+
     .logo img {
-        width: 50px;
+        width: 10px;
         /* Adjust the size as needed */
     }
 
