@@ -81,11 +81,11 @@ header {
 }
 
 #userLoggedOut {
-    display: none;
+    display: block;
 }
 
 #userLoggedIn {
-    display: block;
+    display: none;
 }
 
 #profilepicicon {
