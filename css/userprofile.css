@@ -505,6 +505,7 @@ font-weight: normal;
 position: relative;
 top:-400px;
 margin-right:5px;
+text-wrap: wrap;
 }
 .review-item a{
 margin-right:330px;
