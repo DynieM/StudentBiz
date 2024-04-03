@@ -629,7 +629,8 @@ top:-40px;
 }
 .business-picture {
 padding-top:13px;
-margin-left:15px;
+position:absolute;
+top:20px;
 height:50px;
 width:50px;
 }
