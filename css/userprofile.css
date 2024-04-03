@@ -528,7 +528,7 @@ text-align: left;
 /*individual view text stylings mostly dealing with the positioning of the link in the container */
 #viewtext1 {
   margin-top:-390px;  
-margin-left:200px;
+margin-right:200px;
 }
 #viewtext2 {
 margin-top:-390px;
