@@ -608,14 +608,10 @@ margin:5px;
     margin-top:-15px;
 }
 #favtextheading {
+position:relative;
+top:-40px;
+}
 
-}
-.favorites p{
-margin-left:30px;
-top:-70px;
-font-weight: normal;
-padding:5px;
-}
 /*this edits the position between the box and the favorites heading */
 .favorites {
 margin-top:-40px;
