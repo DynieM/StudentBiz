@@ -603,12 +603,8 @@ margin:5px;
 }
 /*this is just a description of the lm tree services in the favorties box */
 #favtext {
-    font-size:15px;
-    margin-left:-20px;
-    margin-top:-15px;
-}
-#favtextheading {
-
+top:-20px;
+position: relative;
 }
 .favorites p{
 margin-left:30px;
