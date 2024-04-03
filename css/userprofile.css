@@ -386,8 +386,8 @@ footer {
 /*removed left and top */
 #add {
     position: absolute;
-    top:25px;
-    left:30px;
+    top:15px;
+    left:17px;
     width: 20px;
     height: 20px;
     font-family: 'Montserrat';
