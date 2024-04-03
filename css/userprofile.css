@@ -493,11 +493,11 @@ display: flex;
 align-items: center;
 flex-direction: column;
 }
-.review-item p {
-margin-right:60px;
-padding:15px;
-font-size:25px;
 
+.review-item p {
+    margin-right: 60px;
+    padding: 15px;
+    font-size: 25px;
 }
 .review-item a{
 margin-right:330px;
