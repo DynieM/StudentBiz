@@ -506,12 +506,13 @@ position: relative;
 top:-400px;
 word-wrap: break-word;
 display: inline-block;
+text-align: left;
 
 
 }
 .review-txt {
-margin-right:-440px;
-text-align: right;
+margin-right:-480px;
+text-align: left;
 }
 .review-item a{
 margin-right:330px;
