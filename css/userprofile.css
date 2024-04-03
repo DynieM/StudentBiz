@@ -522,6 +522,7 @@ text-align: left;
     padding-left: 20px;
     text-decoration: underline;
     font-weight: 600;
+    z-index:1;
    
     
 }
