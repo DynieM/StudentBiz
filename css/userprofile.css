@@ -518,6 +518,7 @@ position:relative;
 word-wrap:break-word;
 display:inline-block;
 font-style: italic;
+text-align: left;
 top:-400px;
 }
 /*this positions the review paragraph text */
