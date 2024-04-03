@@ -613,8 +613,9 @@ font-size:15px;
 font-weight:normal;
 }
 #favtextheading2 {
-top:50px;
+top:-70px;
 font-weight: normal;
+margin-left:30px;
 }
 #favtextheading1{
 margin-left:30px;
