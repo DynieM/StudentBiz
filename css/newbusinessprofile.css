@@ -433,16 +433,18 @@ footer {
 @media (max-width: 800px) {
     .card {
         grid-template-areas:
-            "logo name"
-            "logo rating"
-            "tags tags"
-            "about about";
-        grid-template-columns: 100px 1fr;
+            "logo"
+            "name"
+            "rating"
+            "tags"
+            "about";
+        grid-template-columns: 1fr;
+        /* Single column layout */
     }
 
     .logo img {
         width: 50px;
-        /* Larger size for smaller screens */
+        /* Adjust the size as needed */
     }
 
     .name,
@@ -453,19 +455,36 @@ footer {
 
     .grid-container {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        /* Single column layout */
         padding: 10px;
     }
 
     .grid-item2 {
-
-        grid-column: span 1;
-
+        grid-column: 1;
+        /* Occupy the first column */
     }
 
+    /* Ensure each grid area takes one row */
+    .logo {
+        grid-area: logo;
+    }
 
+    .name {
+        grid-area: name;
+    }
 
+    .rating {
+        grid-area: rating;
+    }
 
+    .tags {
+        grid-area: tags;
+    }
+
+    .about {
+        grid-area: about;
+    }
 }
 
 /* Styling for pop up page */
