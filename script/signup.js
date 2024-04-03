@@ -31,9 +31,15 @@ async function submitForm() {
 			phone_number_db: phone_number,
             password_db: password,
         });
-        localStorage.setItem("firstName", first_name);
-        localStorage.setItem("email", email);
-        localStorage.setItem("phone", phone_number);
+
+		if (error && error.message.includes('duplicate key value')) {
+            alert('An account with this email already exists.');
+            return;
+		}
+		
+        sessionStorage.setItem("firstName", first_name);
+        sessionStorage.setItem("email", email);
+        sessionStorage.setItem("phone", phone_number);
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
 		alert("An error occurred while saving your data. Please try again.")
