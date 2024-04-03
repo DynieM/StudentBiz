@@ -83,7 +83,7 @@ header {
 }
 
 #userLoggedOut {
-	display: block;
+	display: none;
 }
 
 #loginButton {
@@ -109,7 +109,7 @@ header {
 }
 
 #userLoggedIn {
-	display: none;
+	display: block;
 }
 
 #profilepicicon {
