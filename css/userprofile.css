@@ -566,8 +566,8 @@ position:relative;
 top:15px;
 }
 .heart-icon {
-height:30px;
-width:30px;
+height:40px;
+width:40px;
 margin-left:30px;
 margin:15px;
 }
@@ -604,6 +604,7 @@ margin:5px;
 #favtext {
     font-size:15px;
     margin-left:-20px;
+    margin-top:-15px;
 }
 .favorites p{
 margin-left:30px;
