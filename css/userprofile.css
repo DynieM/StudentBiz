@@ -644,10 +644,11 @@ width:80px;
 }
 #pawspatitle {
 padding:15px;
-font-weight: normal;
+font-weight: bold;
 }
 #pawspatxt {
-font-weight:14px;
+font-size:14px;
+font-weight:normal;
 }
 .inbox-messages .message img {
     width: 50px; /* Uniform width for all images */
