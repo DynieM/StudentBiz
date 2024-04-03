@@ -647,9 +647,10 @@ width:50px;
 }
 #pawspatitle {
 font-weight: bold;
-padding-top:20px;
+padding-top:25px;
 display: inline-block;
 margin-left:27px;
+margin:5px;
 
 }
 
