@@ -1,5 +1,6 @@
 // Former hover functionality with profile icon
-document.addEventListener('DOMContentLoaded', function() {
+
+/*document.addEventListener('DOMContentLoaded', function() {
     function handleHover() {
     const profilePicIcon = document.getElementById('profilepicicon');
     const logoutButton = document.getElementById('logoutButton');
@@ -24,4 +25,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     handleHover();
-});
+});*/
