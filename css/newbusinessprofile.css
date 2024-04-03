@@ -632,18 +632,7 @@ h2 {
     text-align: center;
     border: 5px solid;
     padding: 10px;
-    display: flex;
-    /* Enables Flexbox */
-    justify-content: space-between;
-    /* Distributes space between images */
-    align-items: center;
-    /* Aligns images vertically */
-}
 
-.bPictures img {
-    width: 50%
-    margin-right: 10px;
-    /* Adds space between images */
 }
 
 .grid-container {
