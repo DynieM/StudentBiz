@@ -533,6 +533,9 @@ top: -320px;
 margin-left:30px;
 position:relative;
 }
+#reviewdesc {
+font-size: 14px;
+}
 .review-title {
 position:relative;
 top:15px;
