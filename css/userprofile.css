@@ -645,6 +645,7 @@ width:80px;
 #pawspatitle {
 font-weight: bold;
 display: inline-block;
+margin-left:30px;
 }
 
 #pawspatxt {
