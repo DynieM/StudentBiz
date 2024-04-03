@@ -645,14 +645,14 @@ width:80px;
 #pawspatitle {
 font-weight: bold;
 display: inline-block;
-margin-left:30px;
+
 }
 
 #pawspatxt {
 font-size:14px;
 font-weight:normal;
 padding:10px;
-top:55px;
+top:40px;
 position: relative;
 margin-left:-150px;
 
