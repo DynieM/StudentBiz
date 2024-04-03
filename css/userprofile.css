@@ -501,6 +501,7 @@ flex-direction: column;
 }
 #reviewdesc {
 font-size:14px;
+font-weight: normal;
 }
 .review-item a{
 margin-right:330px;
