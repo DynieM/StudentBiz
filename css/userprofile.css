@@ -649,6 +649,8 @@ font-weight: bold;
 #pawspatxt {
 font-size:14px;
 font-weight:normal;
+padding:10px;
+margin:60px;
 
 }
 .inbox-messages .message img {
