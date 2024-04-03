@@ -571,8 +571,9 @@ width:40px;
 margin-left:30px;
 margin:15px;
 }
+/*positions the second heart icon */
 #hearticon2 {
-top:50px;
+top:130px;
 position:absolute;
 }
 .favorites-heading {
