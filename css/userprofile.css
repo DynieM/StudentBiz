@@ -571,6 +571,10 @@ width:40px;
 margin-left:30px;
 margin:15px;
 }
+#hearticon2 {
+top:50px;
+position:absolute;
+}
 .favorites-heading {
     width: 517px;
     height: 61px;
