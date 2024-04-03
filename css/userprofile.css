@@ -510,6 +510,15 @@ text-align: left;
 font-style: italic;
 
 }
+#reviewdesc2 {
+font-size:14px;
+font-weight:normal;
+position:relative;
+word-wrap:break-word;
+text-align:left;
+font-style: italic;
+top:-400px;
+}
 .review-txt {
 margin-right:-480px;
 text-align: left;
