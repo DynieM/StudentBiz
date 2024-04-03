@@ -608,6 +608,10 @@ margin:5px;
     margin-top:-15px;
     font-weight:normal;
 }
+#favtext2 {
+font-size:15px;
+font-weight:normal;
+}
 #favtextheading2 {
 position:relative;
 top:-40px;
