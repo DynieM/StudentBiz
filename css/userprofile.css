@@ -505,11 +505,11 @@ font-weight: normal;
 position: relative;
 top:-400px;
 word-wrap: break-word;
-display: inline-block;
+
 
 }
 .review-txt {
-margin-left:100px;
+margin-left:150px;
 }
 .review-item a{
 margin-right:330px;
