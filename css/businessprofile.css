@@ -544,6 +544,8 @@ h2 {
 
 #editForm {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .formInput {
