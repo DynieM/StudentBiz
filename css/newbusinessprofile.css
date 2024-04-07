@@ -446,6 +446,13 @@ margin: 10px;
 
     }
 
+    p {
+        max-width: 400px;
+        font-size: 12pt;
+    }
+
+
+    
     .logo img {
         width: 10px;
         /* Adjust the size as needed */
