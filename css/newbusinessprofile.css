@@ -451,8 +451,15 @@ margin: 10px;
         font-size: 12pt;
     }
 
+.greyBack {
 
-    
+    background-color: #ECECEC;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: left;
+}
+
     .logo img {
         width: 10px;
         /* Adjust the size as needed */
