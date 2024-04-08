@@ -177,6 +177,14 @@ p {
     display: block;
     text-align: left;
 }
+.inbox_time {
+    font-size:12px;
+}
+.inbox_text {
+    left: 0px;
+    bottom: 0px;
+}
+
 /*styles for the create a business text above the buttton */
 .cabbtn {
 color:#f1f1f1;
