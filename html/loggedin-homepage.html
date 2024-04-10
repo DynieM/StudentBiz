@@ -109,58 +109,57 @@
         </ul>
     </footer>
     <!--Inbox-->
-    <div id="inbox-container">
-        <div class="inbox-header">
-            <div>
-                <button id="closeInbox">X</button>
-            </div>
-            <input type="text" placeholder="Search Service" />
-            <button type="button" onclick="showNewMessageForm()">
-                New Message
-            </button>
-        </div>
-        <div id="inboxMessages" class="inbox-messages">
-            <!-- Sample messages -->
-            <div class="message">
-                <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
-                <div>
-                    <p><strong>Mie Hair Salon</strong></p>
-                    <p>Last message preview...</p>
+      <div id="inbox-container">
+                <div class="inbox-header">
+                    <div>
+                        <button type="button" id="closeInbox">X</button>
+                    </div>
+                    <div class="search-section">
+                       <input type="text" placeholder="Search Service">
+                    </div>
                 </div>
-                <span>18h ago</span>
-            </div>
-            <div class="message">
-                <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
-                <div>
-                    <p><strong>LM Tree Services</strong></p>
-                    <p>Last message preview...</p>
+
+                 <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
+                 <!-- Inbox Messages -->
+                <div id="inboxMessages" class="inbox-messages">
+                    <!-- Sample messages -->
+                    <div class="message">
+                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
+                        <div>
+                            <p><strong>Mie Hair Salon</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <div class="inbox_time">18h ago</div>
+                    </div>
+                    <div class="message">
+                        <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
+                        <div>
+                            <p><strong>LM Tree Services</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <div class="inbox_time">15h ago</div>
+                    </div>
+                    <div class="message">
+                        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+                        <div class="inbox_text">
+                            <p><strong>Tutor Wise</strong></p>
+                            <p>Last message preview...</p>
+                        </div>
+                        <div class="inbox_time">10m ago</div>
+                    </div>
                 </div>
-                <span>15h ago</span>
-            </div>
-            <div class="message">
-                <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-                <div>
-                    <p><strong>Tutor Wise</strong></p>
-                    <p>Last message preview...</p>
+                <div id="sendMsg" class="send-message">
+                    <input type="text" placeholder="Send Message Here">
                 </div>
-                <span>10m ago</span>
+                <!-- New Message Form -->
+                <div id="newMessageForm" class="new-message-form">
+                    <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+                    <div class="controls">
+                        <textarea placeholder="Type your message..."></textarea>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="sendMsg" class="send-message">
-            <input type="text" placeholder="Send Message Here" />
-        </div>
-        <!-- New Message Form -->
-        <div id="newMessageForm" class="new-message-form">
-            <button type="button" id="inbox-back-button" onclick="showInbox()">
-                &#8592; Back
-            </button>
-            <div class="controls">
-                <input type="text" placeholder="Search for people" />
-                <textarea placeholder="Type your message..."></textarea>
-                <button type="submit">Send</button>
-            </div>
-        </div>
-    </div>
     <!--Pop Up Ad-->
     <div id="popUpAd-container">
         <div class="popup-box">

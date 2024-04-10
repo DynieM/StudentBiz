@@ -123,6 +123,23 @@ header {
 	height: 50px;
 	font-family: "Montserrat", sans-serif;
 }
+.new-message {
+    background-color: #efeff0;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    background-image: url('../assets/Icons/new_message.svg'); /* Path to your search icon */
+    background-position: 10px center; /* Adjust as needed */
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    padding-left: 40px; 
+    margin: 10px;
+}
+.search-icon, .message-icon {
+    margin-right: 10px; /* Adds some space between the icon and the input/button */
+    width: 25px; 
+    height: 20px; 
+}
 
 #logoutButton {
 	width: 100px;
@@ -790,6 +807,24 @@ h2 {
 	border-radius: 4px;
 	width: calc(100% - 20px);
 	margin-bottom: 10px;
+}
+#closeInbox {
+    float: right;
+    justify-content: space-between;
+    padding: 9px;
+    background-color: white;
+    color: gray;
+    margin: 10px;
+}
+.search-section input[type="text"]:first-of-type {
+    font-family: "Montserrat", sans-serif;
+    background-image: url('../assets/Icons/search.svg'); /* Path to your search icon */
+    background-position: 12px center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    background-size: 20px 20px;
+    padding-left: 40px; /* Adjust the padding to ensure text doesn't overlap the icon */
+    background-color: #FFFFFF; /* Example: white background */
+    border: 1px solid #ccc; /* Optional: match the input's border */
 }
 
 .inbox-header button,
