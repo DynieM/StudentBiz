@@ -868,7 +868,11 @@ h2 {
 	justify-content: space-between;
 }
 
-.inbox-messages,
+.inbox-messages {
+	border-radius: 15px;
+    display: block;
+    padding: 10px;
+}
 .send-message {
 	display: block;
 	padding: 10px;
@@ -939,7 +943,6 @@ h2 {
 	font-weight: 600;
 	font-size: 48px;
 	line-height: 150%;
-	/* or 72px */
 	letter-spacing: -0.022em;
 	color: #ffffff;
 }
