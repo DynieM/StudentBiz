@@ -683,9 +683,7 @@ margin-left:-130px;
 
 }
 /*size of search input */
-input {
-width:1000px;
-}
+
 .inbox-messages .message img {
     width: 50px; /* Uniform width for all images */
     height: 50px; /* Uniform height for all images */
