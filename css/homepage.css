@@ -520,18 +520,22 @@ footer {
     resize: none;
     box-sizing: border-box;
 }
+
 .new-message {
     background-color: #efeff0;
     color: gray;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
-    background-image: url('../assets/Icons/new_message.svg'); /* Path to your search icon */
-    background-position: 10px center; /* Adjust as needed */
-    background-repeat: no-repeat; 
+    background-image: url('../assets/Icons/new_message.svg');
+    /* Path to your search icon */
+    background-position: 10px center;
+    /* Adjust as needed */
+    background-repeat: no-repeat;
     background-size: 20px 20px;
-    padding-left: 40px; 
+    padding-left: 40px;
     margin: 10px;
 }
+
 .controls {
     padding: 10px;
     display: flex;
@@ -1099,3 +1103,4 @@ footer {
 }
 
 /* Note: Incomplete styling of the advertisement and the pop-up ad */
+

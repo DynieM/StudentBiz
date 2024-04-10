@@ -72,6 +72,7 @@ header {
 	width: 25px;
 	height: 25px;
 }
+
 /* Styles for the right navigation bar links */
 .rightnav {
 	font-size: 20px;
@@ -123,22 +124,28 @@ header {
 	height: 50px;
 	font-family: "Montserrat", sans-serif;
 }
+
 .new-message {
-    background-color: #efeff0;
-    color: gray;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    background-image: url('../assets/Icons/new_message.svg'); /* Path to your search icon */
-    background-position: 10px center; /* Adjust as needed */
-    background-repeat: no-repeat; 
-    background-size: 20px 20px;
-    padding-left: 40px; 
-    margin: 10px;
+	background-color: #efeff0;
+	color: gray;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
+	background-image: url('../assets/Icons/new_message.svg');
+	/* Path to your search icon */
+	background-position: 10px center;
+	/* Adjust as needed */
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding-left: 40px;
+	margin: 10px;
 }
-.search-icon, .message-icon {
-    margin-right: 10px; /* Adds some space between the icon and the input/button */
-    width: 25px; 
-    height: 20px; 
+
+.search-icon,
+.message-icon {
+	margin-right: 10px;
+	/* Adds some space between the icon and the input/button */
+	width: 25px;
+	height: 20px;
 }
 
 #logoutButton {
@@ -307,7 +314,7 @@ p {
 .categories-heading {
 	font-size: 86px;
 	text-align: left;
-	z-index:2;
+	z-index: 2;
 	position: relative;
 }
 
@@ -434,28 +441,29 @@ footer {
 }
 
 .categories-bg {
-width: 693px;
-height: 170px;
-background: #25222F;
+	width: 693px;
+	height: 170px;
+	background: #25222F;
 	border: 1.5px solid #2C2C2C;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 0px 85px 0px;
-	position:absolute;
-	z-index:2;
+	position: absolute;
+	z-index: 2;
 	left: 0px;
-				top: 1036px;
+	top: 1036px;
 }
+
 .loggedin-bg {
-width: 693px;
-height: 170px;
-background: #25222F;
+	width: 693px;
+	height: 170px;
+	background: #25222F;
 	border: 1.5px solid #2C2C2C;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 0px 85px 0px;
-	position:absolute;
-	z-index:2;
+	position: absolute;
+	z-index: 2;
 	left: 0px;
-				top: 1070px;
+	top: 1070px;
 }
 
 /* Grid styles */
@@ -519,6 +527,7 @@ background: #25222F;
 	border-radius: 20px;
 	font-family: "Montserrat", sans-serif;
 }
+
 .tag-header {
 	margin: 10px 15px;
 	padding: 8px 20px;
@@ -564,12 +573,14 @@ background: #25222F;
 .rating img {
 	size: 10px 10px;
 }
+
 .bInfoAll,
 .bPictures img {
 	height: 15px;
 	width: 15px;
 	padding: 10px;
 }
+
 .bInfoText {
 	padding: 10px;
 }
@@ -718,6 +729,7 @@ background: #25222F;
 	width: 80%;
 	display: flex;
 }
+
 /* Business Info for pop up page */
 .business-info {
 	width: 220%;
@@ -727,6 +739,7 @@ background: #25222F;
 	color: #000000;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .image-section {
 	flex: 1;
 }
@@ -771,6 +784,7 @@ h2 {
 	padding: 5px;
 	padding-right: 15px;
 }
+
 #title_business {
 	font-weight: bold;
 	margin-top: 15px;
@@ -778,6 +792,7 @@ h2 {
 	font-size: 20px;
 	padding: 10px;
 }
+
 /* Styles for Inbox */
 #inbox-container {
 	position: fixed;
@@ -808,23 +823,31 @@ h2 {
 	width: calc(100% - 20px);
 	margin-bottom: 10px;
 }
+
 #closeInbox {
-    float: right;
-    justify-content: space-between;
-    padding: 9px;
-    background-color: white;
-    color: gray;
-    margin: 10px;
+	float: right;
+	justify-content: space-between;
+	padding: 9px;
+	background-color: white;
+	color: gray;
+	margin: 10px;
 }
+
 .search-section input[type="text"]:first-of-type {
-    font-family: "Montserrat", sans-serif;
-    background-image: url('../assets/Icons/search.svg'); /* Path to your search icon */
-    background-position: 12px center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
-    background-size: 20px 20px;
-    padding-left: 40px; /* Adjust the padding to ensure text doesn't overlap the icon */
-    background-color: #FFFFFF; /* Example: white background */
-    border: 1px solid #ccc; /* Optional: match the input's border */
+	font-family: "Montserrat", sans-serif;
+	background-image: url('../assets/Icons/search.svg');
+	/* Path to your search icon */
+	background-position: 12px center;
+	/* Adjust as needed */
+	background-repeat: no-repeat;
+	/* Prevent the icon from repeating */
+	background-size: 20px 20px;
+	padding-left: 40px;
+	/* Adjust the padding to ensure text doesn't overlap the icon */
+	background-color: #FFFFFF;
+	/* Example: white background */
+	border: 1px solid #ccc;
+	/* Optional: match the input's border */
 }
 
 .inbox-header button,
@@ -1094,4 +1117,46 @@ h2 {
 #closePopUpAd {
 	position: relative;
 	right: 10px;
+}
+
+/* Responsive adjustments can be made here */
+@media (max-width: 800px) {
+
+	.advertise img {
+
+		height: 10%;
+		width: 42%;
+		object-fit: contain;
+		text-align: center;
+	}
+
+
+	.adcontainer {
+
+		height: 300px;
+
+	}
+
+	.arrow {
+		position: absolute;
+		top: 30%;
+		transform: translateY(-50%);
+		width: 59.91px;
+		height: 59.91px;
+		cursor: pointer;
+	}
+
+	.alt-heading {
+
+		font-size: 40px;
+
+	}
+
+	input[type="text"] {
+		width: 30rem;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 20px;
+		margin-left: 10%;
+	}
 }
