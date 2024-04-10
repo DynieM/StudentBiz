@@ -13,6 +13,7 @@
     rel="stylesheet">
   <script type="module" src="../script/inbox.js"></script>
   <script type="module" src="../script/logout.js"></script>
+  <script type="module" src="../script/gallery.js"></script>
 </head>
 
 <body>
@@ -51,17 +52,16 @@
 
       <div class="grid-container">
         <div id="bLogo" class="grid-item">
-          <img src="../assets/pictures/Blog-header-1-13.png" alt="businessLogo" class="bProfileImg">
+          <img src="../assets/pictures/image2.png" alt="businessLogo" class="bProfileImg">
           <h3>We Cut Trees!</h3>
           <p class="bText">⭐⭐⭐⭐⭐ 0.0 <a href="" class="specialLink">(0 Reviews)</p></a>
         </div>
         <div class="grid-item" id="bPictures">
           <a href="">Edit</a>
           <div class="image-slider">
-            <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon">
-            <img src="../assets/pictures/summer-lawn-care-0422-2a46e4142f2849c28040519ba83c06fc.png"
-              alt="Lawn being Mowed" class="businessPic">
-            <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon">
+            <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon" id="prevBtn">
+            <img src="../assets/pictures/image1.png" alt="Lawn being Mowed" class="businessPic">
+            <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon" id="nextBtn">
           </div>
           <div class="inline-container">
             <p><strong>Tags:</strong></p>
@@ -109,13 +109,14 @@
         <div class="grid-item2">
           <article>
             <div id="bForm">
-              <form action="/.php">
+              <form action="../script/process_form.php" method="post">
                 <input type="text" id="name" name="name" placeholder="Name"><br><br>
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <input type="text" id="text" name="text" placeholder="Description"><br><br>
                 <button type="submit" class="button">Book Service</button>
               </form>
             </div>
+
         </div>
 
 
