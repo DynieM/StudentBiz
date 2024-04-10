@@ -394,6 +394,7 @@ footer {
 }
 
 .popup-box {
+    z-index: 3;
     position: fixed;
     top: 60%;
     left: 50%;
@@ -1103,4 +1104,3 @@ footer {
 }
 
 /* Note: Incomplete styling of the advertisement and the pop-up ad */
-

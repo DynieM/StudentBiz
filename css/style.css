@@ -717,6 +717,7 @@ footer {
 }
 
 .popup-box {
+	z-index: 3;
 	position: fixed;
 	top: 60%;
 	left: 50%;
