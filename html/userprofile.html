@@ -71,7 +71,8 @@
                     <p class="cabbtn">Create A Business</p>
                 </div>
                 <div class="addicon">
-                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business" id="add"></a>
+                    <a href="../html/businessProfileNew.html"><img src="../assets/Icons/add.svg" alt="Add Business"
+                            id="add"></a>
                 </div>
             </div>
             <div class="flex-grid">
@@ -81,16 +82,16 @@
                         <!-- Review 1 -->
                         <img src="../assets/Icons/LMTreeLogo.svg" class="review-logo" alt="Tree Services Logo">
                         <div class="review-item">
-                                            <p>LM Tree Services</p>
-                                            <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
-                        <a href="../html/businessProfileSet.html" class="view-text" id="viewtext1">View</a>
+                            <p>LM Tree Services</p>
+                            <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
+                            <a href="../html/businessProfileSet.html" class="view-text" id="viewtext1">View</a>
                         </div>
                         <!-- Review 2 -->
                         <img src="../assets/Icons/TutorLogo.svg" class="review-logo" alt="Tree Services Logo">
                         <div class="review-item">
-                            
-                        <p>Tutor Wise</p>
-                        <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
+
+                            <p>Tutor Wise</p>
+                            <img src="../assets/Icons/rating/rating5.svg" alt="Rating: 5/5" class="rating-icon">
                             <a href="" class="view-text" id="viewtext2">View</a>
 
                         </div>
@@ -115,8 +116,9 @@
                     </div>
                     <div class="row">
                         <div class="my-businesses">
-                        <img src="../assets/Logo/petspabusinesspic.jpg" alt="Business Picture" class="business-picture">
-                        <p>Paw Spa</p>
+                            <img src="../assets/Logo/petspabusinesspic.jpg" alt="Business Picture"
+                                class="business-picture">
+                            <p>Paw Spa</p>
 
                         </div>
                     </div>
@@ -136,11 +138,15 @@
             <div id="inbox-container">
                 <div class="inbox-header">
                     <div>
-                        <button id="closeInbox">X</button>
+                        <button type="button" id="closeInbox">X</button>
                     </div>
-                    <input type="text" placeholder="Search Service">
-                    <button type="button" onclick="showNewMessageForm()">New Message</button>
+                    <div class="search-section">
+                       <input type="text" placeholder="Search Service">
+                    </div>
                 </div>
+
+                 <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
+                 <!-- Inbox Messages -->
                 <div id="inboxMessages" class="inbox-messages">
                     <!-- Sample messages -->
                     <div class="message">
@@ -165,7 +171,7 @@
                             <p><strong>Tutor Wise</strong></p>
                             <p>Last message preview...</p>
                         </div>
-                         <div class="inbox_time">10m ago</div>
+                        <div class="inbox_time">10m ago</div>
                     </div>
                 </div>
                 <div id="sendMsg" class="send-message">
