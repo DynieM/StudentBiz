@@ -126,11 +126,12 @@ header {
     flex-grow: 1;
     border-radius: 20px;
     margin: 10px;
-    width: 808px;
+    width:808px;
     height: 71px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .logo {
     /* Styles for the logo */
@@ -193,7 +194,7 @@ p {
 color:#f1f1f1;
 z-index:1;
 position:absolute;
-top:425px;
+top:500px;
 left:1295px;
 font-weight:normal;
 
@@ -439,11 +440,10 @@ footer {
 /*removed left and top */
 #add {
     position: absolute;
-    top:25px;
-    left:30px;
-    width: 58px;
-    height: 64px;
-   
+    top:15px;
+    left:15px;
+    width: 20px;
+    height: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -455,15 +455,15 @@ footer {
 /*top left was pushing the page over */
 .addicon {
     position:absolute;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background: #D9D9D9;
 margin-left:auto;
 margin-top:20px;
 z-index:1;
-top:470px;
-left:1330px;
+top: 530px;
+left:1350px;
 }
 
 
@@ -487,7 +487,7 @@ left:1330px;
     flex: 1;
     display: grid;
     flex-direction: repeat(4, auto);
-    gap: 20px;
+    gap: 10px;
 }
 
 .row {
@@ -506,7 +506,7 @@ left:1330px;
     line-height: 50px;
     letter-spacing: 0.03em;
     color: #000000;
-    padding: 50px;
+    padding: 30px;
 }
 
 .my-reviews {
@@ -528,7 +528,7 @@ left:1330px;
 .my-reviews a {
 display: inline-block;
     margin-left: 300px;
-    text-align: right;/
+    text-align: right;
 }
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
@@ -542,33 +542,59 @@ display: flex;
 align-items: center;
 flex-direction: column;
 }
-.review-item p {
-margin-right:60px;
-padding:15px;
-font-size:25px;
+
+#reviewtitle {
+    margin-right: 60px;
+    padding: 15px;
+    font-size: 25px;
+}
+/*styling the review text paragraphs */
+#reviewdesc1 {
+font-size:14px;
+font-weight: normal;
+position: relative;
+top:-400px;
+word-wrap: break-word;
+display: inline-block;
+text-align: left;
+font-style: italic;
 
 }
-.review-item a{
-margin-right:330px;
-
+#reviewdesc2 {
+font-size:14.5px;
+font-weight:normal;
+position:relative;
+word-wrap:break-word;
+display:inline-block;
+font-style: italic;
+text-align: left;
+top:-400px;
 }
+/*this positions the review paragraph text */
+.review-txt {
+margin-right:-480px;
+text-align: left;
+}
+
 /*view text stylings */
 .view-text {
     color: blue;
     margin-top:-200px;
     padding-left: 20px;
     text-decoration: underline;
+    font-weight: 600;
+    z-index:1;
    
     
 }
 /*individual view text stylings mostly dealing with the positioning of the link in the container */
 #viewtext1 {
   margin-top:-390px;  
-margin-left:150px;
+margin-left:-10px;
 }
 #viewtext2 {
 margin-top:-390px;
-margin-left:150px;
+margin-left:-10px;
 }
 /*rating icon stylings */
 .rating-icon {
@@ -582,25 +608,43 @@ top: -320px;
 margin-left:30px;
 position:relative;
 }
-
+.reviewdesc {
+font-size:10px;
+}
+.review-title {
+position:relative;
+top:15px;
+}
 .heart-icon {
-height:30px;
-width:30px;
+height:40px;
+width:40px;
 margin-left:30px;
 margin:15px;
+}
+/*positions the second heart icon, the one besides paulshaircuts */
+#hearticon2 {
+top:130px;
+position:absolute;
 }
 .favorites-heading {
     width: 517px;
     height: 61px;
+padding-top:20px;
     font-family: 'Oswald';
     font-weight: 400;
     font-size: 55px;
     line-height: 150%;
+    padding:15px;
     /* or 82px */
     letter-spacing: 0.03em;
     color: #000000;
 }
-
+/*positions the favorites heading */
+#favheading {
+top:20px;
+position:relative;
+margin:5px;
+}
 .favorites {
     display: flex;
     flex-direction: column;
@@ -612,10 +656,32 @@ margin:15px;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.favorites p{
-margin-left:30px;
-top:-60px;
+/*this is just a description of the lm tree services in the favorties box */
+#favtext {
+    font-size:15px;
+    margin-left:-15px;
+    margin-top:-60px;
+    font-weight:normal;
+}
+#favtext2 {
+font-size:15px;
+font-weight:normal;
+top:-65px;
+}
+#favtextheading2 {
+top:-45px;
 font-weight: normal;
+margin-left:30px;
+}
+#favtextheading1{
+margin-left:30px;
+top:-70px;
+font-weight: normal;
+padding:5px;
+}
+/*this edits the position between the box and the favorites heading */
+.favorites {
+margin-top:-40px;
 }
 .my-businesses-heading {
     width: 516px;
@@ -629,9 +695,17 @@ font-weight: normal;
     letter-spacing: 0.03em;
     color: #1E1E1E;
 }
+/*edits the positioning between the business heading and the box */
+#businessheading{
+position:relative;
+top:-40px;
+}
 .business-picture {
-height:80px;
-width:80px;
+padding-top:13px;
+position:absolute;
+top:10px;
+height:50px;
+width:50px;
 }
 .my-businesses {
     padding: 10px;
@@ -642,11 +716,28 @@ width:80px;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top:-70px;
 }
-.my-businesses p {
-padding:15px;
-font-weight: normal;
+#pawspatitle {
+font-weight: bold;
+padding-top:25px;
+display: inline-block;
+margin-left:27px;
+
+
 }
+
+#pawspatxt {
+font-size:14px;
+font-weight:normal;
+margin:20px;
+top:50px;
+position: relative;
+margin-left:-130px;
+
+}
+/*size of search input */
+
 .inbox-messages .message img {
     width: 65px; /* Uniform width for all images */
     height: 65px; /* Uniform height for all images */
