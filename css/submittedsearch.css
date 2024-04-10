@@ -126,6 +126,12 @@ header {
 	font-family: "Montserrat", sans-serif;
 }
 
+#logoutButton {
+	width: 100px;
+	height: 50px;
+	font-size: 17px;
+}
+
 .search-bar {
 	flex-grow: 1;
 	border-radius: 20px;
