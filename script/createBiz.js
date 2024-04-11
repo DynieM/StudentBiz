@@ -51,3 +51,5 @@ document.getElementById("addBusiness").addEventListener("click", async function 
         alert("Error saving data to Supabase. Please check console for details.");
     }
 });
+
+export {createClient};

@@ -14,6 +14,7 @@
     <script type="module" src="../script/inbox.js"></script>
     <script type="module" src="../script/logout.js"></script>
     <script type="module" src="../script/gallery.js"></script>
+    <script type="module" src="../script/searchModule.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,11 @@
                 <a href="../html/homepage.html" class="logo-link">
                     <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo" />StudentBiz
                 </a>
+            </div>
+            <div class="search-bar-header">
+                <input type="text" id="searchBar" placeholder="Search...">
+                <button id="searchButton">Search</button>
+                <div id="searchResults"></div>
             </div>
             <!-- Right side of the navigation bar on the Home Page-->
             <div class="rightnav">
@@ -62,7 +68,7 @@
                     <a href="">Edit</a>
                     <div class="image-slider">
                         <img src="../assets/Icons/leftslide.svg" alt="left arrow" class="smallIcon" id="prevBtn">
-                        <img src="../assets/pictures/image1.png" alt="Lawn being Mowed" class="businessPic">
+                        <img id="currentImage" src="../assets/pictures/image1.png" alt="Lawn being Mowed" class="businessPic">
                         <img src="../assets/Icons/rightslide.svg" alt="right arrow" class="smallIcon" id="nextBtn">
                     </div>
                     <div class="inline-container">
