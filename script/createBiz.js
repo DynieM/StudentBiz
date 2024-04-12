@@ -33,13 +33,23 @@ document.getElementById("addBusiness").addEventListener("click", async function 
             });
 
         if (error) {
+
             throw new Error('Error saving data to Supabase:', error.message);
+        
         } else {
-            console.log("Data saved successfully:", data);
-            alert("Business information saved successfully.");
+             console.log("Data saved successfully:", data);
+             alert("Business information saved successfully.");
+    
+             // Construct the URL with query parameters
+            const redirectUrl = `http://127.0.0.1:5500/html/createdBizPage.html?email=${encodeURIComponent(business_email)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(business_phone_number)}`;
+
+    window.location.href = redirectUrl;
         }
+
     } catch (error) {
         console.error(error);
         alert("Error saving data to Supabase. Please check console for details.");
     }
 });
+
+export {createClient};

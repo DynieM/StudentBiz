@@ -590,7 +590,7 @@ h2 {
 
 #editForm {
     text-align: center;
-    background-color: black;
+    background-color: #ECECEC;
     color: white;
     border: solid 1px black;
     border-radius: 25px;
@@ -896,8 +896,47 @@ h2 {
 
 }
 
+#currentImage {
+    transition: opacity 0.5s ease-in-out;
+    /* Smooths transition for the opacity change */
+    opacity: 1;
+    width: auto;
+    height: 10em;
+}
+
 .ratings img {
 
     margin: 0px 100px 0px 0px;
 
+}
+
+.search-bar-header {
+
+    display: flex;
+
+}
+
+.search-bar-header input {
+
+    width: 300px;
+    margin-right: 20px;
+
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#searchResults {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+#searchResults div {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }

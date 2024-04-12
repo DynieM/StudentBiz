@@ -543,15 +543,23 @@ h2 {
 }
 
 #editForm {
-  text-align: center;
-  background-color: black;
-  color: white;
-  border: solid 1px black;
+  text-align: left;
+  background-color: #ECECEC;
+  color: rgb(36, 36, 36);
   border-radius: 25px;
   width: 75%;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  padding: 50px;
+}
+
+#addBusiness{
+
+  margin-left: 37%;
+
 }
 
 .formInput {
@@ -559,6 +567,27 @@ h2 {
   height: 20px;
   width: 25%;
   font-size: 20px;
+  text-align: left;
+}
+
+input {
+  padding: 15px 30%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-left: 30%;
+  margin-right: 50%;
+}
+
+#description {
+
+  padding: 30px 30%;
+
+}
+
+#serviceType {
+
+  padding: 8px;
+
 }
 
 .imageFormInput {
@@ -574,11 +603,12 @@ h2 {
 
 #addBusiness {
   margin-top: 40px;
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: rgb(127, 121, 121);
+  color: rgb(255, 255, 255);
   height: 50px;
   width: 200px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* Business Profile Styles - Joao */
