@@ -1,121 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Submitted Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/submittedsearch.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../script/inbox.js"></script>
-    <script src="../script/search.js"></script>
-  </head>
-  <body>
-    <header>
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <div class="logo">
-          <a href="../html/homepage.html" class="logo-link">
-            <img
-              src="../assets/Logo/studentbizlogo.svg"
-              alt="Home"
-              id="mainLogo"
-            />StudentBiz
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Submitted Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/submittedsearch.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
+    rel="stylesheet" />
+  <script src="../script/inbox.js"></script>
+  <script src="../script/search.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../html/homepage.html" class="logo-link">
+          <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo" />StudentBiz
+        </a>
+      </div>
+      <div id="search-bar-header">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div id="searchResults"></div>
+      </div>
+      <!-- Right side of the navigation bar on the Home Page-->
+      <div class="rightnav">
+        <div id="userLoggedOut">
+          <a href="../html/login.html">
+            <button id="loginButton">Login</button>
+          </a>
+          <a href="../html/signup.html">
+            <button id="signUpButton">Sign Up</button>
           </a>
         </div>
-        <div id="search-bar-header">
-          <input type="text" id="searchInput" placeholder="Search...">
-           <div id="searchResults"></div>
+        <div id="userLoggedIn">
+          <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
+              id="profilepicicon" />Profile</a>
+          <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon" />
+            Inbox</a>
+          <a href="../html/login.html" id="logoutLink">
+            <button id="logoutButton">Log Out</button>
+          </a>
         </div>
-        <!-- Right side of the navigation bar on the Home Page-->
-        <div class="rightnav">
-          <div id="userLoggedOut">
-            <a href="../html/login.html">
-              <button id="loginButton">Login</button>
-            </a>
-            <a href="../html/signup.html">
-              <button id="signUpButton">Sign Up</button>
-            </a>
-          </div>
-          <div id="userLoggedIn">
-            <a href="../html/userprofile.html"
-              ><img
-                src="../assets/Icons/profilepic.svg"
-                alt="Profile Icon"
-                id="profilepicicon"
-              />Profile</a
-            >
-            <a href="#" id="openInbox"
-              ><img
-                src="../assets/Icons/inbox.svg"
-                alt="Inbox Icon"
-                id="inboxicon"
-              />
-              Inbox</a
-            >
-            <a href="../html/login.html" id="logoutLink">
-              <button id="logoutButton">Log Out</button>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <h2>Best Matches For Beauty</h2>
-    <!-- Container for the Tags at the top of the submitted search page-->
+      </div>
+    </nav>
+  </header>
+  <h2>Best Matches For Beauty</h2>
+  <!-- Container for the Tags at the top of the submitted search page-->
 
-    <div class="tag-container">
-      <h2 class="tag-header">Tags</h2>
-      <button class="tag" type="button">Hair</button>
-      <button class="tag" type="button">Nails</button>
-      <button class="tag" type="button">Skincare</button>
-      <button class="tag" type="button">Filter By:</button>
-    </div>
+  <div class="tag-container">
+    <h2 class="tag-header">Tags</h2>
+    <button class="tag" type="button">Hair</button>
+    <button class="tag" type="button">Nails</button>
+    <button class="tag" type="button">Skincare</button>
+    <button class="tag" type="button">Filter By:</button>
+  </div>
 
-    <!-- Generated Searches container -->
-    <div class="search-container">
+  <!-- Generated Searches container -->
+  <div class="search-container">
     <div class="searches">
       <!-- Business #1-->
       <div class="card">
         <div class="business-info">
           <div class="submitted-search-container">
             <div class="logo">
-              <img
-                class="submitted-search-image"
-                src="../assets/Icons/bymieSalon.svg"
-                alt="byMie Hair Salon Logo"
-              />
+              <img class="submitted-search-image" src="../assets/Icons/bymieSalon.svg" alt="byMie Hair Salon Logo" />
             </div>
             <div class="name">
               <h2 class="submitted-search-header">byMie Hair Salon</h2>
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
               <div class="tags">
                 <span>Beauty</span>
                 <span>Hair</span>
@@ -145,39 +106,15 @@
         <div class="business-info">
           <div class="submitted-search-container">
             <div class="logo">
-              <img
-                class="submitted-search-image"
-                src="../assets/Icons/tianalogo.svg"
-                alt="byMie Hair Salon Logo"
-              />
+              <img class="submitted-search-image" src="../assets/Icons/tianalogo.svg" alt="byMie Hair Salon Logo" />
             </div>
             <div class="name">
               <h2 class="submitted-search-header">Tiana's Makeup Services</h2>
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
               <div class="tags">
                 <span>Beauty</span>
                 <span>Makeup</span>
@@ -209,39 +146,15 @@
         <div class="business-info">
           <div class="submitted-search-container">
             <div class="logo">
-              <img
-                class="submitted-search-image"
-                src="../assets/Icons/drybarLogo.svg"
-                alt="byMie Hair Salon Logo"
-              />
+              <img class="submitted-search-image" src="../assets/Icons/drybarLogo.svg" alt="byMie Hair Salon Logo" />
             </div>
             <div class="name">
               <h2 class="submitted-search-header">DryBar Salon</h2>
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
-              <img
-                class="search-rating-star"
-                src="../assets/Icons/star.svg"
-                alt="Blue Star Icon"
-              />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
+              <img class="search-rating-star" src="../assets/Icons/star.svg" alt="Blue Star Icon" />
               <div class="tags">
                 <span>Beauty</span>
                 <span>Hair</span>
@@ -259,77 +172,79 @@
         <div class="about">
           <p class="about-header">About The Business</p>
           <p class="about-text">
-           Discover a world of style at Dry Bar. Our boutique salon combines artistry and elegance for a personalized hair experience. 
-           <b>Transform your look with us</b> – where every strand tells a story.
+            Discover a world of style at Dry Bar. Our boutique salon combines artistry and elegance for a personalized
+            hair experience.
+            <b>Transform your look with us</b> – where every strand tells a story.
           </p>
         </div>
       </div>
-      </div>
     </div>
+  </div>
 
-    <!--Footer Starts -->
-    <footer>
-      <h3><a class="about-footer" href="about.html">About</a></h3>
-      <ul class="footer">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
-        <li><a href="about.html">Accessibility Statement </a></li>
-        <li><a href="about.html">Contact Us</a></li>
-      </ul>
-    </footer>
-    <!--Footer Ends -->
-    <!-- Inbox Container -->
-    <div id="inbox-container">
-      <div class="inbox-header">
+  <!--Footer Starts -->
+  <footer>
+    <h3><a class="about-footer" href="about.html">About</a></h3>
+    <ul class="footer">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">Guidelines &amp; Disclaimers</a></li>
+      <li><a href="about.html">Accessibility Statement </a></li>
+      <li><a href="about.html">Contact Us</a></li>
+    </ul>
+  </footer>
+  <!--Footer Ends -->
+  <!-- Inbox Container -->
+  <div id="inbox-container">
+    <div class="inbox-header">
+      <div>
+        <button id="closeInbox">X</button>
+      </div>
+      <input id="searchServiceInputBox" type="text" placeholder="Search Service" />
+      <button type="button" onclick="showNewMessageForm()">
+        New Message
+      </button>
+    </div>
+    <div id="inboxMessages" class="inbox-messages">
+      <!-- Sample messages -->
+      <div class="message">
+        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
         <div>
-          <button id="closeInbox">X</button>
+          <p><strong>Mie Hair Salon</strong></p>
+          <p>Last message preview...</p>
         </div>
-        <input type="text" placeholder="Search Service" />
-        <button type="button" onclick="showNewMessageForm()">
-          New Message
-        </button>
+        <span>18h ago</span>
       </div>
-      <div id="inboxMessages" class="inbox-messages">
-        <!-- Sample messages -->
-        <div class="message">
-          <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
-          <div>
-            <p><strong>Mie Hair Salon</strong></p>
-            <p>Last message preview...</p>
-          </div>
-          <span>18h ago</span>
+      <div class="message">
+        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+        <div>
+          <p><strong>LM Tree Services</strong></p>
+          <p>Last message preview...</p>
         </div>
-        <div class="message">
-          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
-          <div>
-            <p><strong>LM Tree Services</strong></p>
-            <p>Last message preview...</p>
-          </div>
-          <span>15h ago</span>
-        </div>
-        <div class="message">
-          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-          <div>
-            <p><strong>Tutor Wise</strong></p>
-            <p>Last message preview...</p>
-          </div>
-          <span>10m ago</span>
-        </div>
+        <span>15h ago</span>
       </div>
-      <div id="sendMsg" class="send-message">
-        <input type="text" placeholder="Send Message Here" />
-      </div>
-      <!-- New Message Form -->
-      <div id="newMessageForm" class="new-message-form">
-        <button type="button" id="inbox-back-button" onclick="showInbox()">
-          &#8592; Back
-        </button>
-        <div class="controls">
-          <input type="text" placeholder="Search for people" />
-          <textarea placeholder="Type your message..."></textarea>
-          <button type="submit">Send</button>
+      <div class="message">
+        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
+        <div>
+          <p><strong>Tutor Wise</strong></p>
+          <p>Last message preview...</p>
         </div>
+        <span>10m ago</span>
       </div>
     </div>
-  </body>
+    <div id="sendMsg" class="send-message">
+      <input type="text" placeholder="Send Message Here" />
+    </div>
+    <!-- New Message Form -->
+    <div id="newMessageForm" class="new-message-form">
+      <button type="button" id="inbox-back-button" onclick="showInbox()">
+        &#8592; Back
+      </button>
+      <div class="controls">
+        <input type="text" placeholder="Search for people" />
+        <textarea placeholder="Type your message..."></textarea>
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

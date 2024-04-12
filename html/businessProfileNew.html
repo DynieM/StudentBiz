@@ -25,27 +25,22 @@
       <!-- Right side of the navigation bar on the Home Page-->
       <div class="rightnav">
         <div id="userLoggedOut">
-                    <a href="../html/login.html">
-                        <button id="loginButton">Login</button>
-                    </a>
-                <a href="../html/signup.html">
-                    <button id="signUpButton">Sign Up</button>
-                </a>
-                </div>
-            <div id="userLoggedIn">
-                <a href="../html/userprofile.html"
-              ><img
-                src="../assets/Icons/profilepic.svg"
-                alt="Profile Icon"
-                id="profilepicicon"
-              />Profile</a
-            >
-                <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
-                    Inbox</a>
-                  <a href="../html/login.html" id="logoutLink">
-                    <button id="logoutButton">Log Out</button>
-                </a>
-          </div>
+          <a href="../html/login.html">
+            <button id="loginButton">Login</button>
+          </a>
+          <a href="../html/signup.html">
+            <button id="signUpButton">Sign Up</button>
+          </a>
+        </div>
+        <div id="userLoggedIn">
+          <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
+              id="profilepicicon" />Profile</a>
+          <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
+            Inbox</a>
+          <a href="../html/login.html" id="logoutLink">
+            <button id="logoutButton">Log Out</button>
+          </a>
+        </div>
     </nav>
   </header>
   <div class="addBusinessForm">
@@ -117,7 +112,7 @@
       <div>
         <button id="closeInbox">X</button>
       </div>
-      <input type="text" placeholder="Search Service">
+      <input id="searchServiceInputBox" type="text" placeholder="Search Service">
       <button type="button" onclick="showNewMessageForm()">
         New Message
       </button>
