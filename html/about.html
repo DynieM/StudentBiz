@@ -1,142 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/about.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <script src="../script/inbox.js"></script>
-  </head>
-  <body>
-    <header>
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <div class="logo">
-          <a href="../html/homepage.html" class="logo-link">
-            <img
-              src="../assets/Logo/studentbizlogo.svg"
-              alt="Home"
-              id="mainLogo"
-            />StudentBiz
-          </a>
-        </div>
-        <!-- Right side of the navigation bar on the Home Page-->
-        <div class="rightnav">
-          <div id="userLoggedOut">
-            <a href="../html/login.html">
-              <button id="loginButton">Login</button>
-            </a>
-            <a href="../html/signup.html">
-              <button id="signUpButton">Sign Up</button>
-            </a>
-          </div>
-          <div id="userLoggedIn">
-            <a href="../html/userprofile.html"
-            ><img
-              src="../assets/Icons/profilepic.svg"
-              alt="Profile Icon"
-              id="profilepicicon"
-            />Profile</a
-          >
-          <a href="#" id="openInbox"
-            ><img
-              src="../assets/Icons/inbox.svg"
-              alt="Inbox Icon"
-              id="inboxicon"
-            />
-            Inbox</a
-          >
-          <a href="../html/login.html" id="logoutLink">
-              <button id="logoutButton">Log Out</button>
-          </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="maincontainer">
-        <h1>About Us</h1>
-        <div class="firstcontainer">
-          <h2 class="about-subheading"> About StudentBiz </h2>
-          <p class="about-text">
-             Our platform allows any verified student to create  a profile spotlighting their business offerings,  from
-        creative services to tech solutions and everything in between. Whether you&#39;re a freelancer, sole proprietor,
-        or startup founder,  StudentBiz gives you the tools and exposure  needed to convert your campus side-hustle into a
-        full-fledged enterprise.</p>
-        </div>
-        <div class="secondcontainer">
-          <h2 class="about-subheading"> Accessibility Statement </h2>
-          <p class="about-text">
-               At StudentBiz we strive to have a platform that is accessible and usable for everyone, including
-              people with disabilities. We are making an ongoing effort to comply with the
-            <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer"
-              ><span class="span">Web Content Accessibility Guidelines (WCAG)</span></a
-            >
-              2.1 level AA, which defines requirements for designers and developers to improve accessibility for people
-              with disabilities. If you encounter any problems or have difficultly navigating our site, please feel free
-              to contact us.
-          </p>
-        </div>
-        <div class="thirdcontainer">
-          <h2 class="about-subheading"> Guidelines &amp; Disclaimer </h2>
-          <p class="about-text"> The information provided by “StudentBiz” is for general informational uses only. 
-            We do not validate or guarantee the accuracy, completeness, or reliability of the 
-            information. Users are advised to exercise their own judgment and discretion when 
-            relying on this information. By using the information and products on this site, 
-            users acknowledge and assume all associated risks and and we shall not be held 
-            responsible for any errors, omissions, or inaccuracies in the provided information, 
-            products, or services.</p>
-        </div>
 
-        <!-- Inbox Container -->
-        <div id="inbox-container">
-          <div class="inbox-header">
-            <div>
-              <button id="closeInbox">X</button>
-            </div>
-            <input type="text" placeholder="Search Service">
-            <button type="button" onclick="showNewMessageForm()">New Message</button>
-          </div>
-          <div id="inboxMessages" class="inbox-messages">
-            <!-- Sample messages -->
-            <div class="message">
-              <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
-              <div>
-                <p><strong>Mie Hair Salon</strong></p>
-                <p>Last message preview...</p>
-              </div>
-              <span>18h ago</span>
-            </div>
-            <div class="message">
-              <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
-              <div>
-                <p><strong>LM Tree Services</strong></p>
-                <p class="previewMessage">Last message preview...</p>
-              </div>
-              <span>15h ago</span>
-            </div>
-            <div class="message">
-              <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-              <div>
-                <p><strong>Tutor Wise</strong></p>
-                <p class="previewMessage">Last message preview...</p>
-              </div>
-              <span>10m ago</span>
-            </div>
-          </div>
-          <div id="sendMsg" class="send-message">
-            <input type="text" placeholder="Send Message Here">
-          </div>
-          <!-- New Message Form -->
-          <div id="newMessageForm" class="new-message-form">
-            <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
-            <div class="controls">
-              <input type="text" placeholder="Search for people">
-              <textarea placeholder="Type your message..."></textarea>
-              <button type="submit">Send</button>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
+  <script src="../script/inbox.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../html/homepage.html" class="logo-link">
+          <img src="../assets/Logo/studentbizlogo.svg" alt="Home" id="mainLogo" />StudentBiz
+        </a>
+      </div>
+      <!-- Right side of the navigation bar on the Home Page-->
+      <div class="rightnav">
+        <div id="userLoggedOut">
+          <a href="../html/login.html">
+            <button id="loginButton">Login</button>
+          </a>
+          <a href="../html/signup.html">
+            <button id="signUpButton">Sign Up</button>
+          </a>
         </div>
-  </body>
+        <div id="userLoggedIn">
+          <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
+              id="profilepicicon" />Profile</a>
+          <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon" />
+            Inbox</a>
+          <a href="../html/login.html" id="logoutLink">
+            <button id="logoutButton">Log Out</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="maincontainer">
+    <h1>About Us</h1>
+    <div class="firstcontainer">
+      <h2 class="about-subheading"> About StudentBiz </h2>
+      <p class="about-text">
+        Our platform allows any verified student to create a profile spotlighting their business offerings, from
+        creative services to tech solutions and everything in between. Whether you&#39;re a freelancer, sole proprietor,
+        or startup founder, StudentBiz gives you the tools and exposure needed to convert your campus side-hustle into a
+        full-fledged enterprise.</p>
+    </div>
+    <div class="secondcontainer">
+      <h2 class="about-subheading"> Accessibility Statement </h2>
+      <p class="about-text">
+        At StudentBiz we strive to have a platform that is accessible and usable for everyone, including
+        people with disabilities. We are making an ongoing effort to comply with the
+        <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer"><span
+            class="span">Web Content Accessibility Guidelines (WCAG)</span></a>
+        2.1 level AA, which defines requirements for designers and developers to improve accessibility for people
+        with disabilities. If you encounter any problems or have difficultly navigating our site, please feel free
+        to contact us.
+      </p>
+    </div>
+    <div class="thirdcontainer">
+      <h2 class="about-subheading"> Guidelines &amp; Disclaimer </h2>
+      <p class="about-text"> The information provided by “StudentBiz” is for general informational uses only.
+        We do not validate or guarantee the accuracy, completeness, or reliability of the
+        information. Users are advised to exercise their own judgment and discretion when
+        relying on this information. By using the information and products on this site,
+        users acknowledge and assume all associated risks and and we shall not be held
+        responsible for any errors, omissions, or inaccuracies in the provided information,
+        products, or services.</p>
+    </div>
+
+    <!-- Inbox Container -->
+    <div id="inbox-container">
+      <div class="inbox-header">
+        <div>
+          <button id="closeInbox">X</button>
+        </div>
+        <input id="searchServiceInputBox" type="text" placeholder="Search Service">
+        <button type="button" onclick="showNewMessageForm()">New Message</button>
+      </div>
+      <div id="inboxMessages" class="inbox-messages">
+        <!-- Sample messages -->
+        <div class="message">
+          <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+          <div>
+            <p><strong>Mie Hair Salon</strong></p>
+            <p>Last message preview...</p>
+          </div>
+          <span>18h ago</span>
+        </div>
+        <div class="message">
+          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+          <div>
+            <p><strong>LM Tree Services</strong></p>
+            <p class="previewMessage">Last message preview...</p>
+          </div>
+          <span>15h ago</span>
+        </div>
+        <div class="message">
+          <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
+          <div>
+            <p><strong>Tutor Wise</strong></p>
+            <p class="previewMessage">Last message preview...</p>
+          </div>
+          <span>10m ago</span>
+        </div>
+      </div>
+      <div id="sendMsg" class="send-message">
+        <input type="text" placeholder="Send Message Here">
+      </div>
+      <!-- New Message Form -->
+      <div id="newMessageForm" class="new-message-form">
+        <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+        <div class="controls">
+          <input type="text" placeholder="Search for people">
+          <textarea placeholder="Type your message..."></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>

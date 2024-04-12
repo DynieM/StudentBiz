@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/userprofile.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -108,58 +109,58 @@
             <li><a href="about.html">Contact Us</a></li>
         </ul>
     </footer>
-    <!--Inbox-->
-      <div id="inbox-container">
-                <div class="inbox-header">
-                    <div>
-                        <button type="button" id="closeInbox">X</button>
-                    </div>
-                    <div class="search-section">
-                       <input type="text" placeholder="Search Service">
-                    </div>
-                </div>
-
-                 <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
-                 <!-- Inbox Messages -->
-                <div id="inboxMessages" class="inbox-messages">
-                    <!-- Sample messages -->
-                    <div class="message">
-                        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
-                        <div>
-                            <p><strong>Mie Hair Salon</strong></p>
-                            <p>Last message preview...</p>
-                        </div>
-                        <div class="inbox_time">18h ago</div>
-                    </div>
-                    <div class="message">
-                        <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
-                        <div>
-                            <p><strong>LM Tree Services</strong></p>
-                            <p>Last message preview...</p>
-                        </div>
-                        <div class="inbox_time">15h ago</div>
-                    </div>
-                    <div class="message">
-                        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
-                        <div class="inbox_text">
-                            <p><strong>Tutor Wise</strong></p>
-                            <p>Last message preview...</p>
-                        </div>
-                        <div class="inbox_time">10m ago</div>
-                    </div>
-                </div>
-                <div id="sendMsg" class="send-message">
-                    <input type="text" placeholder="Send Message Here">
-                </div>
-                <!-- New Message Form -->
-                <div id="newMessageForm" class="new-message-form">
-                    <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
-                    <div class="controls">
-                        <textarea placeholder="Type your message..."></textarea>
-                        <button type="submit">Send</button>
-                    </div>
-                </div>
+    <!-- Inbox Container -->
+    <div id="inbox-container">
+        <div class="inbox-header">
+            <div>
+                <button type="button" id="closeInbox">X</button>
             </div>
+            <div class="search-section">
+                <input id="searchServiceInputBox" type="text" placeholder="Search Service">
+            </div>
+        </div>
+
+        <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
+        <!-- Inbox Messages -->
+        <div id="inboxMessages" class="inbox-messages">
+            <!-- Sample messages -->
+            <div class="message">
+                <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
+                <div>
+                    <p><strong>Mie Hair Salon</strong></p>
+                    <p>Last message preview...</p>
+                </div>
+                <div class="inbox_time">18h ago</div>
+            </div>
+            <div class="message">
+                <img src="../assets/pictures/Blog-header-1-13.png" alt="Profile">
+                <div>
+                    <p><strong>LM Tree Services</strong></p>
+                    <p>Last message preview...</p>
+                </div>
+                <div class="inbox_time">15h ago</div>
+            </div>
+            <div class="message">
+                <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+                <div class="inbox_text">
+                    <p><strong>Tutor Wise</strong></p>
+                    <p>Last message preview...</p>
+                </div>
+                <div class="inbox_time">10m ago</div>
+            </div>
+        </div>
+        <div id="sendMsg" class="send-message">
+            <input type="text" placeholder="Send Message Here">
+        </div>
+        <!-- New Message Form -->
+        <div id="newMessageForm" class="new-message-form">
+            <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
+            <div class="controls">
+                <textarea placeholder="Type your message..."></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </div>
     <!--Pop Up Ad-->
     <div id="popUpAd-container">
         <div class="popup-box">

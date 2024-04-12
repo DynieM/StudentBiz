@@ -1,26 +1,30 @@
 /** @format */
 
 window.onload = function () {
-    let firstName = sessionStorage.getItem("firstName");
-    let email = sessionStorage.getItem("email");
-    let phone = sessionStorage.getItem("phone");
-   
+    let storedFirstName = sessionStorage.getItem("firstName");
+    let storedEmail = sessionStorage.getItem("email");
+    let storedPhone = sessionStorage.getItem("phone");
 
-    if (firstName == null || firstName == "") {
-        let firstName = document.querySelector(".username-text").textContent;
-        localStorage.setItem("firstName", firstName);
-    }
-    if (email == null || email == "") {
-        let email = document.querySelector(".emailinfo").textContent;
-        localStorage.setItem("email", email);
-    }
-    if (phone == null || phone == "") {
-        let phone = document.querySelector(".phoneinfo").textContent;
-        localStorage.setItem("phone", phone);
+    const usernameTextElement = document.querySelector(".username-text");
+    const emailInfoElement = document.querySelector(".emailinfo");
+    const phoneInfoElement = document.querySelector(".phoneinfo");
+
+    if (!storedFirstName && usernameTextElement) {
+        storedFirstName = usernameTextElement.textContent;
+        sessionStorage.setItem("firstName", storedFirstName);
     }
 
+    if (!storedEmail && emailInfoElement) {
+        storedEmail = emailInfoElement.textContent;
+        sessionStorage.setItem("email", storedEmail);
+    }
 
-    document.querySelector(".username-text").textContent = firstName;
-    document.querySelector(".emailinfo").textContent = email;
-    document.querySelector(".phoneinfo").textContent = phone;
+    if (!storedPhone && phoneInfoElement) {
+        storedPhone = phoneInfoElement.textContent;
+        sessionStorage.setItem("phone", storedPhone);
+    }
+
+    if (usernameTextElement) usernameTextElement.textContent = storedFirstName;
+    if (emailInfoElement) emailInfoElement.textContent = storedEmail;
+    if (phoneInfoElement) phoneInfoElement.textContent = storedPhone;
 };
