@@ -126,7 +126,7 @@ header {
     flex-grow: 1;
     border-radius: 20px;
     margin: 10px;
-    width:808px;
+    width: 808px;
     height: 71px;
     margin-left: auto;
     margin-right: auto;
@@ -146,16 +146,24 @@ input[type="text"] {
     box-sizing: border-box;
     border-radius: 20px;
 }
+
 .search-section input[type="text"]:first-of-type {
     font-family: "Montserrat", sans-serif;
-    background-image: url('../assets/Icons/search.svg'); /* Path to your search icon */
-    background-position: 12px center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    background-image: url('../assets/Icons/search.svg');
+    /* Path to your search icon */
+    background-position: 12px center;
+    /* Adjust as needed */
+    background-repeat: no-repeat;
+    /* Prevent the icon from repeating */
     background-size: 20px 20px;
-    padding-left: 40px; /* Adjust the padding to ensure text doesn't overlap the icon */
-    background-color: #FFFFFF; /* Example: white background */
-    border: 1px solid #ccc; /* Optional: match the input's border */
+    padding-left: 40px;
+    /* Adjust the padding to ensure text doesn't overlap the icon */
+    background-color: #FFFFFF;
+    /* Example: white background */
+    border: 1px solid #ccc;
+    /* Optional: match the input's border */
 }
+
 button {
     background-color: #000000;
     color: #fff;
@@ -191,14 +199,15 @@ p {
 
 /*styles for the create a business text above the buttton */
 .cabbtn {
-color:#f1f1f1;
-z-index:1;
-position:absolute;
-top:500px;
-left:1295px;
-font-weight:normal;
+    color: #f1f1f1;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    left: 1295px;
+    font-weight: normal;
 
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -234,6 +243,7 @@ footer {
     z-index: 1000;
     display: none;
 }
+
 #closeInbox {
     float: right;
     justify-content: space-between;
@@ -245,8 +255,9 @@ footer {
 
 
 .inbox_time {
-    font-size:12px;
+    font-size: 12px;
 }
+
 .inbox_text {
     left: 0px;
     bottom: 0px;
@@ -270,10 +281,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.search-icon, .message-icon {
-    margin-right: 10px; /* Adds some space between the icon and the input/button */
-    width: 25px; 
-    height: 20px; 
+.search-icon,
+.message-icon {
+    margin-right: 10px;
+    /* Adds some space between the icon and the input/button */
+    width: 25px;
+    height: 20px;
 }
 
 .inbox-header button,
@@ -286,16 +299,19 @@ footer {
     color: white;
     background-color: #007bff;
 }
+
 .new-message {
     background-color: #efeff0;
     color: gray;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
-    background-image: url('../assets/Icons/new_message.svg'); /* Path to your search icon */
-    background-position: 10px center; /* Adjust as needed */
-    background-repeat: no-repeat; 
+    background-image: url('../assets/Icons/new_message.svg');
+    /* Path to your search icon */
+    background-position: 10px center;
+    /* Adjust as needed */
+    background-repeat: no-repeat;
     background-size: 20px 20px;
-    padding-left: 40px; 
+    padding-left: 40px;
     margin: 10px;
 }
 
@@ -305,6 +321,7 @@ footer {
     display: block;
     padding: 10px;
 }
+
 .send-message {
     border-radius: 15px;
     display: block;
@@ -437,11 +454,12 @@ footer {
     letter-spacing: -0.022em;
     color: #FFFFFF;
 }
+
 /*removed left and top */
 #add {
     position: absolute;
-    top:15px;
-    left:15px;
+    top: 15px;
+    left: 15px;
     width: 20px;
     height: 20px;
     font-family: 'Montserrat';
@@ -452,18 +470,19 @@ footer {
     letter-spacing: -0.019em;
     color: #9A9A9A;
 }
+
 /*top left was pushing the page over */
 .addicon {
-    position:absolute;
+    position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 100px;
     background: #D9D9D9;
-margin-left:auto;
-margin-top:20px;
-z-index:1;
-top: 530px;
-left:1350px;
+    margin-left: auto;
+    margin-top: 20px;
+    z-index: 1;
+    top: 530px;
+    left: 1350px;
 }
 
 
@@ -479,7 +498,7 @@ left:1350px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding:10px;
+    padding: 10px;
 
 }
 
@@ -515,21 +534,24 @@ left:1350px;
     background: #D9D9D9;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
-    margin-top:-80px;
-    
-    
+    margin-top: -80px;
+
+
 }
+
 .my-reviews p {
-    margin-right:400px;
+    margin-right: 400px;
     text-align: right;
-    top:-200px;
-    
+    top: -200px;
+
 }
+
 .my-reviews a {
-display: inline-block;
+    display: inline-block;
     margin-left: 300px;
     text-align: right;
 }
+
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
     padding: 15px;
@@ -537,10 +559,11 @@ display: inline-block;
     width: 150px;
 
 }
+
 .review-item {
-display: flex;
-align-items: center;
-flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #reviewtitle {
@@ -548,103 +571,117 @@ flex-direction: column;
     padding: 15px;
     font-size: 25px;
 }
+
 /*styling the review text paragraphs */
 #reviewdesc1 {
-font-size:14px;
-font-weight: normal;
-position: relative;
-top:-400px;
-word-wrap: break-word;
-display: inline-block;
-text-align: left;
-font-style: italic;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -400px;
+    word-wrap: break-word;
+    display: inline-block;
+    text-align: left;
+    font-style: italic;
 
 }
+
 #reviewdesc2 {
-font-size:14.5px;
-font-weight:normal;
-position:relative;
-word-wrap:break-word;
-display:inline-block;
-font-style: italic;
-text-align: left;
-top:-400px;
+    font-size: 14.5px;
+    font-weight: normal;
+    position: relative;
+    word-wrap: break-word;
+    display: inline-block;
+    font-style: italic;
+    text-align: left;
+    top: -400px;
 }
+
 /*this positions the review paragraph text */
 .review-txt {
-margin-right:-480px;
-text-align: left;
+    margin-right: -480px;
+    text-align: left;
 }
 
 /*view text stylings */
 .view-text {
     color: blue;
-    margin-top:-200px;
+    margin-top: -200px;
     padding-left: 20px;
     text-decoration: underline;
     font-weight: 600;
-    z-index:1;
-   
-    
-}
-/*individual view text stylings mostly dealing with the positioning of the link in the container */
-#viewtext1 {
-  margin-top:-390px;  
-margin-left:-10px;
-}
-#viewtext2 {
-margin-top:-390px;
-margin-left:-10px;
-}
-/*rating icon stylings */
-.rating-icon {
-height:200px;
-width:200px;
+    z-index: 1;
+
 
 }
+
+/*individual view text stylings mostly dealing with the positioning of the link in the container */
+#viewtext1 {
+    margin-top: -390px;
+    margin-left: -10px;
+}
+
+#viewtext2 {
+    margin-top: -390px;
+    margin-left: -10px;
+}
+
+/*rating icon stylings */
+.rating-icon {
+    height: 200px;
+    width: 200px;
+
+}
+
 /*review image positioning */
 .review-item img {
-top: -320px;
-margin-left:30px;
-position:relative;
+    top: -320px;
+    margin-left: 30px;
+    position: relative;
 }
+
 .reviewdesc {
-font-size:10px;
+    font-size: 10px;
 }
+
 .review-title {
-position:relative;
-top:15px;
+    position: relative;
+    top: 15px;
 }
+
 .heart-icon {
-height:40px;
-width:40px;
-margin-left:30px;
-margin:15px;
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+    margin: 15px;
 }
+
 /*positions the second heart icon, the one besides paulshaircuts */
 #hearticon2 {
-top:130px;
-position:absolute;
+    top: 130px;
+    position: absolute;
 }
+
 .favorites-heading {
     width: 517px;
     height: 61px;
-padding-top:20px;
+    padding-top: 20px;
     font-family: 'Oswald';
     font-weight: 400;
     font-size: 55px;
     line-height: 150%;
-    padding:15px;
+    padding: 15px;
     /* or 82px */
     letter-spacing: 0.03em;
     color: #000000;
 }
+
 /*positions the favorites heading */
 #favheading {
-top:20px;
-position:relative;
-margin:5px;
+    top: 20px;
+    position: relative;
+    margin: 5px;
 }
+
 .favorites {
     display: flex;
     flex-direction: column;
@@ -656,33 +693,39 @@ margin:5px;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 /*this is just a description of the lm tree services in the favorties box */
 #favtext {
-    font-size:15px;
-    margin-left:-15px;
-    margin-top:-60px;
-    font-weight:normal;
+    font-size: 15px;
+    margin-left: -15px;
+    margin-top: -60px;
+    font-weight: normal;
 }
+
 #favtext2 {
-font-size:15px;
-font-weight:normal;
-top:-65px;
+    font-size: 15px;
+    font-weight: normal;
+    top: -65px;
 }
+
 #favtextheading2 {
-top:-45px;
-font-weight: normal;
-margin-left:30px;
+    top: -45px;
+    font-weight: normal;
+    margin-left: 30px;
 }
-#favtextheading1{
-margin-left:30px;
-top:-70px;
-font-weight: normal;
-padding:5px;
+
+#favtextheading1 {
+    margin-left: 30px;
+    top: -70px;
+    font-weight: normal;
+    padding: 5px;
 }
+
 /*this edits the position between the box and the favorites heading */
 .favorites {
-margin-top:-40px;
+    margin-top: -40px;
 }
+
 .my-businesses-heading {
     width: 516px;
     height: 61px;
@@ -695,18 +738,21 @@ margin-top:-40px;
     letter-spacing: 0.03em;
     color: #1E1E1E;
 }
+
 /*edits the positioning between the business heading and the box */
-#businessheading{
-position:relative;
-top:-40px;
+#businessheading {
+    position: relative;
+    top: -40px;
 }
+
 .business-picture {
-padding-top:13px;
-position:absolute;
-top:10px;
-height:50px;
-width:50px;
+    padding-top: 13px;
+    position: absolute;
+    top: 10px;
+    height: 50px;
+    width: 50px;
 }
+
 .my-businesses {
     padding: 10px;
     display: flex;
@@ -716,37 +762,40 @@ width:50px;
     border: 1px solid #D2D2D2;
     border-radius: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin-top:-70px;
+    margin-top: -70px;
 }
+
 #pawspatitle {
-font-weight: bold;
-padding-top:25px;
-display: inline-block;
-margin-left:27px;
+    font-weight: bold;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: 27px;
 
 
 }
 
 #pawspatxt {
-font-size:14px;
-font-weight:normal;
-margin:20px;
-top:50px;
-position: relative;
-margin-left:-130px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 20px;
+    top: 50px;
+    position: relative;
+    margin-left: -130px;
 
 }
+
 /*size of search input */
 
 .inbox-messages .message img {
-    width: 65px; /* Uniform width for all images */
-    height: 65px; /* Uniform height for all images */
-    object-fit: cover; 
-    border-radius: 60%; 
+    width: 65px;
+    /* Uniform width for all images */
+    height: 65px;
+    /* Uniform height for all images */
+    object-fit: cover;
+    border-radius: 60%;
 }
 
-#logoutButton
-{
+#logoutButton {
     width: 100px;
     height: 50px;
     font-size: 17px;
