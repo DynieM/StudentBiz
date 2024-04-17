@@ -45,7 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			ul.style.listStyleType = "none";
 			results.forEach((result) => {
 				const li = document.createElement("li");
-				li.textContent = result.business_name_db; // Replace 'column_name' with the actual column you want to display
+				const a = document.createElement("a");
+				a.href = "/html/businessProfileSet.html"; // Modify this according to your file structure and naming convention
+				a.textContent = result.business_name_db; // Replace 'column_name' with the actual column you want to display
+				 li.appendChild(a);
 				ul.appendChild(li);
 			});
 			searchResultsContainer.appendChild(ul);

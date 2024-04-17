@@ -7,7 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
-   <script src="../script/login.js"></script>
+
+<script type="module">
+    import { validateForm } from '../script/login.js';
+
+    window.validateForm = validateForm;
+</script>
     <title>Login</title>
 </head>
 <body>
@@ -20,14 +25,15 @@
             <p class="newToStudentBizText"> New to StudentBiz? <a href="../html/signup.html" class="signup-text">Sign Up</a> </p>
         </div>
          <div class="user">
-       <form onsubmit="return validateForm(event)">
+      
          <input type="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
          <input type="password" id="password" placeholder="Password" />
         </div>
-       <div id="buttonLogin">
-        <a href="../html/userprofile.html"><input type="submit" id="LoginButton" value="Login"></a>
+      
+  
+     <div id="buttonLogin">
+    <button id="LoginButton" onclick="validateForm()"> Login </button>
         </div>
-    </form>
         
        
     <br/>

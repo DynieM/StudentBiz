@@ -130,7 +130,7 @@ header {
 	color: gray;
 	font-family: "Montserrat", sans-serif;
 	padding: 10px;
-	background-image: url('../assets/Icons/new_message.svg');
+	background-image: url("../assets/Icons/new_message.svg");
 	/* Path to your search icon */
 	background-position: 10px center;
 	/* Adjust as needed */
@@ -375,7 +375,7 @@ p {
 /* Link styles*/
 a {
 	text-decoration: none;
-	color: white;
+	color: rgb(16, 15, 15);
 }
 
 /* List styling */
@@ -443,8 +443,8 @@ footer {
 .categories-bg {
 	width: 693px;
 	height: 170px;
-	background: #25222F;
-	border: 1.5px solid #2C2C2C;
+	background: #25222f;
+	border: 1.5px solid #2c2c2c;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 0px 85px 0px;
 	position: absolute;
@@ -456,8 +456,8 @@ footer {
 .loggedin-bg {
 	width: 693px;
 	height: 170px;
-	background: #25222F;
-	border: 1.5px solid #2C2C2C;
+	background: #25222f;
+	border: 1.5px solid #2c2c2c;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px 0px 85px 0px;
 	position: absolute;
@@ -836,7 +836,7 @@ h2 {
 
 .search-section input[type="text"]:first-of-type {
 	font-family: "Montserrat", sans-serif;
-	background-image: url('../assets/Icons/search.svg');
+	background-image: url("../assets/Icons/search.svg");
 	/* Path to your search icon */
 	background-position: 12px center;
 	/* Adjust as needed */
@@ -845,7 +845,7 @@ h2 {
 	background-size: 20px 20px;
 	padding-left: 40px;
 	/* Adjust the padding to ensure text doesn't overlap the icon */
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	/* Example: white background */
 	border: 1px solid #ccc;
 	/* Optional: match the input's border */
@@ -870,8 +870,8 @@ h2 {
 
 .inbox-messages {
 	border-radius: 15px;
-    display: block;
-    padding: 10px;
+	display: block;
+	padding: 10px;
 }
 .send-message {
 	display: block;
@@ -1125,20 +1125,15 @@ h2 {
 
 /* Responsive adjustments can be made here */
 @media (max-width: 800px) {
-
 	.advertise img {
-
 		height: 10%;
 		width: 42%;
 		object-fit: contain;
 		text-align: center;
 	}
 
-
 	.adcontainer {
-
 		height: 300px;
-
 	}
 
 	.arrow {
@@ -1151,9 +1146,7 @@ h2 {
 	}
 
 	.alt-heading {
-
 		font-size: 40px;
-
 	}
 
 	input[type="text"] {
@@ -1163,4 +1156,7 @@ h2 {
 		border-radius: 20px;
 		margin-left: 10%;
 	}
+}
+.search-bar-header {
+	width: 600px;
 }

@@ -1,753 +1,739 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    padding-bottom: 25px;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	padding-bottom: 25px;
 }
 
 header {
-    color: #ffffff;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	color: #ffffff;
+	background-color: white;
+	padding: 10px;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
 }
 
 /* Styling for Links in the Nav Bar */
 .navbar a {
-    float: left;
-    color: rgb(21, 20, 20);
-    text-align: center;
-    margin: 14px 16px;
+	float: left;
+	color: rgb(21, 20, 20);
+	text-align: center;
+	margin: 14px 16px;
 }
 
 .navbar .icon {
-    font-family: sans-serif;
-    margin-right: 5px;
-    margin-bottom: 8px;
-    /* Adjust spacing between icon and text */
-    font-size: 25px;
+	font-family: sans-serif;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	/* Adjust spacing between icon and text */
+	font-size: 25px;
 }
 
 /* Styling for Main Logo */
 #mainLogo {
-    width: 50px;
-    height: 50px;
-    display: block;
-    transition: width 1s ease, height 1s ease;
-    margin-right: 10px;
-    /* Add a transition for width and height */
+	width: 50px;
+	height: 50px;
+	display: block;
+	transition: width 1s ease, height 1s ease;
+	margin-right: 10px;
+	/* Add a transition for width and height */
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    padding-left: 10px;
-    font-weight: bold;
-    font-size: 24px;
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .navbar .rightnav img {
-    display: block;
-    /* Make the image a block element */
-    margin: 0 auto 5px;
-    /* Center the image and adjust spacing */
-    width: 25px;
-    height: 25px;
+	display: block;
+	/* Make the image a block element */
+	margin: 0 auto 5px;
+	/* Center the image and adjust spacing */
+	width: 25px;
+	height: 25px;
 }
 
 /* Styles for the right navigation bar links */
 .rightnav {
-    font-size: 20px;
-    right: 25px;
-    position: relative;
-    color: #000000;
-    text-decoration: none;
-    margin-left: 5px;
+	font-size: 20px;
+	right: 25px;
+	position: relative;
+	color: #000000;
+	text-decoration: none;
+	margin-left: 5px;
 }
 
 #userLoggedOut {
-    display: none;
+	display: none;
 }
 
 #loginButton {
-    background-color: white;
-    color: black;
-    width: 100px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
+	background-color: white;
+	color: black;
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
 }
 
 #signUpButton {
-    background-color: blue;
-    color: white;
-    width: 100px;
-    border: 1px solid blue;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
+	background-color: blue;
+	color: white;
+	width: 100px;
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
 }
 
 #userLoggedIn {
-    display: block;
+	display: block;
 }
 
 #profilepicicon {
-    width: 50px;
-    height: 50px;
-    font-family: "Montserrat", sans-serif;
+	width: 50px;
+	height: 50px;
+	font-family: "Montserrat", sans-serif;
 }
 
 #inboxicon {
-    width: 50px;
-    height: 50px;
-    font-family: "Montserrat", sans-serif;
+	width: 50px;
+	height: 50px;
+	font-family: "Montserrat", sans-serif;
 }
 
 #logoutButton {
-    width: 100px;
-    height: 50px;
-    font-size: 17px;
+	width: 100px;
+	height: 50px;
+	font-size: 17px;
 }
 
 .search-bar {
-    flex-grow: 1;
-    border-radius: 20px;
-    margin: 10px;
-    width:808px;
-    height: 71px;
-    margin-left: auto;
-    margin-right: auto;
+	flex-grow: 1;
+	border-radius: 20px;
+	margin: 10px;
+	width: 808px;
+	height: 71px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-
 .logo {
-    /* Styles for the logo */
-    color: #000000;
-    text-decoration: none;
-    font-size: 24px;
+	/* Styles for the logo */
+	color: #000000;
+	text-decoration: none;
+	font-size: 24px;
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 20px;
 }
 .search-section input[type="text"]:first-of-type {
-    font-family: "Montserrat", sans-serif;
-    background-image: url('../assets/Icons/search.svg'); /* Path to your search icon */
-    background-position: 12px center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
-    background-size: 20px 20px;
-    padding-left: 40px; /* Adjust the padding to ensure text doesn't overlap the icon */
-    background-color: #FFFFFF; /* Example: white background */
-    border: 1px solid #ccc; /* Optional: match the input's border */
+	font-family: "Montserrat", sans-serif;
+	background-image: url("../assets/Icons/search.svg"); /* Path to your search icon */
+	background-position: 12px center; /* Adjust as needed */
+	background-repeat: no-repeat; /* Prevent the icon from repeating */
+	background-size: 20px 20px;
+	padding-left: 40px; /* Adjust the padding to ensure text doesn't overlap the icon */
+	background-color: #ffffff; /* Example: white background */
+	border: 1px solid #ccc; /* Optional: match the input's border */
 }
 button {
-    background-color: #000000;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+	background-color: #000000;
+	color: #fff;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
 }
 
 .about-footer {
-    margin-left: 40px;
+	margin-left: 40px;
 }
 
 h2 {
-    font-size: 30px;
-    color: #ffffff;
-    font-family: "Oswald", Helvetica;
-    text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	font-family: "Oswald", Helvetica;
+	text-align: center;
 }
 
 /* Styles for the paragraphs */
 p {
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    left: 30px;
-    bottom: 20px;
-    color: #1E1E1E;
-    font-size: 20px;
-    display: block;
-    text-align: left;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+	color: #1e1e1e;
+	font-size: 20px;
+	display: block;
+	text-align: left;
 }
-
 
 /*styles for the create a business text above the buttton */
 .cabbtn {
-color:#f1f1f1;
-z-index:1;
-position:absolute;
-top:500px;
-left:1295px;
-font-weight:normal;
-
+	color: #f1f1f1;
+	z-index: 1;
+	position: absolute;
+	top: 500px;
+	left: 1295px;
+	font-weight: normal;
 }
 a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 footer {
-    /* Styles for the footer */
-    position: sticky;
-    padding: 15px;
-    color: white;
-    text-align: left;
-    margin-top: 100px;
-    text-decoration: none;
-    background-color: #212427;
-    min-height: 20vh;
-    flex: 1;
+	/* Styles for the footer */
+	position: sticky;
+	padding: 15px;
+	color: white;
+	text-align: left;
+	margin-top: 100px;
+	text-decoration: none;
+	background-color: #212427;
+	min-height: 20vh;
+	flex: 1;
 }
 
 /* Styles for Inbox */
 #inbox-container {
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    width: 390px;
-    background-color: #fff;
-    border-radius: 40px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    z-index: 1000;
-    display: none;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	width: 390px;
+	background-color: #fff;
+	border-radius: 40px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	z-index: 1000;
+	display: none;
 }
 #closeInbox {
-    float: right;
-    justify-content: space-between;
-    padding: 9px;
-    background-color: white;
-    color: gray;
-    margin: 10px;
+	float: right;
+	justify-content: space-between;
+	padding: 9px;
+	background-color: white;
+	color: gray;
+	margin: 10px;
 }
-
 
 .inbox_time {
-    font-size:12px;
+	font-size: 12px;
 }
 .inbox_text {
-    left: 0px;
-    bottom: 0px;
+	left: 0px;
+	bottom: 0px;
 }
 
 .inbox-header,
 .new-message-form {
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    background-color: #f1f1f1;
-    position: relative;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
+	background-color: #f1f1f1;
+	position: relative;
 }
 
 .inbox-header input,
 .new-message-form input,
 .new-message-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: calc(100% - 20px);
-    margin-bottom: 10px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: calc(100% - 20px);
+	margin-bottom: 10px;
 }
 
-.search-icon, .message-icon {
-    margin-right: 10px; /* Adds some space between the icon and the input/button */
-    width: 25px; 
-    height: 20px; 
+.search-icon,
+.message-icon {
+	margin-right: 10px; /* Adds some space between the icon and the input/button */
+	width: 25px;
+	height: 20px;
 }
 
 .inbox-header button,
 .new-message-form button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 10px 12px;
-    border-radius: 4px;
-    color: white;
-    background-color: #007bff;
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 10px 12px;
+	border-radius: 4px;
+	color: white;
+	background-color: #007bff;
 }
 .new-message {
-    background-color: #efeff0;
-    color: gray;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    background-image: url('../assets/Icons/new_message.svg'); /* Path to your search icon */
-    background-position: 10px center; /* Adjust as needed */
-    background-repeat: no-repeat; 
-    background-size: 20px 20px;
-    padding-left: 40px; 
-    margin: 10px;
+	background-color: #efeff0;
+	color: gray;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
+	background-image: url("../assets/Icons/new_message.svg"); /* Path to your search icon */
+	background-position: 10px center; /* Adjust as needed */
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding-left: 40px;
+	margin: 10px;
 }
-
-
 
 .inbox-messages {
-    display: block;
-    padding: 10px;
+	display: block;
+	padding: 10px;
 }
 .send-message {
-    border-radius: 15px;
-    display: block;
-    padding: 10px;
+	border-radius: 15px;
+	display: block;
+	padding: 10px;
 }
 
 .message {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #eee;
-    padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
+	padding: 10px;
 }
 
 .message p {
-    color: black;
-    font-size: 14px;
+	color: black;
+	font-size: 14px;
 }
 
 .send-message input {
-    width: 100%;
-    box-sizing: border-box;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .new-message-form {
-    display: none;
-    background-color: #fff;
+	display: none;
+	background-color: #fff;
 }
 
 .new-message-form textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	resize: none;
+	box-sizing: border-box;
 }
 
 .controls {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center align the flex items */
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Center align the flex items */
 }
 
 .profile-column {
-    width: 100%;
-    height: 516px;
-    background: #B0B0B0;
-    box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.38);
-    border-radius: 0px 0px 0px 70px;
-    z-index: 2;
+	width: 100%;
+	height: 516px;
+	background: #b0b0b0;
+	box-shadow: 0px 4px 4px rgba(5, 5, 5, 0.38);
+	border-radius: 0px 0px 0px 70px;
+	z-index: 2;
 }
 
 .profile-picture {
-    position: absolute;
-    width: 366px;
-    height: 381px;
-    left: 174px;
-    top: 200px;
+	position: absolute;
+	width: 366px;
+	height: 381px;
+	left: 174px;
+	top: 200px;
 }
 
 .username-text {
-    position: absolute;
-    width: 446px;
-    height: 74px;
-    left: 669px;
-    top: 200px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 150%;
-    /* or 72px */
-    letter-spacing: -0.022em;
-    color: #FFFFFF;
+	position: absolute;
+	width: 446px;
+	height: 74px;
+	left: 669px;
+	top: 200px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 150%;
+	/* or 72px */
+	letter-spacing: -0.022em;
+	color: #ffffff;
 }
 
 #studentseal {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 920px;
-    top: 240px;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 920px;
+	top: 240px;
 }
 
 #emailicon {
-    position: absolute;
-    width: 48px;
-    height: 44px;
-    left: 669px;
-    top: 370px;
+	position: absolute;
+	width: 48px;
+	height: 44px;
+	left: 669px;
+	top: 370px;
 }
 
 #phoneicon {
-    position: absolute;
-    width: 48px;
-    height: 47px;
-    left: 669px;
-    top: 450px;
+	position: absolute;
+	width: 48px;
+	height: 47px;
+	left: 669px;
+	top: 450px;
 }
 
 .emailinfo {
-    position: absolute;
-    width: 551px;
-    height: 50px;
-    left: 742px;
-    top: 370px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 150%;
-    /* or 48px */
-    letter-spacing: -0.022em;
-    text-decoration-line: underline;
-    color: #FFFFFF;
+	position: absolute;
+	width: 551px;
+	height: 50px;
+	left: 742px;
+	top: 370px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 150%;
+	/* or 48px */
+	letter-spacing: -0.022em;
+	text-decoration-line: underline;
+	color: #ffffff;
 }
 
 .phoneinfo {
-    position: absolute;
-    width: 551px;
-    height: 50px;
-    left: 742px;
-    top: 450px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 150%;
-    letter-spacing: -0.022em;
-    color: #FFFFFF;
+	position: absolute;
+	width: 551px;
+	height: 50px;
+	left: 742px;
+	top: 450px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 150%;
+	letter-spacing: -0.022em;
+	color: #ffffff;
 }
 /*removed left and top */
 #add {
-    position: absolute;
-    top:15px;
-    left:15px;
-    width: 20px;
-    height: 20px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 128px;
-    line-height: 32px;
-    letter-spacing: -0.019em;
-    color: #9A9A9A;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 128px;
+	line-height: 32px;
+	letter-spacing: -0.019em;
+	color: #9a9a9a;
 }
 /*top left was pushing the page over */
 .addicon {
-    position:absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    background: #D9D9D9;
-margin-left:auto;
-margin-top:20px;
-z-index:1;
-top: 530px;
-left:1350px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	background: #d9d9d9;
+	margin-left: auto;
+	margin-top: 20px;
+	z-index: 1;
+	top: 530px;
+	left: 1350px;
 }
 
-
 .flex-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 45px;
 }
 
 .left-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding:10px;
-
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px;
 }
 
 .right-column {
-    flex: 1;
-    display: grid;
-    flex-direction: repeat(4, auto);
-    gap: 10px;
+	flex: 1;
+	display: grid;
+	flex-direction: repeat(4, auto);
+	gap: 10px;
 }
 
 .row {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
 }
 
 .my-reviews-heading {
-    text-align: left;
-    width: 516px;
-    height: 61px;
-    font-family: 'Oswald';
-    font-weight: 400;
-    font-size: 55px;
-    line-height: 50px;
-    letter-spacing: 0.03em;
-    color: #000000;
-    padding: 30px;
+	text-align: left;
+	width: 516px;
+	height: 61px;
+	font-family: "Oswald";
+	font-weight: 400;
+	font-size: 55px;
+	line-height: 50px;
+	letter-spacing: 0.03em;
+	color: #000000;
+	padding: 30px;
 }
 
 .my-reviews {
-    width: 817px;
-    height: 510px;
-    background: #D9D9D9;
-    border: 1px solid #D2D2D2;
-    border-radius: 30px;
-    margin-top:-80px;
-    
-    
+	width: 817px;
+	height: 510px;
+	background: #d9d9d9;
+	border: 1px solid #d2d2d2;
+	border-radius: 30px;
+	margin-top: -80px;
 }
 .my-reviews p {
-    margin-right:400px;
-    text-align: right;
-    top:-200px;
-    
+	margin-right: 400px;
+	text-align: right;
+	top: -200px;
 }
 .my-reviews a {
-display: inline-block;
-    margin-left: 300px;
-    text-align: right;
+	display: inline-block;
+	margin-left: 300px;
+	text-align: right;
 }
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
-    padding: 15px;
-    height: 150px;
-    width: 150px;
-
+	padding: 15px;
+	height: 150px;
+	width: 150px;
 }
 .review-item {
-display: flex;
-align-items: center;
-flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 #reviewtitle {
-    margin-right: 60px;
-    padding: 15px;
-    font-size: 25px;
+	margin-right: 60px;
+	padding: 15px;
+	font-size: 25px;
 }
 /*styling the review text paragraphs */
 #reviewdesc1 {
-font-size:14px;
-font-weight: normal;
-position: relative;
-top:-400px;
-word-wrap: break-word;
-display: inline-block;
-text-align: left;
-font-style: italic;
-
+	font-size: 14px;
+	font-weight: normal;
+	position: relative;
+	top: -400px;
+	word-wrap: break-word;
+	display: inline-block;
+	text-align: left;
+	font-style: italic;
 }
 #reviewdesc2 {
-font-size:14.5px;
-font-weight:normal;
-position:relative;
-word-wrap:break-word;
-display:inline-block;
-font-style: italic;
-text-align: left;
-top:-400px;
+	font-size: 14.5px;
+	font-weight: normal;
+	position: relative;
+	word-wrap: break-word;
+	display: inline-block;
+	font-style: italic;
+	text-align: left;
+	top: -400px;
 }
 /*this positions the review paragraph text */
 .review-txt {
-margin-right:-480px;
-text-align: left;
+	margin-right: -480px;
+	text-align: left;
 }
 
 /*view text stylings */
 .view-text {
-    color: blue;
-    margin-top:-200px;
-    padding-left: 20px;
-    text-decoration: underline;
-    font-weight: 600;
-    z-index:1;
-   
-    
+	color: blue;
+	margin-top: -200px;
+	padding-left: 20px;
+	text-decoration: underline;
+	font-weight: 600;
+	z-index: 1;
 }
 /*individual view text stylings mostly dealing with the positioning of the link in the container */
 #viewtext1 {
-  margin-top:-390px;  
-margin-left:-10px;
+	margin-top: -390px;
+	margin-left: -10px;
 }
 #viewtext2 {
-margin-top:-390px;
-margin-left:-10px;
+	margin-top: -390px;
+	margin-left: -10px;
 }
 /*rating icon stylings */
 .rating-icon {
-height:200px;
-width:200px;
-
+	height: 200px;
+	width: 200px;
 }
 /*review image positioning */
 .review-item img {
-top: -320px;
-margin-left:30px;
-position:relative;
+	top: -320px;
+	margin-left: 30px;
+	position: relative;
 }
 .reviewdesc {
-font-size:10px;
+	font-size: 10px;
 }
 .review-title {
-position:relative;
-top:15px;
+	position: relative;
+	top: 15px;
 }
 .heart-icon {
-height:40px;
-width:40px;
-margin-left:30px;
-margin:15px;
+	height: 40px;
+	width: 40px;
+	margin-left: 30px;
+	margin: 15px;
 }
 /*positions the second heart icon, the one besides paulshaircuts */
 #hearticon2 {
-top:130px;
-position:absolute;
+	top: 130px;
+	position: absolute;
 }
 .favorites-heading {
-    width: 517px;
-    height: 61px;
-padding-top:20px;
-    font-family: 'Oswald';
-    font-weight: 400;
-    font-size: 55px;
-    line-height: 150%;
-    padding:15px;
-    /* or 82px */
-    letter-spacing: 0.03em;
-    color: #000000;
+	width: 517px;
+	height: 61px;
+	padding-top: 20px;
+	font-family: "Oswald";
+	font-weight: 400;
+	font-size: 55px;
+	line-height: 150%;
+	padding: 15px;
+	/* or 82px */
+	letter-spacing: 0.03em;
+	color: #000000;
 }
 /*positions the favorites heading */
 #favheading {
-top:20px;
-position:relative;
-margin:5px;
+	top: 20px;
+	position: relative;
+	margin: 5px;
 }
 .favorites {
-    display: flex;
-    flex-direction: column;
-    width: 491px;
-    height: 279px;
-    color: black;
-    background: #D9D9D9;
-    border: 1px solid #D2D2D2;
-    border-radius: 30px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	display: flex;
+	flex-direction: column;
+	width: 491px;
+	height: 279px;
+	color: black;
+	background: #d9d9d9;
+	border: 1px solid #d2d2d2;
+	border-radius: 30px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /*this is just a description of the lm tree services in the favorties box */
 #favtext {
-    font-size:15px;
-    margin-left:-15px;
-    margin-top:-60px;
-    font-weight:normal;
+	font-size: 15px;
+	margin-left: -15px;
+	margin-top: -60px;
+	font-weight: normal;
 }
 #favtext2 {
-font-size:15px;
-font-weight:normal;
-top:-65px;
+	font-size: 15px;
+	font-weight: normal;
+	top: -65px;
 }
 #favtextheading2 {
-top:-45px;
-font-weight: normal;
-margin-left:30px;
+	top: -45px;
+	font-weight: normal;
+	margin-left: 30px;
 }
-#favtextheading1{
-margin-left:30px;
-top:-70px;
-font-weight: normal;
-padding:5px;
+#favtextheading1 {
+	margin-left: 30px;
+	top: -70px;
+	font-weight: normal;
+	padding: 5px;
 }
 /*this edits the position between the box and the favorites heading */
 .favorites {
-margin-top:-40px;
+	margin-top: -40px;
 }
 .my-businesses-heading {
-    width: 516px;
-    height: 61px;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 55px;
-    line-height: 150%;
-    /* or 82px */
-    letter-spacing: 0.03em;
-    color: #1E1E1E;
+	width: 516px;
+	height: 61px;
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 55px;
+	line-height: 150%;
+	/* or 82px */
+	letter-spacing: 0.03em;
+	color: #1e1e1e;
 }
 /*edits the positioning between the business heading and the box */
-#businessheading{
-position:relative;
-top:-40px;
+#businessheading {
+	position: relative;
+	top: -40px;
 }
 .business-picture {
-padding-top:13px;
-position:absolute;
-top:10px;
-height:50px;
-width:50px;
+	padding-top: 13px;
+	position: absolute;
+	top: 10px;
+	height: 50px;
+	width: 50px;
 }
 .my-businesses {
-    padding: 10px;
-    display: flex;
-    width: 491px;
-    height: 170px;
-    background: #D9D9D9;
-    border: 1px solid #D2D2D2;
-    border-radius: 30px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin-top:-70px;
+	padding: 10px;
+	display: flex;
+	width: 491px;
+	height: 170px;
+	background: #d9d9d9;
+	border: 1px solid #d2d2d2;
+	border-radius: 30px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	margin-top: -70px;
 }
 #pawspatitle {
-font-weight: bold;
-padding-top:25px;
-display: inline-block;
-margin-left:27px;
-
-
+	font-weight: bold;
+	padding-top: 25px;
+	display: inline-block;
+	margin-left: 27px;
 }
 
 #pawspatxt {
-font-size:14px;
-font-weight:normal;
-margin:20px;
-top:50px;
-position: relative;
-margin-left:-130px;
-
+	font-size: 14px;
+	font-weight: normal;
+	margin: 20px;
+	top: 50px;
+	position: relative;
+	margin-left: -130px;
 }
 /*size of search input */
 
 .inbox-messages .message img {
-    width: 65px; /* Uniform width for all images */
-    height: 65px; /* Uniform height for all images */
-    object-fit: cover; 
-    border-radius: 60%; 
+	width: 65px; /* Uniform width for all images */
+	height: 65px; /* Uniform height for all images */
+	object-fit: cover;
+	border-radius: 60%;
 }
 
-#logoutButton
-{
-    width: 100px;
-    height: 50px;
-    font-size: 17px;
+#logoutButton {
+	width: 100px;
+	height: 50px;
+	font-size: 17px;
+}
+.search-bar-header {
+	width: 700px;
 }
