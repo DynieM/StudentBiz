@@ -1,4 +1,3 @@
-
 import { createClient } from "https://cdn.skypack.dev/@supabase/supabase-js";
 const supabaseUrl = "https://ufszhsluvumwklqoxtax.supabase.co";
 const SB =
@@ -37,9 +36,9 @@ async function submitForm() {
             return;
 		}
 		
-        sessionStorage.setItem("firstName", first_name);
-        sessionStorage.setItem("email", email);
-        sessionStorage.setItem("phone", phone_number);
+        localStorage.setItem("firstName", first_name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("phone", phone_number);
 	} catch (error) {
 		console.error("Error saving data to Supabase:", error);
 		alert("An error occurred while saving your data. Please try again.")
