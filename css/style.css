@@ -383,6 +383,11 @@ ul {
 	list-style-type: none;
 }
 
+footer a {
+
+	color: white;
+}
+
 footer {
 	/* Styles for the footer */
 	position: sticky;
