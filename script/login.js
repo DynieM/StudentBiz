@@ -44,31 +44,3 @@ if (data.password_db !== password) {
 	window.location.href = "../html/userprofile.html";
 }
 
-function validateForm(event) {
-    event.preventDefault(); // Stop the form from submitting until validation is complete
-
-    const emailInput = document.getElementById('email');
-    const passwordInput = document.getElementById('password');
-    const formFeedback = document.getElementById('formFeedback');
-    
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
-    let valid = true;
-    let feedbackMessages = [];
-
-    if (!emailRegex.test(emailInput.value)) {
-        valid = false;
-        feedbackMessages.push("Email must be a valid email address.");
-    }
-
-    if (!passwordRegex.test(passwordInput.value)) {
-        valid = false;
-        feedbackMessages.push("Password must contain at least 8 characters, including 1 uppercase, 1 lowercase, and 1 number.");
-    }
-
-    formFeedback.innerHTML = feedbackMessages.join('<br>');
-
-    return valid;
-}
-
