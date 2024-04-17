@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			results.forEach((result) => {
 				const li = document.createElement("li");
 				const a = document.createElement("a");
-				a.href = "/~jo971435/html/businessProfileSet.html"; // Modify this according to your file structure and naming convention
+				a.href = "https://students.gaim.ucf.edu/~jo971435/html/businessProfileSet.html"; // Modify this according to your file structure and naming convention
 				a.textContent = result.business_name_db; // Replace 'column_name' with the actual column you want to display
 				 li.appendChild(a);
 				ul.appendChild(li);
