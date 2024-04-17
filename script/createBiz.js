@@ -41,7 +41,7 @@ document.getElementById("addBusiness").addEventListener("click", async function 
              alert("Business information saved successfully.");
     
              // Construct the URL with query parameters
-            const redirectUrl = `http://127.0.0.1:5500/html/createdBizPage.html?email=${encodeURIComponent(business_email)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(business_phone_number)}`;
+            const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/businessProfileSet.html?email=${encodeURIComponent(business_email)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(business_phone_number)}`;
 
     window.location.href = redirectUrl;
         }
