@@ -6,6 +6,7 @@
   <title>New Business Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../css/businessprofile.css" />
+  <link rel="stylesheet" href="../css/userprofile.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@500&display=swap"
@@ -25,76 +26,74 @@
       <!-- Right side of the navigation bar on the Home Page-->
       <div class="rightnav">
         <div id="userLoggedOut">
-                    <a href="../html/login.html">
-                        <button id="loginButton">Login</button>
-                    </a>
-                <a href="../html/signup.html">
-                    <button id="signUpButton">Sign Up</button>
-                </a>
-                </div>
-            <div id="userLoggedIn">
-                <a href="../html/userprofile.html"
-              ><img
-                src="../assets/Icons/profilepic.svg"
-                alt="Profile Icon"
-                id="profilepicicon"
-              />Profile</a
-            >
-                <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
-                    Inbox</a>
-                  <a href="../html/login.html" id="logoutLink">
-                    <button id="logoutButton">Log Out</button>
-                </a>
-          </div>
+          <a href="../html/login.html">
+            <button id="loginButton">Login</button>
+          </a>
+          <a href="../html/signup.html">
+            <button id="signUpButton">Sign Up</button>
+          </a>
+        </div>
+        <div id="userLoggedIn">
+          <a href="../html/userprofile.html"><img src="../assets/Icons/profilepic.svg" alt="Profile Icon"
+              id="profilepicicon" />Profile</a>
+          <a href="#" id="openInbox"><img src="../assets/Icons/inbox.svg" alt="Inbox Icon" id="inboxicon">
+            Inbox</a>
+          <a href="../html/login.html" id="logoutLink">
+            <button id="logoutButton">Log Out</button>
+          </a>
+        </div>
     </nav>
   </header>
   <div class="addBusinessForm">
-    <form id="editForm">
-      <h1>Create a New Business</h1>
-      <!-- Input field for business name-->
-      <label for="businessName">Business Name:</label>
-      <input type="text" id="businessName" class="formInput" name="businessName" required /><br />
-      <!-- Input field for email with regex validation -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" class="formInput" name="email" /><br />
-      <!-- Input field for phone number with regex validation -->
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" class="formInput" name="phone" /><br />
-      <!-- Input field for address -->
-      <label for="address">Address:</label>
-      <input id="address" class="formInput" name="address" required /><br />
-      <!-- Input field for business description -->
-      <label for="description">Business Description:</label>
-      <textarea id="description" class="formInput" name="description" required></textarea><br /><br />
-      <!-- Input fields for service type -->
-      <label for="serviceType">Service Type:</label>
-      <input type="text" list="serviceTypeList" id="serviceType" required />
-      <datalist id="serviceTypeList">
-        <option value="Beauty"></option>
-        <option value="Food"></option>
-        <option value="Education/Tutor"></option>
-        <option value="Shopping"></option>
-        <option value="Arts & Crafts"></option>
-        <option value="Pets"></option>
-      </datalist><br /><br />
-      <!-- Optional input fields-->
-      <h2>Optional</h2>
-      <!-- Optional input field for adding business profile picture -->
-      <label for="profilePic">Business Logo:</label>
-      <input type="file" id="businessLogo" class="imageFormInput" name="businessLogo" accept="image/*" /><br />
-      <!-- Optional input field for picture -->
-      <label for="businessPic">Picture:</label>
-      <input type="file" id="businessPic" class="imageFormInput" name="businessPic" accept="image/*" /><br />
-      <!-- Optional input fields for tags -->
-      <label for="tag1">Tag 1:</label>
-      <input type="text" id="tag1" class="tagFormInput" name="tag1" /><br />
-      <label for="tag2">Tag 2:</label>
-      <input type="text" id="tag2" class="tagFormInput" name="tag2" /><br />
-      <label for="tag3">Tag 3:</label>
-      <input type="text" id="tag3" class="tagFormInput" name="tag3" /><br />
-      <!-- Submit button -->
-      <button id="addBusiness" type="submit">Publish Your Business</button>
-    </form>
+    <div id="editForm-shadow">
+      <form id="editForm">
+        <h1>Create a New Business</h1>
+        <!-- Input field for business name-->
+        <label for="businessName">Business Name:</label>
+        <input type="text" id="businessName" class="formInput" name="businessName" required /><br />
+        <!-- Input field for email with regex validation -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="formInput" name="email" /><br />
+        <!-- Input field for phone number with regex validation -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" class="formInput" name="phone" /><br />
+        <!-- Input field for address -->
+        <label for="address">Address:</label>
+        <input id="address" class="formInput" name="address" required /><br /> <br />
+        <!-- Input field for business description -->
+        <label for="description">Business Description:</label>
+        <input id="description" class="formInput" name="description" required></input><br /><br />
+        <!-- Input fields for service type -->
+        <label for="serviceType">Service Type:</label>
+        <input type="text" list="serviceTypeList" id="serviceType" required />
+        <datalist id="serviceTypeList">
+          <option value="Beauty"></option>
+          <option value="Food"></option>
+          <option value="Education/Tutor"></option>
+          <option value="Shopping"></option>
+          <option value="Arts & Crafts"></option>
+          <option value="Pets"></option>
+        </datalist><br /><br />
+        <!-- Optional input fields-->
+        <h2>Optional</h2>
+        <br>
+        <!-- Optional input field for adding business profile picture -->
+        <label for="profilePic">Business Logo:</label>
+        <input type="file" id="businessLogo" class="imageFormInput" name="businessLogo" accept="image/*" /><br />
+        <!-- Optional input field for picture -->
+        <label for="businessPic">Picture:</label>
+        <input type="file" id="businessPic" class="imageFormInput" name="businessPic" accept="image/*" /><br />
+        <!-- Optional input fields for tags -->
+        <label for="tag1">Tag 1:</label>
+        <input type="text" id="tag1" class="tagFormInput" name="tag1" /><br />
+        <label for="tag2">Tag 2:</label>
+        <input type="text" id="tag2" class="tagFormInput" name="tag2" /><br />
+        <label for="tag3">Tag 3:</label>
+        <input type="text" id="tag3" class="tagFormInput" name="tag3" /><br />
+        <!-- Submit button -->
+        <button id="addBusiness" type="submit">Publish Your Business</button>
+      </form>
+    </div>
   </div>
 
   <!--Footer -->
@@ -112,38 +111,40 @@
   <div id="inbox-container">
     <div class="inbox-header">
       <div>
-        <button id="closeInbox">X</button>
+        <button type="button" id="closeInbox">X</button>
       </div>
-      <input type="text" placeholder="Search Service">
-      <button type="button" onclick="showNewMessageForm()">
-        New Message
-      </button>
+      <div class="search-section">
+        <input id="searchServiceInputBox" type="text" placeholder="Search Service">
+      </div>
     </div>
+
+    <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
+    <!-- Inbox Messages -->
     <div id="inboxMessages" class="inbox-messages">
       <!-- Sample messages -->
       <div class="message">
-        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
         <div>
           <p><strong>Mie Hair Salon</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>18h ago</span>
+        <div class="inbox_time">18h ago</div>
       </div>
       <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+        <img src="../assets/Icons/LMTreeLogo.svg" alt="Profile">
         <div>
           <p><strong>LM Tree Services</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>15h ago</span>
+        <div class="inbox_time">15h ago</div>
       </div>
       <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-        <div>
+        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+        <div class="inbox_text">
           <p><strong>Tutor Wise</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>10m ago</span>
+        <div class="inbox_time">10m ago</div>
       </div>
     </div>
     <div id="sendMsg" class="send-message">
@@ -151,16 +152,12 @@
     </div>
     <!-- New Message Form -->
     <div id="newMessageForm" class="new-message-form">
-      <button type="button" id="inbox-back-button" onclick="showInbox()">
-        &#8592; Back
-      </button>
+      <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
       <div class="controls">
-        <input type="text" placeholder="Search for people" />
         <textarea placeholder="Type your message..."></textarea>
         <button type="submit">Send</button>
       </div>
     </div>
   </div>
 </body>
-
 </html>

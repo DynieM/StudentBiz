@@ -6,6 +6,7 @@
   <title>Business Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/userprofile.css">
   <link rel="stylesheet" href="../css/newbusinessprofile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,36 +155,40 @@
   <div id="inbox-container">
     <div class="inbox-header">
       <div>
-        <button id="closeInbox">X</button>
+        <button type="button" id="closeInbox">X</button>
       </div>
-      <input type="text" placeholder="Search Service">
-      <button type="button" onclick="showNewMessageForm()">New Message</button>
+      <div class="search-section">
+        <input id="searchServiceInputBox" type="text" placeholder="Search Service">
+      </div>
     </div>
+
+    <button type="button" class="new-message" onclick="showNewMessageForm()">New Message</button>
+    <!-- Inbox Messages -->
     <div id="inboxMessages" class="inbox-messages">
       <!-- Sample messages -->
       <div class="message">
-        <!--   <img src="../assets/Icons/profilepic.svg" alt="Profile" width="20" height="20">-->
+        <img src="../assets/Icons/bymieSalon.svg" alt="Profile">
         <div>
           <p><strong>Mie Hair Salon</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>18h ago</span>
+        <div class="inbox_time">18h ago</div>
       </div>
       <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40"> -->
+        <img src="../assets/Icons/LMTreeLogo.svg" alt="Profile">
         <div>
           <p><strong>LM Tree Services</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>15h ago</span>
+        <div class="inbox_time">15h ago</div>
       </div>
       <div class="message">
-        <!--        <img src="path_to_profile_picture.jpg" alt="Profile" width="40" height="40">-->
-        <div>
+        <img src="../assets/Icons/TutorLogo.svg" alt="Profile">
+        <div class="inbox_text">
           <p><strong>Tutor Wise</strong></p>
           <p>Last message preview...</p>
         </div>
-        <span>10m ago</span>
+        <div class="inbox_time">10m ago</div>
       </div>
     </div>
     <div id="sendMsg" class="send-message">
@@ -193,7 +198,6 @@
     <div id="newMessageForm" class="new-message-form">
       <button type="button" id="inbox-back-button" onclick="showInbox()">&#8592; Back</button>
       <div class="controls">
-        <input type="text" placeholder="Search for people">
         <textarea placeholder="Type your message..."></textarea>
         <button type="submit">Send</button>
       </div>

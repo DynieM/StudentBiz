@@ -147,6 +147,7 @@ input[type="text"] {
 	box-sizing: border-box;
 	border-radius: 20px;
 }
+
 .search-section input[type="text"]:first-of-type {
 	font-family: "Montserrat", sans-serif;
 	background-image: url("../assets/Icons/search.svg"); /* Path to your search icon */
@@ -157,6 +158,7 @@ input[type="text"] {
 	background-color: #ffffff; /* Example: white background */
 	border: 1px solid #ccc; /* Optional: match the input's border */
 }
+
 button {
 	background-color: #000000;
 	color: #fff;
@@ -198,6 +200,7 @@ p {
 	left: 1295px;
 	font-weight: normal;
 }
+
 a {
 	text-decoration: none;
 	color: white;
@@ -233,6 +236,7 @@ footer {
 	z-index: 1000;
 	display: none;
 }
+
 #closeInbox {
 	float: right;
 	justify-content: space-between;
@@ -245,6 +249,7 @@ footer {
 .inbox_time {
 	font-size: 12px;
 }
+
 .inbox_text {
 	left: 0px;
 	bottom: 0px;
@@ -285,6 +290,7 @@ footer {
 	color: white;
 	background-color: #007bff;
 }
+
 .new-message {
 	background-color: #efeff0;
 	color: gray;
@@ -302,6 +308,7 @@ footer {
 	display: block;
 	padding: 10px;
 }
+
 .send-message {
 	border-radius: 15px;
 	display: block;
@@ -434,6 +441,7 @@ footer {
 	letter-spacing: -0.022em;
 	color: #ffffff;
 }
+
 /*removed left and top */
 #add {
 	position: absolute;
@@ -449,6 +457,7 @@ footer {
 	letter-spacing: -0.019em;
 	color: #9a9a9a;
 }
+
 /*top left was pushing the page over */
 .addicon {
 	position: absolute;
@@ -512,22 +521,26 @@ footer {
 	border-radius: 30px;
 	margin-top: -80px;
 }
+
 .my-reviews p {
 	margin-right: 400px;
 	text-align: right;
 	top: -200px;
 }
+
 .my-reviews a {
 	display: inline-block;
 	margin-left: 300px;
 	text-align: right;
 }
+
 /* Business Logos - in the 'My Reviews' section */
 .review-logo {
 	padding: 15px;
 	height: 150px;
 	width: 150px;
 }
+
 .review-item {
 	display: flex;
 	align-items: center;
@@ -539,6 +552,7 @@ footer {
 	padding: 15px;
 	font-size: 25px;
 }
+
 /*styling the review text paragraphs */
 #reviewdesc1 {
 	font-size: 14px;
@@ -550,6 +564,7 @@ footer {
 	text-align: left;
 	font-style: italic;
 }
+
 #reviewdesc2 {
 	font-size: 14.5px;
 	font-weight: normal;
@@ -560,6 +575,7 @@ footer {
 	text-align: left;
 	top: -400px;
 }
+
 /*this positions the review paragraph text */
 .review-txt {
 	margin-right: -480px;
@@ -575,44 +591,53 @@ footer {
 	font-weight: 600;
 	z-index: 1;
 }
+
 /*individual view text stylings mostly dealing with the positioning of the link in the container */
 #viewtext1 {
 	margin-top: -390px;
 	margin-left: -10px;
 }
+
 #viewtext2 {
 	margin-top: -390px;
 	margin-left: -10px;
 }
+
 /*rating icon stylings */
 .rating-icon {
 	height: 200px;
 	width: 200px;
 }
+
 /*review image positioning */
 .review-item img {
 	top: -320px;
 	margin-left: 30px;
 	position: relative;
 }
+
 .reviewdesc {
 	font-size: 10px;
 }
+
 .review-title {
 	position: relative;
 	top: 15px;
 }
+
 .heart-icon {
 	height: 40px;
 	width: 40px;
 	margin-left: 30px;
 	margin: 15px;
 }
+
 /*positions the second heart icon, the one besides paulshaircuts */
 #hearticon2 {
 	top: 130px;
 	position: absolute;
 }
+
 .favorites-heading {
 	width: 517px;
 	height: 61px;
@@ -626,12 +651,14 @@ footer {
 	letter-spacing: 0.03em;
 	color: #000000;
 }
+
 /*positions the favorites heading */
 #favheading {
 	top: 20px;
 	position: relative;
 	margin: 5px;
 }
+
 .favorites {
 	display: flex;
 	flex-direction: column;
@@ -643,6 +670,7 @@ footer {
 	border-radius: 30px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 /*this is just a description of the lm tree services in the favorties box */
 #favtext {
 	font-size: 15px;
@@ -650,11 +678,13 @@ footer {
 	margin-top: -60px;
 	font-weight: normal;
 }
+
 #favtext2 {
 	font-size: 15px;
 	font-weight: normal;
 	top: -65px;
 }
+
 #favtextheading2 {
 	top: -45px;
 	font-weight: normal;
@@ -666,10 +696,12 @@ footer {
 	font-weight: normal;
 	padding: 5px;
 }
+
 /*this edits the position between the box and the favorites heading */
 .favorites {
 	margin-top: -40px;
 }
+
 .my-businesses-heading {
 	width: 516px;
 	height: 61px;
@@ -682,11 +714,13 @@ footer {
 	letter-spacing: 0.03em;
 	color: #1e1e1e;
 }
+
 /*edits the positioning between the business heading and the box */
 #businessheading {
 	position: relative;
 	top: -40px;
 }
+
 .business-picture {
 	padding-top: 13px;
 	position: absolute;
@@ -694,6 +728,7 @@ footer {
 	height: 50px;
 	width: 50px;
 }
+
 .my-businesses {
 	padding: 10px;
 	display: flex;
@@ -705,6 +740,7 @@ footer {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	margin-top: -70px;
 }
+
 #pawspatitle {
 	font-weight: bold;
 	padding-top: 25px;
@@ -720,6 +756,7 @@ footer {
 	position: relative;
 	margin-left: -130px;
 }
+
 /*size of search input */
 
 .inbox-messages .message img {
