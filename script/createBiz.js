@@ -11,13 +11,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const emailError = document.getElementById('emailError');
   const phoneError = document.getElementById('phoneError');
 
-  emailInput.addEventListener('input', function () {
-    emailError.textContent = emailInput.validity.patternMismatch ? 'Invalid email format.' : '';
+ emailInput.addEventListener('input', function () {
+    if (!emailInput.validity.valid) { // Checks if the input is valid overall
+      emailError.textContent = 'Invalid email format. Please use a valid email address. Emails must end with a @something.com';
+    } else {
+      emailError.textContent = '';
+    }
   });
 
   phoneInput.addEventListener('input', function () {
-    phoneError.textContent = phoneInput.validity.patternMismatch ? 'Invalid phone number format.' : '';
+    if (!phoneInput.validity.valid) { // Checks if the input is valid overall
+      phoneError.textContent = 'Invalid phone number format. Please use a valid phone number. Valid phone numbers formats are: 123-123-1234, (123) 123-1234 or 123 123 1234';
+    } else {
+      phoneError.textContent = '';
+    }
   });
+});
 
   document.getElementById("addBusiness").addEventListener("click", async function (event) {
     event.preventDefault();
