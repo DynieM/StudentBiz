@@ -548,6 +548,12 @@ h1, h2, label {
 
 }
 
+h2 {
+margin-top: 60px;
+  text-align: center;
+
+}
+
 #editForm {
   text-align: left;
   background-color: #464646;
@@ -555,7 +561,7 @@ h1, h2, label {
   border-radius: 25px;
   width: 80%;
   padding: 20px;
-  margin-left: auto;
+  margin-left: 40px;
   margin-right: auto;
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
@@ -564,16 +570,16 @@ h1, h2, label {
 
 #addBusiness{
 
-  margin-left: 37%;
+  margin-left: 40%;
 
 }
 
 .formInput {
   margin-top: 20px;
   height: 20px;
-  width: 300px;
+  width: 50%;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 input {
