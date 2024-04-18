@@ -61,6 +61,5 @@ document.addEventListener('DOMContentLoaded', function () {
       alert("Error saving data to Supabase. Please check console for details.");
     }
   });
-});
 
 export { createClient };
