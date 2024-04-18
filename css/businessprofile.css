@@ -554,6 +554,11 @@ margin-top: 60px;
 
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 #editForm {
   text-align: left;
   background-color: #464646;
