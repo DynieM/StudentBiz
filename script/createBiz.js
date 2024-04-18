@@ -9,16 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const addBusinessBtn = document.getElementById("addBusiness");
     
     addBusinessBtn.addEventListener("click", async function (event) {
-        event.preventDefault(); // Prevent the form from submitting traditionally
+        event.preventDefault(); // prevents the form from submitting
 
-        // Get inputs
         const emailInput = document.getElementById("email");
         const phoneInput = document.getElementById("phone");
         const business_description = document.getElementById("description").value;
         const business_name = document.getElementById("businessName").value;
         const service_type = document.getElementById("serviceType").value;
 
-        // Validate inputs
+        // Validation
         let errors = [];
         if (!emailInput.validity.valid) {
             errors.push("Invalid email format: " + emailInput.validationMessage);
