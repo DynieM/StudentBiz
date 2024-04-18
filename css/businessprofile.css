@@ -544,10 +544,10 @@ h2 {
 
 #editForm {
   text-align: left;
-  background-color: #ECECEC;
-  color: rgb(36, 36, 36);
+  background-color: #171717;
+  color: rgb(245, 242, 242);
   border-radius: 25px;
-  width: 100%;
+  width: 600px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
