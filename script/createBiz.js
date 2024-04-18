@@ -30,7 +30,30 @@ document.getElementById("addBusiness").addEventListener("click", async function 
     const formData = [business_email.value, business_description, business_name, business_phone_number.value, service_type];
     console.log("Form Data Collected:", formData);
 
-    // Your existing submission logic here
+   
+    document.addEventListener('DOMContentLoaded', function () {
+      const emailInput = document.getElementById('email');
+      const phoneInput = document.getElementById('phone');
+      const emailError = document.getElementById('emailError');
+      const phoneError = document.getElementById('phoneError');
+
+      emailInput.addEventListener('input', function () {
+        if (emailInput.validity.patternMismatch) {
+          emailError.textContent = 'Invalid email format.';
+        } else {
+          emailError.textContent = '';
+        }
+      });
+
+      phoneInput.addEventListener('input', function () {
+        if (phoneInput.validity.patternMismatch) {
+          phoneError.textContent = 'Invalid phone number format.';
+        } else {
+          phoneError.textContent = '';
+        }
+      });
+    });
+  
     try {
         const { data, error } = await supabase.from("businesses")
             .insert({
