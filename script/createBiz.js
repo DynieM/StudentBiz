@@ -11,20 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const emailError = document.getElementById('emailError');
   const phoneError = document.getElementById('phoneError');
 
- emailInput.addEventListener('input', function () {
-    if (!emailInput.validity.valid) { // Checks if the input is valid overall
-      emailError.textContent = 'Invalid email format. Please use a valid email address. Emails must end with a @something.com';
+  function validateInput(inputElement, errorElement, errorMessage) {
+    if (!inputElement.checkValidity()) {
+      errorElement.textContent = errorMessage;
     } else {
-      emailError.textContent = '';
+      errorElement.textContent = '';
     }
+  }
+
+  emailInput.addEventListener('input', function () {
+    validateInput(emailInput, emailError, 'Invalid email format. Please use a valid email address.');
   });
 
   phoneInput.addEventListener('input', function () {
-    if (!phoneInput.validity.valid) { // Checks if the input is valid overall
-      phoneError.textContent = 'Invalid phone number format. Please use a valid phone number. Valid phone numbers formats are: 123-123-1234, (123) 123-1234 or 123 123 1234';
-    } else {
-      phoneError.textContent = '';
-    }
+    validateInput(phoneInput, phoneError, 'Invalid phone number format. Please use a valid phone number.');
   });
 });
 
