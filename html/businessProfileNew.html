@@ -67,15 +67,16 @@
         <input id="description" class="formInput" name="description" required></input><br /><br />
         <!-- Input fields for service type -->
         <label for="serviceType">Service Type:</label>
-        <input type="text" list="serviceTypeList" id="serviceType" required />
-        <datalist id="serviceTypeList">
-          <option value="Beauty"></option>
-          <option value="Food"></option>
-          <option value="Education/Tutor"></option>
-          <option value="Shopping"></option>
-          <option value="Arts & Crafts"></option>
-          <option value="Pets"></option>
-        </datalist><br /><br />
+        <select id="serviceType" name="serviceType" required>
+          <option value="">Please select a service type</option>
+          <option value="Beauty">Beauty</option>
+          <option value="Food">Food</option>
+          <option value="Education/Tutor">Education/Tutor</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Arts & Crafts">Arts & Crafts</option>
+          <option value="Pets">Pets</option>
+        </select><br /><br />
+
         <!-- Optional input fields-->
         <h2>Optional</h2>
         <br>
