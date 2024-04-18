@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
 
     if (!emailInput.checkValidity() || !phoneInput.checkValidity()) {
-      alert("Please check your email and phone number for errors.");
+      alert("Please check your email and phone number for errors. Email should be written as johndoe@email.com and number should only include numbers such as 1235467777");
       return;
     }
 
