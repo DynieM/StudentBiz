@@ -11,41 +11,46 @@ document.getElementById("addBusiness").addEventListener("click", async function 
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Collect input values
-    const business_email = document.getElementById("email").value;
+    const business_email = document.getElementById("email");
     const business_description = document.getElementById("description").value;
     const business_name = document.getElementById("businessName").value;
-    const business_phone_number = document.getElementById("phone").value;
-    const service_type = document.getElementById("serviceType").value; // Ensure this ID matches the HTML
+    const business_phone_number = document.getElementById("phone");
+    const service_type = document.getElementById("serviceType").value;
+
+    // Check if the inputs are valid
+    if (!business_email.checkValidity() || !business_phone_number.checkValidity()) {
+        alert("Please check your email and phone number for errors.");
+        // Display specific error messages
+        document.getElementById("emailError").textContent = business_email.validationMessage;
+        document.getElementById("phoneError").textContent = business_phone_number.validationMessage;
+        return; // Stop the function if there are errors
+    }
 
     // Optional: Collect all inputs into an array for testing
-    const formData = [business_email, business_description, business_name, business_phone_number, service_type];
+    const formData = [business_email.value, business_description, business_name, business_phone_number.value, service_type];
     console.log("Form Data Collected:", formData);
 
     // Your existing submission logic here
     try {
         const { data, error } = await supabase.from("businesses")
             .insert({
-                business_email_db: business_email,
+                business_email_db: business_email.value,
                 business_name_db: business_name,
                 business_description_db: business_description,
                 service_type_db: service_type,
-                business_phone_number_db: business_phone_number,
+                business_phone_number_db: business_phone_number.value,
             });
 
         if (error) {
-
             throw new Error('Error saving data to Supabase:', error.message);
-        
         } else {
-             console.log("Data saved successfully:", data);
-             alert("Business information saved successfully.");
-    
-             // Construct the URL with query parameters
-            const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/createdBizPage.html?email=${encodeURIComponent(business_email)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(business_phone_number)}`;
-
-    window.location.href = redirectUrl;
+            console.log("Data saved successfully:", data);
+            alert("Business information saved successfully.");
+            
+            // Construct the URL with query parameters
+            const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/createdBizPage.html?email=${encodeURIComponent(business_email.value)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(business_phone_number.value)}`;
+            window.location.href = redirectUrl;
         }
-
     } catch (error) {
         console.error(error);
         alert("Error saving data to Supabase. Please check console for details.");
