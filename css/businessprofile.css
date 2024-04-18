@@ -556,9 +556,13 @@ margin-top: 60px;
 
 .error-message {
   color: red;
-  font-size: 0.8em;
+  font-size: 16pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  /* Ensures the span takes the full width for center alignment */
 }
-
 #editForm {
   text-align: left;
   background-color: #464646;
