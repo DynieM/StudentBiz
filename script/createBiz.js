@@ -6,27 +6,28 @@ const SB = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI
 const supabase = createClient(supabaseUrl, SB);
 
 document.addEventListener('DOMContentLoaded', function () {
-  const emailInput = document.getElementById('email');
-  const phoneInput = document.getElementById('phone');
-  const emailError = document.getElementById('emailError');
-  const phoneError = document.getElementById('phoneError');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const emailError = document.getElementById('emailError');
+    const phoneError = document.getElementById('phoneError');
 
-  function validateInput(inputElement, errorElement, errorMessage) {
-    if (!inputElement.checkValidity()) {
-      errorElement.textContent = errorMessage;
-    } else {
-      errorElement.textContent = '';
+    function validateInput(inputElement, errorElement, errorMessage) {
+        if (!inputElement.validity.valid) {
+            errorElement.textContent = errorMessage;  
+        } else {
+            errorElement.textContent = '';            // Clears the message when input is valid
+        }
     }
-  }
 
-  emailInput.addEventListener('input', function () {
-    validateInput(emailInput, emailError, 'Invalid email format. Please use a valid email address.');
-  });
+    emailInput.addEventListener('input', function () {
+        validateInput(emailInput, emailError, 'Invalid email format. Please use a valid email address.');
+    });
 
-  phoneInput.addEventListener('input', function () {
-    validateInput(phoneInput, phoneError, 'Invalid phone number format. Please use a valid phone number.');
-  });
+    phoneInput.addEventListener('input', function () {
+        validateInput(phoneInput, phoneError, 'Invalid phone number format. Please use a valid phone number.');
+    });
 });
+
 
   document.getElementById("addBusiness").addEventListener("click", async function (event) {
     event.preventDefault();
