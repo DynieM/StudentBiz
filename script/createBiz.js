@@ -57,21 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error(error.message);
             }
             alert("Business information saved successfully.");
-            window.location.href = "successURL.html";  // Redirect to a success page
+            const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/createdBizPage.html?email=${encodeURIComponent(emailInput.value)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(phoneInput.value)}`;
+      window.location.href = redirectUrl;
         } catch (error) {
             console.error("Error saving data to Supabase:", error);
             alert("Error saving data to Supabase. Please check console for details.");
         }
     });
 });
-
-      const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/createdBizPage.html?email=${encodeURIComponent(emailInput.value)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(phoneInput.value)}`;
-      window.location.href = redirectUrl;
-
-    } catch (error) {
-      console.error("Error saving data to Supabase:", error);
-      alert("Error saving data to Supabase. Please check console for details.");
-    }
-  });
 
 export { createClient };
