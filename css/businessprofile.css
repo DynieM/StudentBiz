@@ -561,8 +561,12 @@ margin-top: 60px;
   font-style: italic;
   text-align: center;
   display: block;
-  /* Ensures the span takes the full width for center alignment */
+  margin-top: 5px;
+  height: auto;
+  visibility: visible;
+ 
 }
+
 #editForm {
   text-align: left;
   background-color: #464646;
