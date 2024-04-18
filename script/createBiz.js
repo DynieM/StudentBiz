@@ -6,53 +6,65 @@ const SB = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI
 const supabase = createClient(supabaseUrl, SB);
 
 document.addEventListener('DOMContentLoaded', function () {
-    const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
-    const emailError = document.getElementById('emailError');
-    const phoneError = document.getElementById('phoneError');
+    const addBusinessBtn = document.getElementById("addBusiness");
+    
+    addBusinessBtn.addEventListener("click", async function (event) {
+        event.preventDefault(); // Prevent the form from submitting traditionally
 
-    function validateInput(inputElement, errorElement, errorMessage) {
-        if (!inputElement.validity.valid) {
-            errorElement.textContent = errorMessage;  
-        } else {
-            errorElement.textContent = '';            // Clears the message when input is valid
+        // Get inputs
+        const emailInput = document.getElementById("email");
+        const phoneInput = document.getElementById("phone");
+        const business_description = document.getElementById("description").value;
+        const business_name = document.getElementById("businessName").value;
+        const service_type = document.getElementById("serviceType").value;
+
+        // Validate inputs
+        let errors = [];
+        if (!emailInput.validity.valid) {
+            errors.push("Invalid email format: " + emailInput.validationMessage);
         }
-    }
+        if (!phoneInput.validity.valid) {
+            errors.push("Invalid phone number format: " + phoneInput.validationMessage);
+        }
+        if (!document.getElementById("description").validity.valid) {
+            errors.push("Business description is required.");
+        }
+        if (!document.getElementById("businessName").validity.valid) {
+            errors.push("Business name is required.");
+        }
+        if (!document.getElementById("serviceType").validity.valid) {
+            errors.push("Service type is required.");
+        }
 
-    emailInput.addEventListener('input', function () {
-        validateInput(emailInput, emailError, 'Invalid email format. Please use a valid email address.');
-    });
+        // Handle errors
+        if (errors.length > 0) {
+            alert("Please correct the errors before submitting:\n" + errors.join("\n"));
+            console.error("Form submission errors:", errors);
+            return;
+        }
 
-    phoneInput.addEventListener('input', function () {
-        validateInput(phoneInput, phoneError, 'Invalid phone number format. Please use a valid phone number.');
+        // Proceed with form submission logic if no errors
+        try {
+            const { data, error } = await supabase.from("businesses").insert({
+                business_email_db: emailInput.value,
+                business_name_db: business_name,
+                business_description_db: business_description,
+                service_type_db: service_type,
+                business_phone_number_db: phoneInput.value,
+            });
+
+            if (error) {
+                throw new Error(error.message);
+            }
+            alert("Business information saved successfully.");
+            window.location.href = "successURL.html";  // Redirect to a success page
+        } catch (error) {
+            console.error("Error saving data to Supabase:", error);
+            alert("Error saving data to Supabase. Please check console for details.");
+        }
     });
 });
 
-
-  document.getElementById("addBusiness").addEventListener("click", async function (event) {
-    event.preventDefault();
-
-    if (!emailInput.checkValidity() || !phoneInput.checkValidity()) {
-      alert("Please check your email and phone number for errors. Email should be written as johndoe@email.com and number should only include numbers such as 1235467777");
-      return;
-    }
-
-    const business_description = document.getElementById("description").value;
-    const business_name = document.getElementById("businessName").value;
-    const service_type = document.getElementById("serviceType").value;
-
-    try {
-      const { data, error } = await supabase.from("businesses").insert({
-        business_email_db: emailInput.value,
-        business_name_db: business_name,
-        business_description_db: business_description,
-        service_type_db: service_type,
-        business_phone_number_db: phoneInput.value,
-      });
-
-      if (error) throw new Error(error.message);
-
-      alert("Business information saved successfully.");
       const redirectUrl = `https://students.gaim.ucf.edu/~jo971435/html/createdBizPage.html?email=${encodeURIComponent(emailInput.value)}&name=${encodeURIComponent(business_name)}&description=${encodeURIComponent(business_description)}&phone=${encodeURIComponent(phoneInput.value)}`;
       window.location.href = redirectUrl;
 
